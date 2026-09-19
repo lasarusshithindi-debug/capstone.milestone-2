@@ -1,0 +1,16 @@
+class,top_term
+security_incident,ot
+security_incident,account
+security_incident,review
+security_incident,engineering
+security_incident,engineering workstation
+security_incident,workstation
+security_incident,observed ast
+security_incident,suspected scanning
+security_incident,far
+security_incident,scanning
+security_incident,far normal
+security_incident,normal baseline
+security_incident,observed
+security_incident,normal
+security_incident,device suspected

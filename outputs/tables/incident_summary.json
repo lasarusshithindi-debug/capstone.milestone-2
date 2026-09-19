@@ -1,0 +1,30 @@
+{
+  "case_account": "vend069",
+  "account_role": "vendor_technician",
+  "employment_type": "vendor",
+  "alert_window_days": [
+    "2019-04-25",
+    "2019-04-26",
+    "2019-04-27",
+    "2019-04-28"
+  ],
+  "timeline_rows": 202,
+  "direct_evidence_rows": 169,
+  "context_only_rows": 11,
+  "privileged_actions": 16,
+  "privileged_without_mfa": 16,
+  "affected_assets": 8,
+  "injected_pattern_behind_case": [
+    "GT2_vendor_out_of_hours"
+  ],
+  "status": "ANALYTICAL SCENARIO - synthetic access data, testbed context rows",
+  "env": {
+    "utc_time": "2026-09-19T19:32:56+00:00",
+    "python": "3.11.15",
+    "platform": "Linux-6.18.44-fc-v37-x86_64-with-glibc2.39",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scikit_learn": "1.8.0",
+    "seed": 3815
+  }
+}

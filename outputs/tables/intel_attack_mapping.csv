@@ -1,0 +1,15 @@
+rule,rule_description,rank,attack_id,attack_name,attack_class,similarity,confidence
+R1,repeated failed authentication attempts against a single account,1,DC0002,User Account Authentication,data_component,0.246,moderate
+R1,repeated failed authentication attempts against a single account,2,M0804,Human User Authentication,mitigation,0.193,moderate
+R2,password spraying from one source address against many accounts,1,M0927,Password Policies,mitigation,0.363,moderate
+R2,password spraying from one source address against many accounts,2,A0015,Switch,asset,0.143,low - reported for context only
+R3,account authenticating from two distant locations within a short period,1,M0936,Account Use Policies,mitigation,0.141,low - reported for context only
+R3,account authenticating from two distant locations within a short period,2,M0804,Human User Authentication,mitigation,0.106,low - reported for context only
+R4,privileged engineering action performed outside normal working hours,1,AN1935,Analytic 1935,analytic,0.207,moderate
+R4,privileged engineering action performed outside normal working hours,2,T1692.001,Command Message,technique,0.152,moderate
+R5,account authenticating from a country never seen before for that account,1,M0936,Account Use Policies,mitigation,0.244,moderate
+R5,account authenticating from a country never seen before for that account,2,M0804,Human User Authentication,mitigation,0.183,moderate
+R6,dormant account reactivated and used for remote access,1,M0935,Limit Access to Resource Over Network,mitigation,0.219,moderate
+R6,dormant account reactivated and used for remote access,2,M0936,Account Use Policies,mitigation,0.172,moderate
+R7,privileged remote session established without multi-factor authentication,1,DC0002,User Account Authentication,data_component,0.381,moderate
+R7,privileged remote session established without multi-factor authentication,2,M0804,Human User Authentication,mitigation,0.367,moderate

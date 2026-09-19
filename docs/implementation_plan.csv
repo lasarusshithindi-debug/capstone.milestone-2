@@ -1,0 +1,24 @@
+task_id,task,description,dataset_or_tool,responsible,expected_output,status,dependencies,estimated_completion
+T01,Acquire and verify data sources,"Clone ToN_IoT telemetry and flow mirrors, extract ATT&CK ICS bundle, hash every file",git / pandas,Member A,"data/raw/ populated, SHA-256 in data_inventory.csv",DONE,none,19 Sep 2026
+T02,Generate documented synthetic sources,"Asset inventory, user directory, remote-access log, ticket corpus with fixed seed",src/s02 and src/s03,Member B,"3 synthetic CSVs + provenance JSONs",DONE,T01,19 Sep 2026
+T03,Data inventory and dictionary,"Profile every file: rows, columns, types, missingness, duplicates, semantic roles",src/s04,Member A,"data_inventory.csv, data_dictionary.csv, data_quality.csv",DONE,T01 T02,19 Sep 2026
+T04,Requirements matrix,Map C1-C10 and the 5.1 minimum-data rules to datasets and methods,src/s05,Member B,"requirements_matrix.csv, minimum_data_check.csv",DONE,T03,19 Sep 2026
+T05,Cleaning and feature pipeline,"Placeholders, type coercion, duplicate flags, timestamps, engineered features, crosswalk",src/s06,Member A,"processed parquet tables + cleaning_log.csv (37 actions)",DONE,T03,19 Sep 2026
+T06,Baselines and exploratory analytics,"Volumes, attack mix, service profile, login-hour baselines, unusual user-days",src/s07,Member A,"8 figures + baseline_*.csv + eda_findings.csv",DONE,T05,19 Sep 2026
+T07,Supervised detection,"Compare LR / decision tree / random forest; binary and attack family; leakage control",src/s08,Member A,"supervised_*.csv, confusion matrices, saved models",DONE,T05,19 Sep 2026
+T08,Anomaly detection,"Isolation Forest (unsupervised and clean-baseline), LOF, DBSCAN peer groups",src/s09,Member A,"anomaly_*.csv, threshold tables, flagged user-days",DONE,T05,19 Sep 2026
+T09,Access analytics,"7 behaviour rules with evidence event IDs, per-role and per-user baselines",src/s10,Member B,"ueba_alerts.csv, ueba_rule_summary.csv",DONE,T05 T08,19 Sep 2026
+T10,Investigation and response,"Case ranking, correlated timeline with linkage basis, affected entities, 4-phase plan",src/s11,Member B,"incident_*.csv + fig19",DONE,T09,19 Sep 2026
+T11,Control simulation,"5 scenarios x 5000 Monte Carlo runs, Wilson CIs, sensitivity analysis",src/s13,Member B,"simulation_summary.csv, simulation_sensitivity.csv",DONE,T02,19 Sep 2026
+T12,Text mining and NLP,"TF-IDF classification, indicator extraction against an answer key, NMF topics, ATT&CK enrichment",src/s14,Member B,"nlp_*.csv + fig22 fig23",DONE,T02 T01,19 Sep 2026
+T13,Predictive risk and adversarial tests,"Six-component risk score with bands, next-day early warning, 4 robustness test families",src/s15,Member A,"risk_*.csv, adversarial_results.csv, fig24 fig25",DONE,T08 T09,19 Sep 2026
+T14,Intelligence products,"PIRs, ATT&CK mapping, operational watchlist, executive brief",src/s12,Member B,"intel_*.csv, intelligence_executive_brief.md",DONE,T10 T11 T12 T13,19 Sep 2026
+T15,Analyst prototype,Streamlit console with 8 views over every output,app/app.py,Both,"working dashboard verified in a headless browser",DONE,T06-T14,19 Sep 2026
+T16,Reproducibility pack,"run_all.py, requirements.txt, README, notebook, 16 test cases, experiment log",src/run_all.py and tests/,Member A,"green test run, reproducible pipeline",DONE,T15,19 Sep 2026
+T17,Compliance checklist,Verify C1-C10 against files that actually exist,src/s20,Member B,"compliance_checklist.csv and .md",DONE,T16,19 Sep 2026
+T18,Repository and contribution evidence,"Initialise git, split commits between members, record review notes",git,Both,"commit history showing both members",IN PROGRESS,T16,20 Sep 2026
+T19,Milestone 2 document,"Implementation plan PDF assembled from the generated tables and figures",docs/,Both,"submission PDF",TO DO,T17 T18,20 Sep 2026
+T20,Presentation preparation,"10-minute deck, split speaking parts, rehearse Q&A on limitations",PowerPoint,Both,"deck + speaker notes",TO DO,T19,25 Sep 2026
+T21,Replace synthetic access log with an approved real source,"If the facilitator approves an authentic identity source, re-run stages 06-15 against it",TBC,Member B,"updated results and caveats",BACKLOG,T19,after Milestone 2
+T22,Stronger evasion testing,"Perturb the categorical features (proto, service, conn_state) that the model relies on",src/s15,Member A,"extended adversarial_results.csv",BACKLOG,T13,after Milestone 2
+T23,Live ingestion for the prototype,"Replace the pre-computed CSV reads with a scheduled refresh",app/,Both,"dashboard that updates on a schedule",BACKLOG,T15,after Milestone 2

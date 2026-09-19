@@ -1,0 +1,94 @@
+{
+  "network": {
+    "best_model": "random_forest",
+    "class_balance": {
+      "attack": 148434,
+      "normal": 42040,
+      "attack_share": 0.7792874618058108
+    },
+    "test_metrics": [
+      {
+        "model": "logistic_regression",
+        "accuracy": 0.9555501111247222,
+        "precision": 0.9933732816355305,
+        "recall": 0.949293750421055,
+        "f1": 0.970833429024183,
+        "roc_auc": 0.9944157397616571,
+        "pr_auc": 0.9982644981514021
+      },
+      {
+        "model": "decision_tree",
+        "accuracy": 0.9923350191624521,
+        "precision": 0.9959284669890901,
+        "recall": 0.9942287395297658,
+        "f1": 0.9950778774189198,
+        "roc_auc": 0.9958736797408645,
+        "pr_auc": 0.9977127080952714
+      },
+      {
+        "model": "random_forest",
+        "accuracy": 0.9980050049874876,
+        "precision": 0.998697595041879,
+        "recall": 0.9987424490804159,
+        "f1": 0.9987200215575317,
+        "roc_auc": 0.9999649169802228,
+        "pr_auc": 0.9999902208444486
+      }
+    ],
+    "cv": [
+      {
+        "model": "logistic_regression",
+        "cv_f1_mean": 0.9690142730721872,
+        "cv_f1_sd": 0.0015282533160345412
+      },
+      {
+        "model": "decision_tree",
+        "cv_f1_mean": 0.9924485411871257,
+        "cv_f1_sd": 0.0006151347824118506
+      },
+      {
+        "model": "random_forest",
+        "cv_f1_mean": 0.9982874639986581,
+        "cv_f1_sd": 5.418560954125637e-05
+      }
+    ],
+    "multiclass_macro_f1": 0.9644880881119431,
+    "rows_used": 190474,
+    "rows_dropped_as_duplicate": 20569
+  },
+  "modbus": {
+    "best_model": "random_forest",
+    "metrics": [
+      {
+        "model": "logistic_regression",
+        "accuracy": 0.6244021681368902,
+        "precision": 0.5735225686365751,
+        "recall": 0.5916946711473836,
+        "f1": 0.5824669187145558,
+        "roc_auc": 0.7852095778391489,
+        "pr_auc": 0.7230314046744974
+      },
+      {
+        "model": "random_forest",
+        "accuracy": 0.9901158465299181,
+        "precision": 0.9997546012269939,
+        "recall": 0.9779164666346616,
+        "f1": 0.9887149617764834,
+        "roc_auc": 0.9984964979481593,
+        "pr_auc": 0.9985384020601438
+      }
+    ],
+    "rows_used": 31362,
+    "rows_dropped_as_duplicate": 19744,
+    "attack_share": 0.4427651297748868
+  },
+  "env": {
+    "utc_time": "2026-09-19T19:32:50+00:00",
+    "python": "3.11.15",
+    "platform": "Linux-6.18.44-fc-v37-x86_64-with-glibc2.39",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scikit_learn": "1.8.0",
+    "seed": 3815
+  }
+}

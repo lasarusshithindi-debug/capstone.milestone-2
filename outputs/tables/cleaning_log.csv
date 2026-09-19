@@ -1,0 +1,38 @@
+dataset,action,detail,reason,rows_before,rows_after
+iot_fridge,strip_whitespace_bom,all object columns,raw files contain a BOM and padded values such as ' off ',59944,59944
+iot_fridge,drop_redundant_columns,"date, time",both duplicate the information already held in ts,59944,59944
+iot_fridge,standardise_category,temp_condition,case and spacing varied between records,59944,59944
+iot_fridge,flag_exact_duplicates,8901 rows flagged,identical ts and values; kept but flagged so models can exclude them without deleting evidence,59944,59944
+iot_garage_door,strip_whitespace_bom,all object columns,raw files contain a BOM and padded values such as ' off ',59587,59587
+iot_garage_door,drop_redundant_columns,"date, time",both duplicate the information already held in ts,59587,59587
+iot_garage_door,coerce_numeric,sphone_signal: 35000 values to NaN,non-numeric text found in a measurement column,59587,59587
+iot_garage_door,standardise_category,door_state,case and spacing varied between records,59587,59587
+iot_garage_door,flag_exact_duplicates,38836 rows flagged,identical ts and values; kept but flagged so models can exclude them without deleting evidence,59587,59587
+iot_garage_door,retain_missing,sphone_signal: 35000 NaN,"gaps are treated as missing telemetry, not imputed, so that the model cannot learn from invented readings",59587,59587
+iot_gps_tracker,strip_whitespace_bom,all object columns,raw files contain a BOM and padded values such as ' off ',58960,58960
+iot_gps_tracker,drop_redundant_columns,"date, time",both duplicate the information already held in ts,58960,58960
+iot_gps_tracker,flag_exact_duplicates,0 rows flagged,identical ts and values; kept but flagged so models can exclude them without deleting evidence,58960,58960
+iot_modbus,strip_whitespace_bom,all object columns,raw files contain a BOM and padded values such as ' off ',51106,51106
+iot_modbus,drop_redundant_columns,"date, time",both duplicate the information already held in ts,51106,51106
+iot_modbus,flag_exact_duplicates,19744 rows flagged,identical ts and values; kept but flagged so models can exclude them without deleting evidence,51106,51106
+iot_motion_light,strip_whitespace_bom,all object columns,raw files contain a BOM and padded values such as ' off ',59488,59488
+iot_motion_light,drop_redundant_columns,"date, time",both duplicate the information already held in ts,59488,59488
+iot_motion_light,standardise_category,light_status,case and spacing varied between records,59488,59488
+iot_motion_light,flag_exact_duplicates,28629 rows flagged,identical ts and values; kept but flagged so models can exclude them without deleting evidence,59488,59488
+iot_thermostat,strip_whitespace_bom,all object columns,raw files contain a BOM and padded values such as ' off ',52774,52774
+iot_thermostat,drop_redundant_columns,"date, time",both duplicate the information already held in ts,52774,52774
+iot_thermostat,flag_exact_duplicates,1154 rows flagged,identical ts and values; kept but flagged so models can exclude them without deleting evidence,52774,52774
+iot_weather,strip_whitespace_bom,all object columns,raw files contain a BOM and padded values such as ' off ',59260,59260
+iot_weather,drop_redundant_columns,"date, time",both duplicate the information already held in ts,59260,59260
+iot_weather,flag_exact_duplicates,0 rows flagged,identical ts and values; kept but flagged so models can exclude them without deleting evidence,59260,59260
+telemetry_events,unify_sensors,784691 measurement rows,single long table lets every sensor be compared on one timeline,,784691
+network_flow,strip_whitespace_bom,all object columns,consistent keys for grouping and joining,211043,211043
+network_flow,placeholder_to_missing,4385154 cells,Zeek uses '-' for not-applicable fields; treating it as a category would create fake patterns,211043,211043
+network_flow,coerce_numeric,"src_port, dst_port, duration, src_bytes, dst_bytes, missed_bytes ...",numeric fields arrive as text because of the '-' placeholder,211043,211043
+network_flow,flag_sparse_columns,"ssl_version, ssl_cipher, ssl_resumed, ssl_established, ssl_subject, ssl_issuer, http_trans_depth, http_method, http_uri, http_version, http_user_agent, http_orig_mime_types, http_resp_mime_types, weird_name, weird_addl, weird_notice",16 columns are >97% missing; excluded from modelling features but retained in the file for investigation,211043,211043
+network_flow,flag_exact_duplicates,20569 rows,identical flows are plausible in a testbed; flagged rather than deleted,211043,211043
+network_flow,feature_engineering,"total_bytes, total_pkts, bytes_ratio, log_duration, log_total_bytes, bytes_per_pkt, is_internal_dst, is_wellknown_dst_port","size and direction features are the standard way to separate scanning, flooding and data-transfer behaviour",211043,211043
+access_log,parse_timestamps,0 unparseable rows removed,time is the backbone of behaviour analytics,22686,22686
+access_log,feature_engineering,"hour, dow, is_weekend, is_out_of_hours, is_failure, is_external_src, is_foreign_country",these are the behavioural dimensions used for the user baseline in step 7,22686,22686
+access_user_day,aggregate,2792 user-day rows,behaviour analytics compares a user against their own daily history,22686,2792
+network_flow,derive_ip_profile,776 addresses profiled,ToN_IoT provides no asset names; roles are inferred from observed behaviour and the mining archetype column is explicitly an assumption,211043,776

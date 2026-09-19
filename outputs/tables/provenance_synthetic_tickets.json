@@ -1,0 +1,23 @@
+{
+  "generator": "src/s03_generate_tickets.py",
+  "seed": 3822,
+  "rows": 320,
+  "categories": {
+    "mechanical": 71,
+    "security_incident": 65,
+    "instrumentation": 65,
+    "network_fault": 62,
+    "access_request": 57
+  },
+  "sha256": "2200cd9518bc949c3177e3e2f4fdb3827ed48760dc3aa7a81eb309a20cfa8244",
+  "data_status": "SYNTHETIC - template-generated, no real ticket content",
+  "env": {
+    "utc_time": "2026-09-19T19:31:48+00:00",
+    "python": "3.11.15",
+    "platform": "Linux-6.18.44-fc-v37-x86_64-with-glibc2.39",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scikit_learn": "1.8.0",
+    "seed": 3815
+  }
+}

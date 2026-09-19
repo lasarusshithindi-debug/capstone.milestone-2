@@ -1,0 +1,192 @@
+{
+  "risk_score": {
+    "weights": {
+      "failures": 0.15,
+      "out_of_hours": 0.1,
+      "external_foreign": 0.2,
+      "priv_no_mfa": 0.2,
+      "anomaly": 0.2,
+      "egress": 0.15
+    },
+    "bands": [
+      {
+        "min_score": 85.4,
+        "band": "critical",
+        "action": "Investigate now; consider suspending the account"
+      },
+      {
+        "min_score": 76.0,
+        "band": "high",
+        "action": "Investigate within the shift; verify with the account owner"
+      },
+      {
+        "min_score": 66.4,
+        "band": "moderate",
+        "action": "Review in the daily triage queue"
+      },
+      {
+        "min_score": 0.0,
+        "band": "low",
+        "action": "No action; keep in the baseline"
+      }
+    ],
+    "roc_auc_vs_injected": 0.9884461426491995,
+    "precision_at_20": 0.75,
+    "band_counts": [
+      {
+        "risk_band": "critical",
+        "user_days": 15,
+        "share": 0.0053724928366762174,
+        "injected_rows": 12,
+        "mean_score": 89.5
+      },
+      {
+        "risk_band": "high",
+        "user_days": 42,
+        "share": 0.01504297994269341,
+        "injected_rows": 17,
+        "mean_score": 78.85
+      },
+      {
+        "risk_band": "moderate",
+        "user_days": 223,
+        "share": 0.07987106017191978,
+        "injected_rows": 15,
+        "mean_score": 69.99013452914798
+      },
+      {
+        "risk_band": "low",
+        "user_days": 2512,
+        "share": 0.8997134670487106,
+        "injected_rows": 0,
+        "mean_score": 47.5265923566879
+      }
+    ]
+  },
+  "early_warning": {
+    "train_days": "2019-04-22",
+    "roc_auc": 0.5281822684497276,
+    "precision_at_20": 0.25,
+    "test_positive_rate": 0.08185538881309687,
+    "top_features": [
+      {
+        "feature": "iso_score",
+        "coefficient": 0.7669273501953129
+      },
+      {
+        "feature": "bytes_out",
+        "coefficient": 0.2766936973923911
+      },
+      {
+        "feature": "risk_score",
+        "coefficient": 0.17906753166376532
+      },
+      {
+        "feature": "priv_no_mfa",
+        "coefficient": 0.08800804855959368
+      }
+    ]
+  },
+  "adversarial": [
+    {
+      "test": "T0_baseline",
+      "setting": "unmodified held-out flows",
+      "f1": 0.9986683566237226,
+      "recall_on_attacks": 0.9987805269407272,
+      "f1_change_vs_baseline": 0.0
+    },
+    {
+      "test": "T1_drift_noise",
+      "setting": "multiplicative Gaussian noise, sigma=0.05",
+      "f1": 0.9982829174356094,
+      "recall_on_attacks": 0.9981707904110908,
+      "f1_change_vs_baseline": -0.0003854391881131791
+    },
+    {
+      "test": "T1_drift_noise",
+      "setting": "multiplicative Gaussian noise, sigma=0.15",
+      "f1": 0.9953194626999647,
+      "recall_on_attacks": 0.9963415808221816,
+      "f1_change_vs_baseline": -0.003348893923757812
+    },
+    {
+      "test": "T1_drift_noise",
+      "setting": "multiplicative Gaussian noise, sigma=0.3",
+      "f1": 0.9876563026693848,
+      "recall_on_attacks": 0.9872918070665254,
+      "f1_change_vs_baseline": -0.011012053954337797
+    },
+    {
+      "test": "T2_evasion",
+      "setting": "attack flows padded x1.5 and slowed x2.0, conn_state=sf",
+      "f1": 0.9985558871666507,
+      "recall_on_attacks": 0.9985558871666507,
+      "f1_change_vs_baseline": -0.00011246945707188427
+    },
+    {
+      "test": "T2_evasion",
+      "setting": "attack flows padded x3.0 and slowed x5.0, conn_state=sf",
+      "f1": 0.9982022471910112,
+      "recall_on_attacks": 0.9978498764481243,
+      "f1_change_vs_baseline": -0.00046610943271130356
+    },
+    {
+      "test": "T2_evasion",
+      "setting": "attack flows padded x6.0 and slowed x10.0, conn_state=sf",
+      "f1": 0.997655221147978,
+      "recall_on_attacks": 0.996758768974038,
+      "f1_change_vs_baseline": -0.0010131354757445532
+    },
+    {
+      "test": "T3_missing_data",
+      "setting": "10% of feature values lost",
+      "f1": 0.9905957124191441,
+      "recall_on_attacks": 0.9853663232887263,
+      "f1_change_vs_baseline": -0.008072644204578427
+    },
+    {
+      "test": "T3_missing_data",
+      "setting": "25% of feature values lost",
+      "f1": 0.9499110601300018,
+      "recall_on_attacks": 0.9168511921953724,
+      "f1_change_vs_baseline": -0.048757296493720736
+    },
+    {
+      "test": "T3_missing_data",
+      "setting": "50% of feature values lost",
+      "f1": 0.7728277798073411,
+      "recall_on_attacks": 0.6449407913738326,
+      "f1_change_vs_baseline": -0.22584057681638148
+    },
+    {
+      "test": "T4_label_poisoning",
+      "setting": "5% of training labels flipped",
+      "f1": 0.997851324482073,
+      "recall_on_attacks": 0.998523795770354,
+      "f1_change_vs_baseline": -0.0008170321416495208
+    },
+    {
+      "test": "T4_label_poisoning",
+      "setting": "15% of training labels flipped",
+      "f1": 0.9944254341574694,
+      "recall_on_attacks": 0.9932287153814062,
+      "f1_change_vs_baseline": -0.0042429224662531295
+    },
+    {
+      "test": "T4_label_poisoning",
+      "setting": "30% of training labels flipped",
+      "f1": 0.9581519149565417,
+      "recall_on_attacks": 0.9357209332178043,
+      "f1_change_vs_baseline": -0.040516441667180825
+    }
+  ],
+  "env": {
+    "utc_time": "2026-09-19T19:33:48+00:00",
+    "python": "3.11.15",
+    "platform": "Linux-6.18.44-fc-v37-x86_64-with-glibc2.39",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scikit_learn": "1.8.0",
+    "seed": 3815
+  }
+}

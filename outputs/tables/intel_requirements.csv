@@ -1,0 +1,6 @@
+pir,question,sources,review_cycle
+PIR1,"Which remote accounts show behaviour consistent with credential abuse, and which assets did they touch?","access log, UEBA rules, anomaly model",daily
+PIR2,"Is there evidence of an attacker reaching the OT zone or an industrial protocol (Modbus, DNP3, MQTT)?","network flows, Modbus telemetry classifier",daily
+PIR3,Which IIoT devices or network sources deviate from their established behavioural baseline?,"telemetry baselines, Isolation Forest",daily
+PIR4,Which control package most reduces the chance of an intrusion reaching critical OT assets?,Monte Carlo simulation,quarterly
+PIR5,Are maintenance and incident reports describing security-relevant conditions that the technical telemetry has not surfaced?,"ticket corpus, ATT&CK enrichment",weekly

@@ -1,0 +1,7 @@
+requirement,measured,threshold,status
+At least three distinct security data sources,"5 source families: IIoT telemetry, network flows, remote-access log, ticket text, ATT&CK ICS text (plus asset and user context)",>= 3,MET
+"At least 5,000 combined event/transaction records","635,833 records across 13 files",">= 5,000",MET
+"At least one labelled dataset (recommended >= 1,000 records)","IIoT telemetry 401,119 labelled rows; network flows 211,043 labelled rows",">= 1,000",MET
+At least one unlabelled/semi-labelled dataset for anomaly or behavioural work,"Synthetic remote-access log 22,686 events with no operational label (injected patterns held back as ground truth only)",>= 1 dataset,MET
+At least 200 unstructured text records,677 records (320 tickets + 357 ATT&CK ICS descriptions),>= 200,MET
+Documented asset/user/device/account/service context,"194 assets and 114 user accounts with site, zone, criticality, protocol and privilege attributes",documented,MET

@@ -1,0 +1,44 @@
+{
+  "stages": [
+    {
+      "stage": "s15",
+      "module": "s15_risk_adversarial",
+      "description": "predictive risk score and adversarial tests",
+      "seconds": 14.7
+    },
+    {
+      "stage": "s12",
+      "module": "s12_intelligence",
+      "description": "intelligence requirements and products",
+      "seconds": 0.2
+    },
+    {
+      "stage": "s16",
+      "module": "s16_architecture",
+      "description": "architecture diagram",
+      "seconds": 0.3
+    },
+    {
+      "stage": "nb",
+      "module": "make_notebook",
+      "description": "build the walkthrough notebook",
+      "seconds": 0.0
+    },
+    {
+      "stage": "s20",
+      "module": "s20_compliance",
+      "description": "compliance checklist C1-C10",
+      "seconds": 0.0
+    }
+  ],
+  "total_seconds": 15.2,
+  "env": {
+    "utc_time": "2026-09-19T19:33:49+00:00",
+    "python": "3.11.15",
+    "platform": "Linux-6.18.44-fc-v37-x86_64-with-glibc2.39",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scikit_learn": "1.8.0",
+    "seed": 3815
+  }
+}

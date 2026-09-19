@@ -1,0 +1,71 @@
+{
+  "alerts": 176,
+  "by_rule": [
+    {
+      "rule": "R1",
+      "severity": "medium",
+      "alerts": 11,
+      "accounts": 11,
+      "matched_injected": 11,
+      "precision_vs_injected": 1.0
+    },
+    {
+      "rule": "R2",
+      "severity": "high",
+      "alerts": 1,
+      "accounts": 1,
+      "matched_injected": 1,
+      "precision_vs_injected": 1.0
+    },
+    {
+      "rule": "R3",
+      "severity": "high",
+      "alerts": 3,
+      "accounts": 3,
+      "matched_injected": 3,
+      "precision_vs_injected": 1.0
+    },
+    {
+      "rule": "R4",
+      "severity": "medium",
+      "alerts": 101,
+      "accounts": 30,
+      "matched_injected": 6,
+      "precision_vs_injected": 0.0594059405940594
+    },
+    {
+      "rule": "R5",
+      "severity": "low",
+      "alerts": 41,
+      "accounts": 40,
+      "matched_injected": 41,
+      "precision_vs_injected": 1.0
+    },
+    {
+      "rule": "R6",
+      "severity": "high",
+      "alerts": 1,
+      "accounts": 1,
+      "matched_injected": 1,
+      "precision_vs_injected": 1.0
+    },
+    {
+      "rule": "R7",
+      "severity": "high",
+      "alerts": 18,
+      "accounts": 2,
+      "matched_injected": 18,
+      "precision_vs_injected": 1.0
+    }
+  ],
+  "accounts_with_alerts": 56,
+  "env": {
+    "utc_time": "2026-09-19T19:32:55+00:00",
+    "python": "3.11.15",
+    "platform": "Linux-6.18.44-fc-v37-x86_64-with-glibc2.39",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scikit_learn": "1.8.0",
+    "seed": 3815
+  }
+}

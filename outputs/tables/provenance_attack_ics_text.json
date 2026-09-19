@@ -1,0 +1,30 @@
+{
+  "output": "data/raw/attack_ics_text.csv",
+  "records": 357,
+  "by_class": {
+    "technique": 97,
+    "analytic": 97,
+    "mitigation": 52,
+    "data_component": 36,
+    "malware": 23,
+    "asset": 18,
+    "threat_group": 14,
+    "tactic": 12,
+    "campaign": 8
+  },
+  "total_words": 34658,
+  "bundle_path": "/home/claude/capstone/data/raw/attack_bundle/ics-attack.json",
+  "bundle_sha256": "08b83d2cea6b6d6752468ef0e62e2ab2a53c9443ef72c439ecccb07ab9e89da9",
+  "repo": "https://github.com/mitre-attack/attack-stix-data",
+  "repo_commit": "6cda5ad8462c79e14fbb872f4e09059b18e0cfc4 Wed Aug 5 18:56:42 2026 -0400",
+  "licence": "MITRE ATT&CK - Terms of Use (free to use with attribution)",
+  "env": {
+    "utc_time": "2026-09-19T19:31:47+00:00",
+    "python": "3.11.15",
+    "platform": "Linux-6.18.44-fc-v37-x86_64-with-glibc2.39",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scikit_learn": "1.8.0",
+    "seed": 3815
+  }
+}

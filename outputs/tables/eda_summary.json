@@ -1,0 +1,31 @@
+{
+  "figures": [
+    "fig01_telemetry_volume_over_time.png",
+    "fig02_attack_mix_by_sensor.png",
+    "fig03_modbus_registers.png",
+    "fig04_network_type_counts.png",
+    "fig05_network_service.png",
+    "fig06_top_talkers.png",
+    "fig07_access_events_over_time.png",
+    "fig08_login_hour_by_role.png",
+    "fig09_confusion_network.png",
+    "fig10_feature_importance_network.png",
+    "fig11_confusion_network_multiclass.png",
+    "fig12_confusion_modbus.png",
+    "fig13_network_anomaly_scores.png",
+    "fig14_anomaly_share_by_type.png",
+    "fig15_access_anomaly_scatter.png",
+    "fig16_top_anomalous_user_days.png",
+    "fig17_ueba_rule_alerts.png",
+    "fig18_alerts_per_day.png",
+    "fig19_incident_timeline.png",
+    "fig20_simulation_scenarios.png",
+    "fig21_simulation_sensitivity.png",
+    "fig22_ticket_classification_cm.png",
+    "fig23_indicator_counts.png",
+    "fig24_risk_score_distribution.png",
+    "fig25_adversarial_tests.png",
+    "fig26_architecture.png"
+  ],
+  "findings": 4
+}

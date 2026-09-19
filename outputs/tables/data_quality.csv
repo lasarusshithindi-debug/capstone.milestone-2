@@ -1,0 +1,11 @@
+dataset,issue,detail,value
+iot_fridge,duplicate_rows,full-row duplicates,8901.0
+iot_garage_door,duplicate_rows,full-row duplicates,38836.0
+iot_modbus,duplicate_rows,full-row duplicates,19744.0
+iot_motion_light,duplicate_rows,full-row duplicates,28629.0
+iot_thermostat,duplicate_rows,full-row duplicates,1154.0
+network_flow,duplicate_rows,full-row duplicates,20569.0
+access_log,high_missingness,gt_scenario,99.52
+tickets,constant_column,data_status,1.0
+attack_ics_text,high_missingness,platforms,89.36
+attack_ics_text,constant_column,source,1.0

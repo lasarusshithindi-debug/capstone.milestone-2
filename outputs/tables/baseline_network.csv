@@ -1,0 +1,5 @@
+service,flows,median_duration,median_total_bytes,p95_total_bytes,median_pkts
+dns,29189,7.3e-05,130.0,448.0,2.0
+http,738,0.08321200000000001,4204.0,1118148.3499999985,16.0
+none,19793,0.184625,0.0,96.0,32.0
+ssl,280,66.807492,5136.0,60340.4,31.0

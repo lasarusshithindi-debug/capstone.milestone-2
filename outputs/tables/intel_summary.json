@@ -1,0 +1,159 @@
+{
+  "pirs": 5,
+  "watchlist_accounts": 115,
+  "accounts_with_alerts": 56,
+  "critical_risk_user_days": 15,
+  "high_risk_user_days": 42,
+  "attack_mappings": [
+    {
+      "rule": "R1",
+      "rule_description": "repeated failed authentication attempts against a single account",
+      "rank": 1,
+      "attack_id": "DC0002",
+      "attack_name": "User Account Authentication",
+      "attack_class": "data_component",
+      "similarity": 0.246,
+      "confidence": "moderate"
+    },
+    {
+      "rule": "R1",
+      "rule_description": "repeated failed authentication attempts against a single account",
+      "rank": 2,
+      "attack_id": "M0804",
+      "attack_name": "Human User Authentication",
+      "attack_class": "mitigation",
+      "similarity": 0.193,
+      "confidence": "moderate"
+    },
+    {
+      "rule": "R2",
+      "rule_description": "password spraying from one source address against many accounts",
+      "rank": 1,
+      "attack_id": "M0927",
+      "attack_name": "Password Policies",
+      "attack_class": "mitigation",
+      "similarity": 0.363,
+      "confidence": "moderate"
+    },
+    {
+      "rule": "R2",
+      "rule_description": "password spraying from one source address against many accounts",
+      "rank": 2,
+      "attack_id": "A0015",
+      "attack_name": "Switch",
+      "attack_class": "asset",
+      "similarity": 0.143,
+      "confidence": "low - reported for context only"
+    },
+    {
+      "rule": "R3",
+      "rule_description": "account authenticating from two distant locations within a short period",
+      "rank": 1,
+      "attack_id": "M0936",
+      "attack_name": "Account Use Policies",
+      "attack_class": "mitigation",
+      "similarity": 0.141,
+      "confidence": "low - reported for context only"
+    },
+    {
+      "rule": "R3",
+      "rule_description": "account authenticating from two distant locations within a short period",
+      "rank": 2,
+      "attack_id": "M0804",
+      "attack_name": "Human User Authentication",
+      "attack_class": "mitigation",
+      "similarity": 0.106,
+      "confidence": "low - reported for context only"
+    },
+    {
+      "rule": "R4",
+      "rule_description": "privileged engineering action performed outside normal working hours",
+      "rank": 1,
+      "attack_id": "AN1935",
+      "attack_name": "Analytic 1935",
+      "attack_class": "analytic",
+      "similarity": 0.207,
+      "confidence": "moderate"
+    },
+    {
+      "rule": "R4",
+      "rule_description": "privileged engineering action performed outside normal working hours",
+      "rank": 2,
+      "attack_id": "T1692.001",
+      "attack_name": "Command Message",
+      "attack_class": "technique",
+      "similarity": 0.152,
+      "confidence": "moderate"
+    },
+    {
+      "rule": "R5",
+      "rule_description": "account authenticating from a country never seen before for that account",
+      "rank": 1,
+      "attack_id": "M0936",
+      "attack_name": "Account Use Policies",
+      "attack_class": "mitigation",
+      "similarity": 0.244,
+      "confidence": "moderate"
+    },
+    {
+      "rule": "R5",
+      "rule_description": "account authenticating from a country never seen before for that account",
+      "rank": 2,
+      "attack_id": "M0804",
+      "attack_name": "Human User Authentication",
+      "attack_class": "mitigation",
+      "similarity": 0.183,
+      "confidence": "moderate"
+    },
+    {
+      "rule": "R6",
+      "rule_description": "dormant account reactivated and used for remote access",
+      "rank": 1,
+      "attack_id": "M0935",
+      "attack_name": "Limit Access to Resource Over Network",
+      "attack_class": "mitigation",
+      "similarity": 0.219,
+      "confidence": "moderate"
+    },
+    {
+      "rule": "R6",
+      "rule_description": "dormant account reactivated and used for remote access",
+      "rank": 2,
+      "attack_id": "M0936",
+      "attack_name": "Account Use Policies",
+      "attack_class": "mitigation",
+      "similarity": 0.172,
+      "confidence": "moderate"
+    },
+    {
+      "rule": "R7",
+      "rule_description": "privileged remote session established without multi-factor authentication",
+      "rank": 1,
+      "attack_id": "DC0002",
+      "attack_name": "User Account Authentication",
+      "attack_class": "data_component",
+      "similarity": 0.381,
+      "confidence": "moderate"
+    },
+    {
+      "rule": "R7",
+      "rule_description": "privileged remote session established without multi-factor authentication",
+      "rank": 2,
+      "attack_id": "M0804",
+      "attack_name": "Human User Authentication",
+      "attack_class": "mitigation",
+      "similarity": 0.367,
+      "confidence": "moderate"
+    }
+  ],
+  "assets_in_scope": 52,
+  "env": {
+    "utc_time": "2026-09-19T19:33:48+00:00",
+    "python": "3.11.15",
+    "platform": "Linux-6.18.44-fc-v37-x86_64-with-glibc2.39",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scikit_learn": "1.8.0",
+    "seed": 3815
+  }
+}

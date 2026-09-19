@@ -1,0 +1,32 @@
+{
+  "datasets": 13,
+  "total_records": 635833,
+  "distinct_source_families": [
+    "ToN_IoT IIoT telemetry",
+    "ToN_IoT network flows",
+    "Synthetic remote-access log",
+    "Synthetic ticket text",
+    "MITRE ATT&CK for ICS text"
+  ],
+  "labelled_datasets": [
+    "iot_fridge",
+    "iot_garage_door",
+    "iot_gps_tracker",
+    "iot_modbus",
+    "iot_motion_light",
+    "iot_thermostat",
+    "iot_weather",
+    "network_flow",
+    "tickets"
+  ],
+  "text_records": 677,
+  "env": {
+    "utc_time": "2026-09-19T19:31:51+00:00",
+    "python": "3.11.15",
+    "platform": "Linux-6.18.44-fc-v37-x86_64-with-glibc2.39",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scikit_learn": "1.8.0",
+    "seed": 3815
+  }
+}

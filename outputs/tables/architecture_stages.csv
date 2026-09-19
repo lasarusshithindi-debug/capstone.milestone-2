@@ -1,0 +1,16 @@
+stage,what_it_does,implemented_in,evidence_files,evidence_present
+DATA SOURCES,ToN_IoT IIoT telemetry (401k) · ToN_IoT network flows (211k) · synthetic access log (22.7k) · tickets (320) · ATT&CK ICS (357) · asset & user context,src/s01-s03,data/raw/attack_ics_text.csv; data/raw/synthetic_remote_access_log.csv,2/2
+INGESTION & INVENTORY,"hashing, profiling, data dictionary, quality findings",src/s04_inventory.py,outputs/tables/data_inventory.csv; outputs/tables/data_dictionary.csv,2/2
+CLEANING & FEATURES,"placeholder handling, type coercion, duplicate flags, timestamp standardisation, engineered features, joins",src/s06_clean.py,outputs/tables/cleaning_log.csv; data/processed/network_flows.parquet,2/2
+DESCRIPTIVE & BASELINE,"volumes, attack mix, service profile, login-hour baselines",src/s07_eda.py,outputs/tables/baseline_access_role.csv; outputs/tables/eda_findings.csv,2/2
+SUPERVISED ML,logistic regression / decision tree / random forest; binary and attack-family classification,src/s08_supervised.py,outputs/tables/supervised_network_test.csv,1/1
+ANOMALY & CLUSTERING,"Isolation Forest (2 framings), LOF, DBSCAN peer groups",src/s09_anomaly.py,outputs/tables/anomaly_access_flagged_user_days.csv,1/1
+ACCESS ANALYTICS,"7 behaviour rules with evidence, per-user and per-role baselines",src/s10_access_analytics.py,outputs/tables/ueba_alerts.csv,1/1
+INVESTIGATION,"case ranking, correlated timeline, affected entities, response plan",src/s11_investigation.py,outputs/tables/incident_timeline.csv,1/1
+TEXT MINING / NLP,"TF-IDF classification, indicator extraction, NMF topics, ATT&CK enrichment",src/s14_textmining.py,outputs/tables/nlp_extracted_indicators.csv,1/1
+INTELLIGENCE,"PIRs, ATT&CK mapping, operational watchlist, executive brief",src/s12_intelligence.py,outputs/intelligence_executive_brief.md,1/1
+PREDICTIVE RISK,"six-component risk score, bands, next-day early warning",src/s15_risk_adversarial.py,outputs/tables/risk_user_day_scores.csv,1/1
+SIMULATION,Monte Carlo control scenarios with sensitivity analysis,src/s13_simulation.py,outputs/tables/simulation_summary.csv,1/1
+ADVERSARIAL TESTING,"drift, evasion, missing data, label poisoning",src/s15_risk_adversarial.py,outputs/tables/adversarial_results.csv,1/1
+DECISION SUPPORT,Streamlit analyst console (8 views) + reproducible notebook,app/app.py,app/app.py,1/1
+SECURITY ACTION,containment / eradication / recovery / monitoring decisions,src/s11_investigation.py,outputs/tables/incident_response_plan.csv,1/1

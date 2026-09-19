@@ -1,0 +1,15 @@
+sensor,measure,n,share_beyond_3sd
+weather,pressure,24260,0.2638499587798846
+gps_tracker,longitude,23960,0.041652754590984976
+gps_tracker,latitude,23960,0.03747913188647746
+garage_door,sphone_signal,24587,0.0
+modbus,FC1_Read_Input_Register,16106,0.0
+fridge,fridge_temperature,24944,0.0
+modbus,FC2_Read_Discrete_Value,16106,0.0
+modbus,FC3_Read_Holding_Register,16106,0.0
+motion_light,motion_status,24488,0.0
+modbus,FC4_Read_Coil,16106,0.0
+thermostat,current_temperature,17774,0.0
+thermostat,thermostat_status,17774,0.0
+weather,humidity,24260,0.0
+weather,temperature,24260,0.0

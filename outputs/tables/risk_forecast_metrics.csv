@@ -1,0 +1,2 @@
+train_days,test_days,train_rows,test_rows,positive_rate_test,roc_auc,precision_at_20
+< 2019-04-22,>= 2019-04-22,1945,733,0.08185538881309687,0.5281822684497276,0.25

@@ -1,0 +1,177 @@
+alert_id,rule,severity,timestamp,username,asset_id,src_ip,detail,evidence_event_ids,matches_injected_pattern
+R4-0016,R4,medium,2019-04-01 21:09:58+00:00,ot053,AST-0112,10.36.45.162,"privileged action on file_share at 21:00, outside this account's usual 03:00-20:00 pattern",ACC000796,
+R4-0017,R4,medium,2019-04-01 21:29:17+00:00,ot054,AST-0069,10.54.133.148,"privileged action on plc_engineering_ws at 21:00, outside this account's usual 02:00-18:00 pattern",ACC000805,
+R4-0018,R4,medium,2019-04-01 23:00:55+00:00,cont023,AST-0008,10.26.192.130,"privileged action on erp at 23:00, outside this account's usual 04:00-22:00 pattern",ACC000825,
+R4-0019,R4,medium,2019-04-02 00:18:23+00:00,it059,AST-0162,10.46.74.160,"privileged action on fleet_mgmt at 00:00, outside this account's usual 03:00-18:00 pattern",ACC000833,
+R4-0020,R4,medium,2019-04-02 01:43:46+00:00,ot052,AST-0192,10.24.91.83,"privileged action on telemetry_broker at 01:00, outside this account's usual 03:00-20:00 pattern",ACC000841,
+R4-0021,R4,medium,2019-04-02 22:42:34+00:00,ot052,AST-0183,10.24.91.156,"privileged action on file_share at 22:00, outside this account's usual 03:00-20:00 pattern",ACC001738,
+R4-0022,R4,medium,2019-04-02 22:42:57+00:00,ot052,AST-0189,10.24.91.83,"privileged action on telemetry_broker at 22:00, outside this account's usual 03:00-20:00 pattern",ACC001739,
+R4-0023,R4,medium,2019-04-03 22:46:39+00:00,cont001,AST-0065,10.51.56.159,"privileged action on erp at 22:00, outside this account's usual 01:00-21:00 pattern",ACC002586,
+R4-0024,R4,medium,2019-04-03 23:37:10+00:00,cont015,AST-0042,10.21.208.153,"privileged action on maintenance_portal at 23:00, outside this account's usual 02:00-22:00 pattern",ACC002600,
+R4-0025,R4,medium,2019-04-04 02:30:19+00:00,ot056,AST-0138,10.51.35.54,"privileged action on cctv_nvr at 02:00, outside this account's usual 03:00-23:00 pattern",ACC002647,
+R4-0026,R4,medium,2019-04-04 21:54:07+00:00,ot054,AST-0090,10.54.133.148,"privileged action on erp at 21:00, outside this account's usual 02:00-18:00 pattern",ACC003444,
+R4-0027,R4,medium,2019-04-04 21:55:53+00:00,ot054,AST-0069,10.54.133.148,"privileged action on erp at 21:00, outside this account's usual 02:00-18:00 pattern",ACC003445,
+R4-0028,R4,medium,2019-04-04 22:04:29+00:00,ot054,AST-0075,10.54.133.148,"privileged action on cctv_nvr at 22:00, outside this account's usual 02:00-18:00 pattern",ACC003449,
+R4-0029,R4,medium,2019-04-05 02:32:22+00:00,main029,AST-0106,10.42.15.166,"privileged action on telemetry_broker at 02:00, outside this account's usual 02:00-22:00 pattern",ACC003546,
+R4-0030,R4,medium,2019-04-05 18:09:47+00:00,it060,AST-0174,10.42.223.225,"privileged action on file_share at 18:00, outside this account's usual 04:00-17:00 pattern",ACC004250,
+R4-0031,R4,medium,2019-04-05 22:18:45+00:00,it059,AST-0157,10.46.74.160,"privileged action on scada_hmi at 22:00, outside this account's usual 03:00-18:00 pattern",ACC004343,
+R4-0032,R4,medium,2019-04-05 23:32:50+00:00,supe106,AST-0077,10.20.229.121,"privileged action on file_share at 23:00, outside this account's usual 01:00-20:00 pattern",ACC004357,
+R4-0033,R4,medium,2019-04-06 03:15:20+00:00,vend075,AST-0017,10.56.89.214,"privileged action on historian at 03:00, outside this account's usual 03:00-20:00 pattern",ACC004388,
+R4-0034,R4,medium,2019-04-06 03:20:42+00:00,vend073,AST-0059,10.40.31.156,"privileged action on scada_hmi at 03:00, outside this account's usual 04:00-22:00 pattern",ACC004391,
+R4-0035,R4,medium,2019-04-06 03:27:06+00:00,vend073,AST-0054,10.40.31.26,"privileged action on telemetry_broker at 03:00, outside this account's usual 04:00-22:00 pattern",ACC004393,
+R4-0036,R4,medium,2019-04-06 03:29:09+00:00,vend073,AST-0057,10.40.31.183,"privileged action on scada_hmi at 03:00, outside this account's usual 04:00-22:00 pattern",ACC004394,
+R4-0037,R4,medium,2019-04-06 03:47:19+00:00,vend075,AST-0006,10.56.89.214,"privileged action on telemetry_broker at 03:00, outside this account's usual 03:00-20:00 pattern",ACC004396,
+R4-0038,R4,medium,2019-04-07 19:36:42+00:00,it061,AST-0160,10.54.110.211,"privileged action on cctv_nvr at 19:00, outside this account's usual 04:00-17:00 pattern",ACC005144,
+R4-0039,R4,medium,2019-04-08 20:29:11+00:00,main033,AST-0111,10.54.46.221,"privileged action on cctv_nvr at 20:00, outside this account's usual 04:00-19:00 pattern",ACC006028,
+R4-0040,R4,medium,2019-04-08 22:36:58+00:00,ot051,AST-0057,10.33.125.11,"privileged action on historian at 22:00, outside this account's usual 02:00-21:00 pattern",ACC006065,
+R4-0041,R4,medium,2019-04-09 01:38:46+00:00,ot054,AST-0074,10.54.133.148,"privileged action on cctv_nvr at 01:00, outside this account's usual 02:00-18:00 pattern",ACC006124,
+R4-0042,R4,medium,2019-04-09 01:51:20+00:00,ot054,AST-0080,10.54.133.148,"privileged action on plc_engineering_ws at 01:00, outside this account's usual 02:00-18:00 pattern",ACC006131,
+R4-0043,R4,medium,2019-04-10 00:19:11+00:00,ot052,AST-0183,10.24.91.83,"privileged action on file_share at 00:00, outside this account's usual 03:00-20:00 pattern",ACC006980,
+R4-0044,R4,medium,2019-04-10 00:27:21+00:00,ot052,AST-0189,10.24.91.156,"privileged action on plc_engineering_ws at 00:00, outside this account's usual 03:00-20:00 pattern",ACC006985,
+R4-0045,R4,medium,2019-04-10 22:12:08+00:00,vend072,AST-0120,10.26.30.26,"privileged action on historian at 22:00, outside this account's usual 03:00-18:00 pattern",ACC007929,
+R4-0046,R4,medium,2019-04-10 22:20:40+00:00,cont001,AST-0076,10.51.56.159,"privileged action on erp at 22:00, outside this account's usual 01:00-21:00 pattern",ACC007937,
+R4-0047,R4,medium,2019-04-11 01:44:46+00:00,ot055,AST-0098,10.29.65.57,"privileged action on cctv_nvr at 01:00, outside this account's usual 02:00-19:00 pattern",ACC007989,
+R4-0048,R4,medium,2019-04-11 18:01:45+00:00,it068,AST-0179,10.34.120.15,"privileged action on maintenance_portal at 18:00, outside this account's usual 04:00-17:00 pattern",ACC008715,
+R4-0049,R4,medium,2019-04-11 18:15:22+00:00,it068,AST-0173,10.34.120.15,"privileged action on plc_engineering_ws at 18:00, outside this account's usual 04:00-17:00 pattern",ACC008726,
+R4-0050,R4,medium,2019-04-11 18:16:09+00:00,it068,AST-0171,10.34.120.15,"privileged action on maintenance_portal at 18:00, outside this account's usual 04:00-17:00 pattern",ACC008729,
+R4-0051,R4,medium,2019-04-11 19:37:05+00:00,it061,AST-0162,10.54.110.211,"privileged action on cctv_nvr at 19:00, outside this account's usual 04:00-17:00 pattern",ACC008760,
+R4-0052,R4,medium,2019-04-11 20:23:02+00:00,ot054,AST-0080,10.54.133.148,"privileged action on plc_engineering_ws at 20:00, outside this account's usual 02:00-18:00 pattern",ACC008769,
+R4-0053,R4,medium,2019-04-11 21:02:38+00:00,supe106,AST-0074,10.20.229.121,"privileged action on maintenance_portal at 21:00, outside this account's usual 01:00-20:00 pattern",ACC008786,
+R4-0054,R4,medium,2019-04-11 22:20:09+00:00,cont001,AST-0065,10.51.56.77,"privileged action on scada_hmi at 22:00, outside this account's usual 01:00-21:00 pattern",ACC008806,
+R4-0055,R4,medium,2019-04-15 02:02:07+00:00,ot053,AST-0108,10.36.45.162,"privileged action on plc_engineering_ws at 02:00, outside this account's usual 03:00-20:00 pattern",ACC010446,
+R4-0056,R4,medium,2019-04-15 02:05:59+00:00,ot053,AST-0112,10.36.45.162,"privileged action on file_share at 02:00, outside this account's usual 03:00-20:00 pattern",ACC010451,
+R4-0057,R4,medium,2019-04-15 22:48:41+00:00,ot051,AST-0062,10.33.125.11,"privileged action on maintenance_portal at 22:00, outside this account's usual 02:00-21:00 pattern",ACC011269,
+R4-0058,R4,medium,2019-04-16 21:03:26+00:00,ot052,AST-0183,10.24.91.27,"privileged action on file_share at 21:00, outside this account's usual 03:00-20:00 pattern",ACC012138,
+R4-0059,R4,medium,2019-04-16 22:47:05+00:00,vend070,AST-0032,10.43.130.59,"privileged action on file_share at 22:00, outside this account's usual 02:00-20:00 pattern",ACC012177,
+R4-0060,R4,medium,2019-04-17 00:15:18+00:00,ot056,AST-0138,10.51.35.54,"privileged action on scada_hmi at 00:00, outside this account's usual 03:00-23:00 pattern",ACC012208,
+R4-0061,R4,medium,2019-04-18 00:01:16+00:00,main029,AST-0104,10.42.15.166,"privileged action on maintenance_portal at 00:00, outside this account's usual 02:00-22:00 pattern",ACC013192,
+R4-0062,R4,medium,2019-04-18 00:10:47+00:00,main029,AST-0106,10.42.15.166,"privileged action on maintenance_portal at 00:00, outside this account's usual 02:00-22:00 pattern",ACC013198,
+R4-0063,R4,medium,2019-04-18 00:20:34+00:00,main029,AST-0104,10.42.15.166,"privileged action on maintenance_portal at 00:00, outside this account's usual 02:00-22:00 pattern",ACC013205,
+R4-0064,R4,medium,2019-04-18 02:39:37+00:00,main029,AST-0095,10.42.15.55,"privileged action on telemetry_broker at 02:00, outside this account's usual 02:00-22:00 pattern",ACC013251,
+R4-0065,R4,medium,2019-04-18 05:42:30+00:00,it066,AST-0190,10.33.114.111,"privileged action on plc_engineering_ws at 05:00, outside this account's usual 06:00-17:00 pattern",ACC013300,
+R4-0066,R4,medium,2019-04-18 05:43:23+00:00,it066,AST-0193,10.33.114.111,"privileged action on cctv_nvr at 05:00, outside this account's usual 06:00-17:00 pattern",ACC013301,
+R4-0067,R4,medium,2019-04-18 05:43:53+00:00,it066,AST-0188,10.33.114.229,"privileged action on plc_engineering_ws at 05:00, outside this account's usual 06:00-17:00 pattern",ACC013302,
+R4-0068,R4,medium,2019-04-18 05:44:19+00:00,it066,AST-0188,10.33.114.229,"privileged action on cctv_nvr at 05:00, outside this account's usual 06:00-17:00 pattern",ACC013303,
+R4-0069,R4,medium,2019-04-18 18:39:40+00:00,it066,AST-0190,10.33.114.229,"privileged action on plc_engineering_ws at 18:00, outside this account's usual 06:00-17:00 pattern",ACC013957,
+R4-0070,R4,medium,2019-04-18 22:47:33+00:00,ot053,AST-0120,10.36.45.162,"privileged action on file_share at 22:00, outside this account's usual 03:00-20:00 pattern",ACC014058,
+R4-0071,R4,medium,2019-04-18 22:59:41+00:00,ot053,AST-0111,10.36.45.162,"privileged action on plc_engineering_ws at 22:00, outside this account's usual 03:00-20:00 pattern",ACC014062,
+R4-0072,R4,medium,2019-04-18 23:14:22+00:00,main029,AST-0095,10.42.15.166,"privileged action on maintenance_portal at 23:00, outside this account's usual 02:00-22:00 pattern",ACC014073,
+R4-0073,R4,medium,2019-04-18 23:14:41+00:00,main029,AST-0106,10.42.15.55,"privileged action on maintenance_portal at 23:00, outside this account's usual 02:00-22:00 pattern",ACC014074,
+R4-0074,R4,medium,2019-04-18 23:22:29+00:00,main029,AST-0109,10.42.15.166,"privileged action on telemetry_broker at 23:00, outside this account's usual 02:00-22:00 pattern",ACC014078,
+R4-0075,R4,medium,2019-04-19 01:51:53+00:00,supe112,AST-0061,10.20.186.144,"privileged action on maintenance_portal at 01:00, outside this account's usual 04:00-21:00 pattern",ACC014123,
+R4-0076,R4,medium,2019-04-19 03:23:17+00:00,cont023,AST-0015,10.26.192.118,"privileged action on erp at 03:00, outside this account's usual 04:00-22:00 pattern",ACC014174,
+R4-0077,R4,medium,2019-04-19 04:52:09+00:00,it061,AST-0158,10.54.110.211,"privileged action on cctv_nvr at 04:00, outside this account's usual 04:00-17:00 pattern",ACC014214,
+R4-0078,R4,medium,2019-04-19 20:02:30+00:00,main030,AST-0152,10.55.90.7,"privileged action on fleet_mgmt at 20:00, outside this account's usual 01:00-18:00 pattern",ACC014912,
+R4-0079,R4,medium,2019-04-19 20:12:50+00:00,main030,AST-0137,10.55.90.187,"privileged action on fleet_mgmt at 20:00, outside this account's usual 01:00-18:00 pattern",ACC014915,
+R4-0080,R4,medium,2019-04-20 22:39:14+00:00,vend072,AST-0104,10.26.30.26,"privileged action on fleet_mgmt at 22:00, outside this account's usual 03:00-18:00 pattern",ACC015370,
+R4-0081,R4,medium,2019-04-21 18:18:13+00:00,it066,AST-0190,10.33.114.89,"privileged action on cctv_nvr at 18:00, outside this account's usual 06:00-17:00 pattern",ACC015660,
+R4-0082,R4,medium,2019-04-21 22:05:30+00:00,main037,AST-0104,10.37.113.228,"privileged action on historian at 22:00, outside this account's usual 01:00-19:00 pattern",ACC015690,
+R4-0083,R4,medium,2019-04-21 22:06:47+00:00,supe112,AST-0037,10.20.186.144,"privileged action on cctv_nvr at 22:00, outside this account's usual 04:00-21:00 pattern",ACC015691,
+R4-0084,R4,medium,2019-04-21 22:15:11+00:00,supe112,AST-0053,10.20.186.198,"privileged action on maintenance_portal at 22:00, outside this account's usual 04:00-21:00 pattern",ACC015692,
+R4-0085,R4,medium,2019-04-21 22:15:58+00:00,supe112,AST-0037,10.20.186.144,"privileged action on maintenance_portal at 22:00, outside this account's usual 04:00-21:00 pattern",ACC015694,
+R4-0086,R4,medium,2019-04-22 01:37:56+00:00,vend070,AST-0032,10.43.130.59,"privileged action on erp at 01:00, outside this account's usual 02:00-20:00 pattern",ACC015749,
+R4-0087,R4,medium,2019-04-23 02:56:39+00:00,vend076,AST-0082,10.52.241.81,"privileged action on file_share at 02:00, outside this account's usual 04:00-17:00 pattern",ACC016618,
+R4-0088,R4,medium,2019-04-23 03:54:43+00:00,ot057,AST-0005,10.35.244.12,"privileged action on fleet_mgmt at 03:00, outside this account's usual 03:00-20:00 pattern",ACC016646,
+R4-0089,R4,medium,2019-04-23 21:46:21+00:00,supe106,AST-0077,10.20.229.121,"privileged action on file_share at 21:00, outside this account's usual 01:00-20:00 pattern",ACC017457,
+R4-0090,R4,medium,2019-04-23 22:14:24+00:00,cont001,AST-0081,10.51.56.159,"privileged action on scada_hmi at 22:00, outside this account's usual 01:00-21:00 pattern",ACC017470,
+R4-0091,R4,medium,2019-04-23 22:18:57+00:00,cont001,AST-0065,10.51.56.141,"privileged action on erp at 22:00, outside this account's usual 01:00-21:00 pattern",ACC017474,
+R4-0092,R4,medium,2019-04-23 23:16:46+00:00,it060,AST-0168,10.42.223.225,"privileged action on file_share at 23:00, outside this account's usual 04:00-17:00 pattern",ACC017494,
+R4-0093,R4,medium,2019-04-23 23:45:38+00:00,it061,AST-0158,10.54.110.211,"privileged action on maintenance_portal at 23:00, outside this account's usual 04:00-17:00 pattern",ACC017499,
+R1-0001,R1,medium,2019-04-24 02:00:00+00:00,cont015,,196.44.128.77,3 failed logins within one hour,ACC017571|ACC017572|ACC017573,GT1_password_spray
+R1-0005,R1,medium,2019-04-24 02:00:00+00:00,cont081,,196.44.128.77,3 failed logins within one hour,ACC017623|ACC017625|ACC017626,GT1_password_spray
+R1-0002,R1,medium,2019-04-24 02:00:00+00:00,cont021,,196.44.128.77,3 failed logins within one hour,ACC017616|ACC017617|ACC017618,GT1_password_spray
+R2-0012,R2,high,2019-04-24 02:00:00+00:00,38 accounts,,196.44.128.77,source 196.44.128.77 failed against 38 distinct accounts in one hour (74 attempts),ACC017556|ACC017557|ACC017558|ACC017559|ACC017560|ACC017561|ACC017562|ACC017563|ACC017564|ACC017565|ACC017566|ACC017568|ACC017569|ACC017570|ACC017571,GT1_password_spray
+R1-0011,R1,medium,2019-04-24 02:00:00+00:00,vend076,,196.44.128.77,3 failed logins within one hour,ACC017560|ACC017561|ACC017562,GT1_password_spray
+R1-0010,R1,medium,2019-04-24 02:00:00+00:00,vend072,,196.44.128.77,3 failed logins within one hour,ACC017629|ACC017631|ACC017632,GT1_password_spray
+R1-0009,R1,medium,2019-04-24 02:00:00+00:00,vend071,,196.44.128.77,3 failed logins within one hour,ACC017565|ACC017566|ACC017568,GT1_password_spray
+R1-0008,R1,medium,2019-04-24 02:00:00+00:00,supe114,,196.44.128.77,3 failed logins within one hour,ACC017594|ACC017595|ACC017596,GT1_password_spray
+R1-0007,R1,medium,2019-04-24 02:00:00+00:00,supe112,,196.44.128.77,3 failed logins within one hour,ACC017609|ACC017610|ACC017611,GT1_password_spray
+R1-0003,R1,medium,2019-04-24 02:00:00+00:00,cont026,,196.44.128.77,3 failed logins within one hour,ACC017580|ACC017581|ACC017582,GT1_password_spray
+R1-0006,R1,medium,2019-04-24 02:00:00+00:00,main049,,196.44.128.77,3 failed logins within one hour,ACC017600|ACC017602|ACC017603,GT1_password_spray
+R1-0004,R1,medium,2019-04-24 02:00:00+00:00,cont080,,196.44.128.77,3 failed logins within one hour,ACC017597|ACC017598|ACC017599,GT1_password_spray
+R5-0117,R5,low,2019-04-24 02:14:00+00:00,main042,,196.44.128.77,first activity from ZZZ (previously ['NAM']),ACC017556,GT1_password_spray
+R5-0118,R5,low,2019-04-24 02:15:03+00:00,cont006,,196.44.128.77,first activity from ZZZ (previously ['NAM']),ACC017558,GT1_password_spray
+R5-0119,R5,low,2019-04-24 02:15:36+00:00,vend076,,196.44.128.77,first activity from ZZZ (previously ['NAM']),ACC017560,GT1_password_spray
+R5-0120,R5,low,2019-04-24 02:16:43+00:00,cont008,,196.44.128.77,first activity from ZZZ (previously ['NAM']),ACC017563,GT1_password_spray
+R5-0121,R5,low,2019-04-24 02:17:04+00:00,vend071,,196.44.128.77,first activity from ZZZ (previously ['NAM']),ACC017565,GT1_password_spray
+R5-0122,R5,low,2019-04-24 02:17:45+00:00,ot054,,196.44.128.77,first activity from ZZZ (previously ['NAM']),ACC017569,GT1_password_spray
+R5-0123,R5,low,2019-04-24 02:18:13+00:00,cont015,,196.44.128.77,first activity from ZZZ (previously ['NAM']),ACC017571,GT1_password_spray
+R5-0124,R5,low,2019-04-24 02:19:34+00:00,vend070,,196.44.128.77,first activity from ZZZ (previously ['NAM']),ACC017574,GT1_password_spray
+R5-0125,R5,low,2019-04-24 02:19:55+00:00,supe106,,196.44.128.77,first activity from ZZZ (previously ['NAM']),ACC017575,GT1_password_spray
+R5-0126,R5,low,2019-04-24 02:20:18+00:00,cont078,,196.44.128.77,first activity from ZZZ (previously ['NAM']),ACC017576,GT1_password_spray
+R5-0127,R5,low,2019-04-24 02:21:25+00:00,main032,,196.44.128.77,first activity from ZZZ (previously ['NAM']),ACC017578,GT1_password_spray
+R5-0128,R5,low,2019-04-24 02:21:57+00:00,cont026,,196.44.128.77,first activity from ZZZ (previously ['NAM']),ACC017580,GT1_password_spray
+R5-0129,R5,low,2019-04-24 02:23:05+00:00,cont087,,196.44.128.77,first activity from ZZZ (previously ['NAM']),ACC017583,GT1_password_spray
+R5-0130,R5,low,2019-04-24 02:24:17+00:00,cont086,,196.44.128.77,first activity from ZZZ (previously ['NAM']),ACC017585,GT1_password_spray
+R5-0131,R5,low,2019-04-24 02:24:39+00:00,cont083,,196.44.128.77,first activity from ZZZ (previously ['NAM']),ACC017586,GT1_password_spray
+R5-0132,R5,low,2019-04-24 02:24:48+00:00,main039,,196.44.128.77,first activity from ZZZ (previously ['NAM']),ACC017587,GT1_password_spray
+R5-0133,R5,low,2019-04-24 02:25:25+00:00,cont018,,196.44.128.77,first activity from ZZZ (previously ['NAM']),ACC017589,GT1_password_spray
+R5-0134,R5,low,2019-04-24 02:26:25+00:00,main047,,196.44.128.77,first activity from ZZZ (previously ['NAM']),ACC017591,GT1_password_spray
+R5-0135,R5,low,2019-04-24 02:26:59+00:00,main037,,196.44.128.77,first activity from ZZZ (previously ['NAM']),ACC017593,GT1_password_spray
+R5-0136,R5,low,2019-04-24 02:27:06+00:00,supe114,,196.44.128.77,first activity from ZZZ (previously ['NAM']),ACC017594,GT1_password_spray
+R5-0137,R5,low,2019-04-24 02:28:22+00:00,cont080,,196.44.128.77,first activity from ZZZ (previously ['NAM']),ACC017597,GT1_password_spray
+R5-0138,R5,low,2019-04-24 02:29:26+00:00,main049,,196.44.128.77,first activity from ZZZ (previously ['NAM']),ACC017600,GT1_password_spray
+R5-0139,R5,low,2019-04-24 02:30:31+00:00,main048,,196.44.128.77,first activity from ZZZ (previously ['NAM']),ACC017604,GT1_password_spray
+R5-0140,R5,low,2019-04-24 02:31:00+00:00,main028,,196.44.128.77,first activity from ZZZ (previously ['NAM']),ACC017605,GT1_password_spray
+R5-0141,R5,low,2019-04-24 02:31:33+00:00,mine099,,196.44.128.77,first activity from ZZZ (previously ['NAM']),ACC017606,GT1_password_spray
+R5-0142,R5,low,2019-04-24 02:32:05+00:00,vend077,,196.44.128.77,first activity from ZZZ (previously ['NAM']),ACC017608,GT1_password_spray
+R5-0143,R5,low,2019-04-24 02:32:38+00:00,supe112,,196.44.128.77,first activity from ZZZ (previously ['NAM']),ACC017609,GT1_password_spray
+R5-0144,R5,low,2019-04-24 02:33:47+00:00,ot058,,196.44.128.77,first activity from ZZZ (previously ['NAM']),ACC017612,GT1_password_spray
+R5-0145,R5,low,2019-04-24 02:34:08+00:00,cont017,,196.44.128.77,first activity from ZZZ (previously ['NAM']),ACC017613,GT1_password_spray
+R5-0146,R5,low,2019-04-24 02:34:53+00:00,cont014,,196.44.128.77,first activity from ZZZ (previously ['NAM']),ACC017615,GT1_password_spray
+R5-0147,R5,low,2019-04-24 02:35:27+00:00,cont021,,196.44.128.77,first activity from ZZZ (previously ['NAM']),ACC017616,GT1_password_spray
+R5-0148,R5,low,2019-04-24 02:36:55+00:00,cont022,,196.44.128.77,first activity from ZZZ (previously ['NAM']),ACC017619,GT1_password_spray
+R5-0149,R5,low,2019-04-24 02:37:28+00:00,main029,,196.44.128.77,first activity from ZZZ (previously ['NAM']),ACC017621,GT1_password_spray
+R5-0150,R5,low,2019-04-24 02:37:49+00:00,cont081,,196.44.128.77,first activity from ZZZ (previously ['NAM']),ACC017623,GT1_password_spray
+R5-0151,R5,low,2019-04-24 02:39:23+00:00,main038,,196.44.128.77,first activity from ZZZ (previously ['NAM']),ACC017627,GT1_password_spray
+R5-0152,R5,low,2019-04-24 02:39:57+00:00,vend072,,196.44.128.77,first activity from ZZZ (previously ['NAM']),ACC017629,GT1_password_spray
+R5-0153,R5,low,2019-04-24 02:40:40+00:00,it063,,196.44.128.77,first activity from ZZZ (previously ['NAM']),ACC017633,GT1_password_spray
+R5-0154,R5,low,2019-04-24 02:41:07+00:00,it061,,196.44.128.77,first activity from ZZZ (previously ['NAM']),ACC017634,GT1_password_spray
+R3-0013,R3,high,2019-04-24 03:09:10+00:00,main042,,10.29.143.7,authenticated from ZZZ then NAM within 28 minutes,ACC017635|ACC017645,GT1_password_spray
+R4-0094,R4,medium,2019-04-24 21:17:53+00:00,ot055,AST-0117,10.29.65.182,"privileged action on cctv_nvr at 21:00, outside this account's usual 02:00-19:00 pattern",ACC018318,
+R4-0095,R4,medium,2019-04-24 22:46:40+00:00,it059,AST-0163,10.46.74.160,"privileged action on plc_engineering_ws at 22:00, outside this account's usual 03:00-18:00 pattern",ACC018356,
+R5-0155,R5,low,2019-04-25 00:00:00+00:00,vend069,,41.182.90.6,first activity from ZAF (previously ['NAM']),ACC018376,GT2_vendor_out_of_hours
+R3-0015,R3,high,2019-04-25 00:02:15+00:00,vend069,,10.32.16.10,authenticated from ZAF then NAM within 2 minutes,ACC018376|ACC018378,GT2_vendor_out_of_hours
+R7-0159,R7,high,2019-04-25 00:11:00+00:00,vend069,AST-0142,41.182.90.6,privileged action on plc_engineering_ws from external address 41.182.90.6 with no MFA,ACC018379,GT2_vendor_out_of_hours
+R4-0096,R4,medium,2019-04-25 00:11:00+00:00,vend069,AST-0142,41.182.90.6,"privileged action on plc_engineering_ws at 00:00, outside this account's usual 00:00-21:00 pattern",ACC018379,GT2_vendor_out_of_hours
+R4-0097,R4,medium,2019-04-25 00:29:00+00:00,vend069,AST-0135,41.182.90.6,"privileged action on scada_hmi at 00:00, outside this account's usual 00:00-21:00 pattern",ACC018390,GT2_vendor_out_of_hours
+R7-0160,R7,high,2019-04-25 00:29:00+00:00,vend069,AST-0135,41.182.90.6,privileged action on scada_hmi from external address 41.182.90.6 with no MFA,ACC018390,GT2_vendor_out_of_hours
+R4-0098,R4,medium,2019-04-25 00:31:00+00:00,vend069,AST-0142,41.182.90.6,"privileged action on scada_hmi at 00:00, outside this account's usual 00:00-21:00 pattern",ACC018394,GT2_vendor_out_of_hours
+R7-0161,R7,high,2019-04-25 00:31:00+00:00,vend069,AST-0142,41.182.90.6,privileged action on scada_hmi from external address 41.182.90.6 with no MFA,ACC018394,GT2_vendor_out_of_hours
+R4-0099,R4,medium,2019-04-25 00:36:00+00:00,vend069,AST-0142,41.182.90.6,"privileged action on plc_engineering_ws at 00:00, outside this account's usual 00:00-21:00 pattern",ACC018396,GT2_vendor_out_of_hours
+R7-0162,R7,high,2019-04-25 00:36:00+00:00,vend069,AST-0142,41.182.90.6,privileged action on plc_engineering_ws from external address 41.182.90.6 with no MFA,ACC018396,GT2_vendor_out_of_hours
+R4-0100,R4,medium,2019-04-25 22:52:50+00:00,vend075,AST-0006,10.56.89.214,"privileged action on historian at 22:00, outside this account's usual 03:00-20:00 pattern",ACC019230,
+R4-0101,R4,medium,2019-04-25 23:12:28+00:00,vend075,AST-0026,10.56.89.214,"privileged action on telemetry_broker at 23:00, outside this account's usual 03:00-20:00 pattern",ACC019242,
+R4-0102,R4,medium,2019-04-26 01:35:48+00:00,ot056,AST-0130,10.51.35.54,"privileged action on scada_hmi at 01:00, outside this account's usual 03:00-23:00 pattern",ACC019289,
+R4-0103,R4,medium,2019-04-26 02:35:46+00:00,main033,AST-0111,10.54.46.38,"privileged action on maintenance_portal at 02:00, outside this account's usual 04:00-19:00 pattern",ACC019305,
+R7-0163,R7,high,2019-04-26 03:07:00+00:00,vend069,AST-0142,41.182.90.6,privileged action on historian from external address 41.182.90.6 with no MFA,ACC019317,GT2_vendor_out_of_hours
+R7-0164,R7,high,2019-04-26 03:08:00+00:00,vend069,AST-0152,41.182.90.6,privileged action on plc_engineering_ws from external address 41.182.90.6 with no MFA,ACC019318,GT2_vendor_out_of_hours
+R7-0165,R7,high,2019-04-26 03:12:00+00:00,vend069,AST-0133,41.182.90.6,privileged action on scada_hmi from external address 41.182.90.6 with no MFA,ACC019320,GT2_vendor_out_of_hours
+R7-0166,R7,high,2019-04-26 04:11:00+00:00,vend069,AST-0142,41.182.90.6,privileged action on plc_engineering_ws from external address 41.182.90.6 with no MFA,ACC019339,GT2_vendor_out_of_hours
+R4-0104,R4,medium,2019-04-26 22:32:33+00:00,main047,AST-0100,10.21.44.146,"privileged action on telemetry_broker at 22:00, outside this account's usual 01:00-17:00 pattern",ACC020079,
+R4-0105,R4,medium,2019-04-26 22:41:07+00:00,main047,AST-0112,10.21.44.146,"privileged action on erp at 22:00, outside this account's usual 01:00-17:00 pattern",ACC020081,
+R4-0106,R4,medium,2019-04-27 00:06:53+00:00,cont001,AST-0076,10.51.56.159,"privileged action on scada_hmi at 00:00, outside this account's usual 01:00-21:00 pattern",ACC020122,
+R7-0167,R7,high,2019-04-27 01:03:00+00:00,vend069,AST-0124,41.182.90.6,privileged action on scada_hmi from external address 41.182.90.6 with no MFA,ACC020141,GT2_vendor_out_of_hours
+R7-0168,R7,high,2019-04-27 01:24:00+00:00,vend069,AST-0137,41.182.90.6,privileged action on historian from external address 41.182.90.6 with no MFA,ACC020144,GT2_vendor_out_of_hours
+R7-0169,R7,high,2019-04-27 01:55:00+00:00,vend069,AST-0133,41.182.90.6,privileged action on plc_engineering_ws from external address 41.182.90.6 with no MFA,ACC020148,GT2_vendor_out_of_hours
+R7-0170,R7,high,2019-04-27 01:56:00+00:00,vend069,AST-0135,41.182.90.6,privileged action on scada_hmi from external address 41.182.90.6 with no MFA,ACC020149,GT2_vendor_out_of_hours
+R3-0014,R3,high,2019-04-27 09:30:00+00:00,ot051,,185.220.101.44,authenticated from NAM then RUS within 25 minutes,ACC020255|ACC020264,GT4_impossible_travel
+R5-0156,R5,low,2019-04-27 09:30:00+00:00,ot051,,185.220.101.44,first activity from RUS (previously ['NAM']),ACC020264,GT4_impossible_travel
+R4-0107,R4,medium,2019-04-28 00:46:43+00:00,main049,AST-0053,10.21.53.77,"privileged action on historian at 00:00, outside this account's usual 01:00-20:00 pattern",ACC020541,
+R4-0108,R4,medium,2019-04-28 00:53:25+00:00,ot051,AST-0048,10.33.125.37,"privileged action on erp at 00:00, outside this account's usual 02:00-21:00 pattern",ACC020545,
+R7-0171,R7,high,2019-04-28 02:37:00+00:00,vend069,AST-0142,41.182.90.6,privileged action on historian from external address 41.182.90.6 with no MFA,ACC020553,GT2_vendor_out_of_hours
+R7-0172,R7,high,2019-04-28 02:42:00+00:00,vend069,AST-0142,41.182.90.6,privileged action on scada_hmi from external address 41.182.90.6 with no MFA,ACC020554,GT2_vendor_out_of_hours
+R7-0173,R7,high,2019-04-28 02:52:00+00:00,vend069,AST-0142,41.182.90.6,privileged action on scada_hmi from external address 41.182.90.6 with no MFA,ACC020557,GT2_vendor_out_of_hours
+R7-0174,R7,high,2019-04-28 02:56:00+00:00,vend069,AST-0124,41.182.90.6,privileged action on historian from external address 41.182.90.6 with no MFA,ACC020559,GT2_vendor_out_of_hours
+R6-0158,R6,high,2019-04-29 03:40:00+00:00,cont081,,102.89.33.14,account dormant for 20 days then authenticated from NGA,ACC020951,GT3_dormant_account
+R5-0157,R5,low,2019-04-29 03:40:00+00:00,cont081,,102.89.33.14,"first activity from NGA (previously ['NAM', 'ZZZ'])",ACC020951,GT3_dormant_account
+R7-0175,R7,high,2019-04-29 03:44:00+00:00,cont081,AST-0191,102.89.33.14,privileged action on file_share from external address 102.89.33.14 with no MFA,ACC020952,GT3_dormant_account
+R4-0109,R4,medium,2019-04-29 03:44:00+00:00,cont081,AST-0191,102.89.33.14,"privileged action on file_share at 03:00, outside this account's usual 05:00-18:00 pattern",ACC020952,GT3_dormant_account
+R4-0110,R4,medium,2019-04-29 03:54:56+00:00,it059,AST-0156,10.46.74.160,"privileged action on plc_engineering_ws at 03:00, outside this account's usual 03:00-18:00 pattern",ACC020956,
+R4-0111,R4,medium,2019-04-29 04:02:00+00:00,cont081,AST-0186,102.89.33.14,"privileged action on fleet_mgmt at 04:00, outside this account's usual 05:00-18:00 pattern",ACC020959,GT3_dormant_account
+R7-0176,R7,high,2019-04-29 04:02:00+00:00,cont081,AST-0186,102.89.33.14,privileged action on fleet_mgmt from external address 102.89.33.14 with no MFA,ACC020959,GT3_dormant_account
+R4-0112,R4,medium,2019-04-29 20:04:20+00:00,ot055,AST-0096,10.29.65.23,"privileged action on cctv_nvr at 20:00, outside this account's usual 02:00-19:00 pattern",ACC021648,
+R4-0113,R4,medium,2019-04-29 22:06:53+00:00,cont001,AST-0081,10.51.56.77,"privileged action on erp at 22:00, outside this account's usual 01:00-21:00 pattern",ACC021686,
+R4-0114,R4,medium,2019-04-30 00:52:35+00:00,it059,AST-0164,10.46.74.160,"privileged action on scada_hmi at 00:00, outside this account's usual 03:00-18:00 pattern",ACC021742,
+R4-0115,R4,medium,2019-04-30 03:03:18+00:00,vend072,AST-0109,10.26.30.26,"privileged action on historian at 03:00, outside this account's usual 03:00-18:00 pattern",ACC021797,
+R4-0116,R4,medium,2019-04-30 21:47:32+00:00,ot057,AST-0011,10.35.244.12,"privileged action on fleet_mgmt at 21:00, outside this account's usual 03:00-20:00 pattern",ACC022613,

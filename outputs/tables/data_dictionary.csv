@@ -1,0 +1,154 @@
+dataset,column,dtype,semantic_role,non_null,missing_pct,n_unique,is_constant,example_values
+iot_fridge,ts,int64,timestamp,59944,0.0,18910,False,1556245180 ; 1556245185 ; 1556245195
+iot_fridge,date,str,timestamp,59944,0.0,8,False,25-Apr-19 ; 28-Apr-19 ; 29-Apr-19
+iot_fridge,time,str,timestamp,59944,0.0,18106,False, 19:19:40  ;  19:19:45  ;  19:19:55 
+iot_fridge,fridge_temperature,float64,numeric,59944,0.0,151,False,9.0 ; 9.25 ; 12.65
+iot_fridge,temp_condition,str,categorical,59944,0.0,2,False,high ; low
+iot_fridge,label,int64,security_label,59944,0.0,2,False,1 ; 0
+iot_fridge,type,str,security_label,59944,0.0,7,False,ddos ; backdoor ; injection
+iot_garage_door,ts,int64,timestamp,59587,0.0,18959,False,1556228553 ; 1556228558 ; 1556228563
+iot_garage_door,date,str,timestamp,59587,0.0,8,False,25-Apr-19 ; 28-Apr-19 ; 1-Apr-19
+iot_garage_door,time,str,timestamp,59587,0.0,18166,False, 14:42:33  ;  14:42:38  ;  14:42:43 
+iot_garage_door,door_state,str,categorical,59587,0.0,2,False,closed ; open
+iot_garage_door,sphone_signal,str,categorical,59587,0.0,4,False,0 ; 1 ; true  
+iot_garage_door,label,int64,security_label,59587,0.0,2,False,1 ; 0
+iot_garage_door,type,str,security_label,59587,0.0,8,False,ddos ; backdoor ; injection
+iot_gps_tracker,ts,int64,timestamp,58960,0.0,26898,False,1556242299 ; 1556242301 ; 1556242306
+iot_gps_tracker,date,str,timestamp,58960,0.0,8,False,25-Apr-19 ; 28-Apr-19 ; 31-Mar-19
+iot_gps_tracker,time,str,timestamp,58960,0.0,25032,False, 18:31:39  ;  18:31:41  ;  18:31:46 
+iot_gps_tracker,latitude,float64,numeric,58960,0.0,58341,False,116.5217044 ; 121.7429329 ; 121.7959286
+iot_gps_tracker,longitude,float64,numeric,58960,0.0,58341,False,132.1625042 ; 135.0725 ; 135.1101981
+iot_gps_tracker,label,int64,security_label,58960,0.0,2,False,1 ; 0
+iot_gps_tracker,type,str,security_label,58960,0.0,8,False,ddos ; backdoor ; injection
+iot_modbus,ts,int64,timestamp,51106,0.0,24889,False,1556208840 ; 1556208841 ; 1556208842
+iot_modbus,date,str,timestamp,51106,0.0,8,False,25-Apr-19 ; 28-Apr-19 ; 31-Mar-19
+iot_modbus,time,str,timestamp,51106,0.0,23600,False, 09:14:00  ;  09:14:01  ;  09:14:02 
+iot_modbus,FC1_Read_Input_Register,int64,numeric,51106,0.0,12478,False,49389 ; 40665 ; 57147
+iot_modbus,FC2_Read_Discrete_Value,int64,numeric,51106,0.0,12511,False,52921 ; 44748 ; 19212
+iot_modbus,FC3_Read_Holding_Register,int64,numeric,51106,0.0,12465,False,25770 ; 21098 ; 15924
+iot_modbus,FC4_Read_Coil,int64,numeric,51106,0.0,12503,False,13625 ; 35371 ; 39734
+iot_modbus,label,int64,security_label,51106,0.0,2,False,1 ; 0
+iot_modbus,type,str,security_label,51106,0.0,6,False,injection ; backdoor ; normal
+iot_motion_light,ts,int64,timestamp,59488,0.0,27459,False,1556246497 ; 1556246502 ; 1556246503
+iot_motion_light,date,str,timestamp,59488,0.0,7,False,25-Apr-19 ; 28-Apr-19 ; 31-Mar-19
+iot_motion_light,time,str,timestamp,59488,0.0,25354,False, 19:41:37  ;  19:41:42  ;  19:41:43 
+iot_motion_light,motion_status,int64,numeric,59488,0.0,2,False,0 ; 1
+iot_motion_light,light_status,str,categorical,59488,0.0,2,False, off ;  on
+iot_motion_light,label,int64,security_label,59488,0.0,2,False,1 ; 0
+iot_motion_light,type,str,security_label,59488,0.0,8,False,ddos ; backdoor ; injection
+iot_thermostat,ts,int64,timestamp,52774,0.0,22677,False,1556207942 ; 1556207946 ; 1556207947
+iot_thermostat,date,str,timestamp,52774,0.0,8,False,25-Apr-19 ; 28-Apr-19 ; 31-Mar-19
+iot_thermostat,time,str,timestamp,52774,0.0,21177,False,8:59:02 ; 8:59:06 ; 8:59:07
+iot_thermostat,current_temperature,float64,numeric,52774,0.0,49632,False,30.57732541 ; 29.18791215 ; 30.20889259
+iot_thermostat,thermostat_status,int64,numeric,52774,0.0,2,False,1 ; 0
+iot_thermostat,label,int64,security_label,52774,0.0,2,False,1 ; 0
+iot_thermostat,type,str,security_label,52774,0.0,7,False,injection ; backdoor ; normal
+iot_weather,ts,int64,timestamp,59260,0.0,23978,False,1556238796 ; 1556238801 ; 1556238811
+iot_weather,date,str,timestamp,59260,0.0,7,False,25-Apr-19 ; 28-Apr-19 ; 31-Mar-19
+iot_weather,time,str,timestamp,59260,0.0,23070,False,17:33:16 ; 17:33:21 ; 17:33:31
+iot_weather,temperature,float64,numeric,59260,0.0,56501,False,40.88186638 ; 44.91380636 ; 38.29582187
+iot_weather,pressure,float64,numeric,59260,0.0,7940,False,-0.101805871 ; 2.661615511 ; -2.438871078
+iot_weather,humidity,float64,numeric,59260,0.0,11056,False,38.3636313 ; 46.14142334 ; 50.85064264
+iot_weather,label,int64,security_label,59260,0.0,2,False,1 ; 0
+iot_weather,type,str,security_label,59260,0.0,8,False,ddos ; backdoor ; injection
+network_flow,src_ip,str,ip_address,211043,0.0,51,False,192.168.1.37 ; 192.168.1.193 ; 192.168.1.33
+network_flow,src_port,int64,network_field,211043,0.0,26628,False,4444 ; 49180 ; 49181
+network_flow,dst_ip,str,ip_address,211043,0.0,753,False,192.168.1.193 ; 192.168.1.37 ; 192.168.1.33
+network_flow,dst_port,int64,network_field,211043,0.0,2039,False,49178 ; 8080 ; 445
+network_flow,proto,str,network_field,211043,0.0,3,False,tcp ; udp ; icmp
+network_flow,service,str,network_field,211043,0.0,9,False,- ; smb;gssapi ; dce_rpc
+network_flow,duration,float64,network_field,211043,0.0,68570,False,290.371539 ; 0.000102 ; 0.000148
+network_flow,src_bytes,int64,network_field,211043,0.0,2199,False,101568 ; 0 ; 8359
+network_flow,dst_bytes,int64,network_field,211043,0.0,2338,False,2592 ; 0 ; 415330
+network_flow,conn_state,str,network_field,211043,0.0,13,False,OTH ; REJ ; S1
+network_flow,missed_bytes,int64,network_field,211043,0.0,694,False,0 ; 83380 ; 15928
+network_flow,src_pkts,int64,network_field,211043,0.0,274,False,108 ; 1 ; 45
+network_flow,src_ip_bytes,int64,ip_address,211043,0.0,3648,False,108064 ; 52 ; 48
+network_flow,dst_pkts,int64,network_field,211043,0.0,203,False,31 ; 1 ; 252
+network_flow,dst_ip_bytes,int64,ip_address,211043,0.0,3304,False,3832 ; 40 ; 342042
+network_flow,dns_query,str,network_field,211043,0.0,726,False,- ; mqtt-dashboard-lb-1160139393.eu-central-1.elb.amazonaws.com ; https://192.168.1.184
+network_flow,dns_qclass,int64,network_field,211043,0.0,3,False,0 ; 1 ; 32769
+network_flow,dns_qtype,int64,network_field,211043,0.0,12,False,0 ; 1 ; 28
+network_flow,dns_rcode,int64,network_field,211043,0.0,4,False,0 ; 3 ; 2
+network_flow,dns_AA,str,network_field,211043,0.0,3,False,- ; F ; T
+network_flow,dns_RD,str,network_field,211043,0.0,3,False,- ; T ; F
+network_flow,dns_RA,str,network_field,211043,0.0,3,False,- ; T ; F
+network_flow,dns_rejected,str,network_field,211043,0.0,3,False,- ; F ; T
+network_flow,ssl_version,str,network_field,211043,0.0,4,False,- ; TLSv10 ; TLSv12
+network_flow,ssl_cipher,str,network_field,211043,0.0,6,False,- ; TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA ; TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+network_flow,ssl_resumed,str,network_field,211043,0.0,3,False,- ; F ; T
+network_flow,ssl_established,str,network_field,211043,0.0,3,False,- ; T ; F
+network_flow,ssl_subject,str,network_field,211043,0.0,6,False,- ; CN=Mr Shepherd;OU=Security Shepherd Project;O=OWASP;L=Dublin;ST=Ireland;C=IE ; CN=settings-win.data.microsoft.com;OU=WSE;O=Microsoft;L=Redmond;ST=WA;C=US
+network_flow,ssl_issuer,str,network_field,211043,0.0,5,False,- ; CN=Mr Shepherd;OU=Security Shepherd Project;O=OWASP;L=Dublin;ST=Ireland;C=IE ; CN=Microsoft Secure Server CA 2011;O=Microsoft Corporation;L=Redmond;ST=Washington;C=US
+network_flow,http_trans_depth,str,network_field,211043,0.0,11,False,- ; 1 ; 2
+network_flow,http_method,str,network_field,211043,0.0,4,False,- ; GET ; POST
+network_flow,http_uri,str,network_field,211043,0.0,86,False,- ; /dvwa/login.php-r ; /
+network_flow,http_version,str,network_field,211043,0.0,2,False,- ; 1.1
+network_flow,http_request_body_len,int64,network_field,211043,0.0,6,False,0 ; 1242 ; 2338
+network_flow,http_response_body_len,int64,network_field,211043,0.0,75,False,0 ; 1057 ; 664
+network_flow,http_status_code,int64,network_field,211043,0.0,8,False,0 ; 404 ; 200
+network_flow,http_user_agent,str,user_account,211043,0.0,35,False,- ; Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:49.0) Gecko/20100101 Firefox/49.0 ; Mozilla/5.0 (iPhone; U; CPU iOS 2_0 like Mac OS X; en-us)
+network_flow,http_orig_mime_types,str,network_field,211043,0.0,3,False,- ; application/xml ; application/soap+xml
+network_flow,http_resp_mime_types,str,network_field,211043,0.0,10,False,- ; text/html ; application/ocsp-response
+network_flow,weird_name,str,network_field,211043,0.0,11,False,- ; possible_split_routing ; bad_TCP_checksum
+network_flow,weird_addl,str,network_field,211043,0.0,3,False,- ; 46 ; 48
+network_flow,weird_notice,str,network_field,211043,0.0,2,False,- ; F
+network_flow,label,int64,security_label,211043,0.0,2,False,1 ; 0
+network_flow,type,str,security_label,211043,0.0,10,False,backdoor ; ddos ; dos
+access_log,event_id,str,categorical,22686,0.0,22686,False,ACC000001 ; ACC000002 ; ACC000003
+access_log,timestamp,str,timestamp,22686,0.0,22538,False,2019-04-01 00:38:39 ; 2019-04-01 00:42:15 ; 2019-04-01 00:51:00
+access_log,username,str,user_account,22686,0.0,114,False,cont006 ; main049 ; main027
+access_log,user_role,str,user_account,22686,0.0,8,False,control_room_operator ; maintenance_engineer ; mine_planner
+access_log,employment_type,str,categorical,22686,0.0,3,False,employee ; vendor ; contractor
+access_log,site,str,categorical,22686,0.0,8,False,PIT-A ; PIT-B ; WORKSHOP-01
+access_log,asset_id,str,device_asset,22686,0.0,184,False,AST-0030 ; AST-0052 ; AST-0055
+access_log,src_ip,str,ip_address,22686,0.0,244,False,10.52.62.121 ; 10.21.53.77 ; 10.52.62.14
+access_log,src_country,str,categorical,22686,0.0,5,False,NAM ; ZZZ ; ZAF
+access_log,auth_method,str,authentication_access,22686,0.0,5,False,ot_jump_host ; rdp_broker ; vpn_gateway
+access_log,mfa_used,bool,authentication_access,22686,0.0,2,False,True ; False
+access_log,event_type,str,categorical,22686,0.0,5,False,LOGIN_SUCCESS ; RESOURCE_ACCESS ; LOGOUT
+access_log,result,str,authentication_access,22686,0.0,2,False,success ; failure
+access_log,target_system,str,categorical,22686,0.0,9,False,erp ; historian ; cctv_nvr
+access_log,privileged_action,bool,authentication_access,22686,0.0,2,False,False ; True
+access_log,session_duration_s,int64,authentication_access,22686,0.0,3554,False,1945 ; 3512 ; 0
+access_log,bytes_out,int64,network_field,22686,0.0,9766,False,0 ; 2234374 ; 5584733
+access_log,gt_scenario,str,security_label,108,99.52,4,False,GT1_password_spray ; GT2_vendor_out_of_hours ; GT4_impossible_travel
+asset_inventory,asset_id,str,device_asset,194,0.0,194,False,AST-0001 ; AST-0002 ; AST-0003
+asset_inventory,asset_type,str,device_asset,194,0.0,17,False,plc ; rtu ; hmi
+asset_inventory,site,str,categorical,194,0.0,8,False,PIT-A ; PIT-B ; PLANT-01
+asset_inventory,site_zone,str,categorical,194,0.0,3,False,OT ; IT-OT ; IT
+asset_inventory,device_zone,str,device_asset,194,0.0,3,False,OT ; IT-OT ; IT
+asset_inventory,criticality,str,categorical,194,0.0,4,False,critical ; high ; medium
+asset_inventory,primary_protocol,str,network_field,168,13.4,7,False,modbus ; dnp3 ; http
+asset_inventory,ip_address,str,ip_address,194,0.0,187,False,192.168.10.245 ; 192.168.10.232 ; 192.168.10.104
+asset_inventory,owner_team,str,categorical,194,0.0,2,False,OT Engineering ; IT Operations
+asset_inventory,patch_status,str,categorical,194,0.0,4,False,behind_2_cycles ; current ; behind_1_cycle
+asset_inventory,remote_access_enabled,bool,numeric,194,0.0,2,False,True ; False
+user_directory,username,str,user_account,114,0.0,114,False,cont001 ; cont002 ; cont003
+user_directory,user_role,str,user_account,114,0.0,8,False,control_room_operator ; maintenance_engineer ; ot_network_admin
+user_directory,employment_type,str,categorical,114,0.0,3,False,employee ; vendor ; contractor
+user_directory,home_site,str,categorical,114,0.0,8,False,PLANT-01 ; PIT-A ; TAILINGS-01
+user_directory,privileged_account,bool,user_account,114,0.0,2,False,True ; False
+user_directory,account_created,str,user_account,114,0.0,109,False,2016-02-27 ; 2017-10-09 ; 2017-04-03
+user_directory,mfa_enrolled,bool,authentication_access,114,0.0,2,False,True ; False
+tickets,ticket_id,str,categorical,320,0.0,320,False,TKT00023 ; TKT00132 ; TKT00297
+tickets,opened_at,str,timestamp,320,0.0,319,False,2019-04-01 00:32:00 ; 2019-04-01 02:26:00 ; 2019-04-01 02:56:00
+tickets,category,str,security_label,320,0.0,5,False,access_request ; security_incident ; mechanical
+tickets,priority,str,categorical,320,0.0,4,False,P3 ; P2 ; P4
+tickets,site,str,categorical,320,0.0,8,False,PIT-A ; PIT-B ; WORKSHOP-01
+tickets,asset_id,str,device_asset,320,0.0,147,False,AST-0071 ; AST-0120 ; AST-0158
+tickets,reported_by,str,user_account,320,0.0,107,False,mine102 ; it064 ; cont087
+tickets,text,str,categorical,320,0.0,274,False,Contractor mine102 requires temporary remote access to the fleet management portal at PIT-A for a commissioning task. Approval and MFA enrolment required before access is granted. ; Repeated failed remote logins for account it064 from 112.238.161.97 against the PLC engineering workstation on AST-0120. SOC asked to review; account temporarily disabled pending confirmation. ; Conveyor drive bearing at PIT-A running hot. Vibration readings above the alarm threshold; replacement scheduled for the next shutdown.
+tickets,gt_entities,str,security_label,320,0.0,250,False,site=PIT-A|target=fleet management portal|user=mine102 ; asset=AST-0120|ip=112.238.161.97|target=PLC engineering workstation|user=it064 ; site=PIT-A
+tickets,data_status,str,categorical,320,0.0,1,True,SYNTHETIC
+attack_ics_text,record_id,str,categorical,357,0.0,357,False,C0041 ; C0030 ; C0028
+attack_ics_text,stix_id,str,categorical,357,0.0,357,False,campaign--1169ff24-b35f-4d8d-8cf3-643a2834227f ; campaign--45a98f02-852f-49b2-94c0-c63207bebbbf ; campaign--46421788-b6e1-4256-b351-f8beffd1afba
+attack_ics_text,record_class,str,categorical,357,0.0,9,False,campaign ; mitigation ; threat_group
+attack_ics_text,name,str,categorical,357,0.0,355,False,FrostyGoop Incident ; Triton Safety Instrumented System Attack ; 2015 Ukraine Electric Power Attack
+attack_ics_text,text,str,categorical,357,0.0,341,False,"[FrostyGoop Incident](https://attack.mitre.org/campaigns/C0041) took place in January 2024 against a municipal district heating company in Ukraine. Following initial access via likely exploitation of external facing services, [FrostyGoop](https://attack.mitre.org/software/S1165) was used to manipulate ENCO control systems via legitimate Modbus commands to impact the delivery of heating services to Ukrainian civilians.(Citation: Dragos FROSTYGOOP 2024)(Citation: Nozomi BUSTLEBERM 2024) ; [Triton Safety Instrumented System Attack](https://attack.mitre.org/campaigns/C0030) was a campaign employed by [TEMP.Veles](https://attack.mitre.org/groups/G0088) which leveraged the [Triton](https://attack.mitre.org/software/S1009) malware framework against a petrochemical organization.(Citation: Triton-EENews-2017) The malware and techniques used within this campaign targeted specific Triconex [Safety Controller](https://attack.mitre.org/assets/A0010)s within the environment.(Citation: FireEye TRITON 2018) The incident was eventually discovered due to a safety trip that occurred as a result of an issue in the malware.(Citation: FireEye TRITON 2017) ; [2015 Ukraine Electric Power Attack](https://attack.mitre.org/campaigns/C0028) was a [Sandworm Team](https://attack.mitre.org/groups/G0034) campaign during which they used [BlackEnergy](https://attack.mitre.org/software/S0089) (specifically BlackEnergy3) and [KillDisk](https://attack.mitre.org/software/S0607) to target and disrupt transmission and distribution substations within the Ukrainian power grid. This campaign was the first major public attack conducted against the Ukrainian power grid by Sandworm Team."
+attack_ics_text,platforms,str,categorical,38,89.36,12,False,Windows ; Network Devices|Linux ; Field Controller/RTU/PLC/IED|Engineering Workstation
+attack_ics_text,created,str,categorical,357,0.0,156,False,2024-11-20T23:15:36.728Z ; 2024-03-25T17:47:37.619Z ; 2023-09-27T13:11:52.340Z
+attack_ics_text,modified,str,categorical,357,0.0,195,False,2026-07-31T20:48:13.258Z ; 2026-07-31T20:48:13.868Z ; 2026-08-04T20:48:44.047Z
+attack_ics_text,n_chars,int64,numeric,357,0.0,299,False,489 ; 659 ; 516
+attack_ics_text,n_words,int64,numeric,357,0.0,179,False,53 ; 65 ; 49
+attack_ics_text,source,str,categorical,357,0.0,1,True,MITRE ATT&CK for ICS (STIX bundle)

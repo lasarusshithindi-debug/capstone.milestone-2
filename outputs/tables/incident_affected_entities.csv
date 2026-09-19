@@ -1,0 +1,9 @@
+asset_id,asset_type,site,site_zone,device_zone,criticality,primary_protocol,ip_address,owner_team,patch_status,remote_access_enabled,why_involved
+AST-0017,sensor_thermostat,PIT-A,OT,OT,medium,mqtt,192.168.10.11,OT Engineering,behind_1_cycle,True,accessed during the alert window by vend069
+AST-0090,laptop,PLANT-01,OT,IT,medium,,192.168.12.83,IT Operations,behind_2_cycles,True,accessed during the alert window by vend069
+AST-0124,plc,WORKSHOP-01,IT-OT,OT,critical,modbus,192.168.14.13,OT Engineering,current,True,accessed during the alert window by vend069
+AST-0133,iiot_gateway,WORKSHOP-01,IT-OT,OT,high,mqtt,192.168.14.92,OT Engineering,behind_1_cycle,True,accessed during the alert window by vend069
+AST-0135,sensor_weather,WORKSHOP-01,IT-OT,OT,medium,mqtt,192.168.14.2,OT Engineering,behind_1_cycle,False,accessed during the alert window by vend069
+AST-0137,sensor_weather,WORKSHOP-01,IT-OT,OT,medium,mqtt,192.168.14.127,OT Engineering,current,True,accessed during the alert window by vend069
+AST-0142,sensor_motion,WORKSHOP-01,IT-OT,OT,low,mqtt,192.168.14.198,OT Engineering,current,False,accessed during the alert window by vend069
+AST-0152,laptop,WORKSHOP-01,IT-OT,IT,medium,,192.168.14.189,IT Operations,behind_2_cycles,True,accessed during the alert window by vend069

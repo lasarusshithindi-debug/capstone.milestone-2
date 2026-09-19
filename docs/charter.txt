@@ -1,0 +1,514 @@
+                                                                                               SAS821S · Security Analytics
+
+                                                                                              Capstone · Project Charter Template
+
+
+
+
+                                                MILESTONE 1 · DUE 10 AUGUST 2026 · 20%
+
+
+                                    Project Charter Template
+                                     SAS821S CAPSTONE PROJECT · EXACTLY TWO GROUP MEMBERS
+
+
+
+
+1. Group and project identification
+      Field                                      Group response
+                                                 T08 – Mining Remote Operations and Industrial-IoT Intrusion
+      Topic ID and approved topic
+                                                 Analytics
+                                                 Security Analytics for Detecting Anomalous Behavior in Mining
+      Working project title
+                                                 Remote Operations through a prototype
+      Member A                                   222093471 · Sophia Kalume · Data and Modelling Lead
+                                                 215103815 · Lazarus Shithindi · Security Engineering and
+      Member B
+                                                 Intelligence Lead
+      Repository/location                        TBC
+      Date submitted                             10/08/2026
+
+
+
+2. Problem and decision statement
+The main problem and decision statement is “Identifying how security analytics can be used to detect
+and prioritise anomalous IIoT, network and remote-user behaviour in a simulated mining remote-
+operations environment”.
+
+To monitor and manage operations, mining operations depend more on networked equipment, industrial
+Internet of Things (IIoT) devices, remote access and central control services. Although these technologies
+facilitate effective remote operations, the way they interconnected makes it possible for unauthorized
+access, anomalous network/device behavior and credential abuse. Unusual communication between
+devices, compromised remote-user credentials, anomalous sensor activity and other deviations from
+standard operating procedures can all be the source of suspicious behavior.
+
+
+Namibia University of Science and Technology · Semester 2, 2026
+
+                                                                                                                         Page 1
+                                                                                                 SAS821S · Security Analytics
+
+                                                                                                Capstone · Project Charter Template
+
+
+
+
+This project will focus primarily on IIoT telemetry, network-flow data and remote-user activity which will
+be analysed to establish normal behavioural patterns and identify significant deviations that may indicate
+potential security concerns. The main stakeholders affected are mining security personnel, IT ,network
+administrators, remote-operations personnel and operational managers as they require understandable
+analytical information that can assist them in determining which users devices or network events require
+further investigation.
+
+The project also aims to identify which remote users, IIoT devices or network events should be prioritised
+for security investigation based on detected anomalous behaviour and associated risk and will be
+answered as the project progresses. A small segmentation simulation will additionally be used to
+demonstrate how network segmentation may affect the potential spread or impact of suspicious activity.
+This simulation will be performed in an authorised or simulated environment and will not involve testing
+live mining infrastructure.
+
+
+3. Scope and exclusions
+      In scope                                                    Out of scope
+      Simulated mining remote-operations
+                                                                  Live mining infrastructure, physical industrial
+      environment, IIoT sensor telemetry, device
+                                                                  equipment, live network penetration testing,
+      telemetry, networkflow data, remote user
+                                                                  real user passwords or credentials,
+      activity, data cleaning, identification of
+                                                                  unauthorized or confidential data, real time
+      abnormal behavioural patterns, IIoT and
+                                                                  employee surveillance, real-time production
+      network anomaly detection, authorized,
+                                                                  deployment.
+      public or synthetic datasets.
+
+
+
+4. Objectives and security analytics questions
+      Objective/question                                          Measure of completion
+      Objective 1: Prepare and integrate IIoT,
+                                                                  Cleaned datasets, documented preprocessing
+      network-flow and remote-user activity data
+                                                                  steps and identified analytical features.
+      for security analytics.
+      Objective 2: Develop a prototype capable of                 Working anomaly-detection/behaviour-
+      detecting and prioritizing anomalous IIoT,                  analysis process, risk prioritization and
+      network and remote-user behaviour.                          functioning prototype dashboard.
+
+
+
+Namibia University of Science and Technology · Semester 2, 2026
+
+                                                                                                                           Page 2
+                                                                                                    SAS821S · Security Analytics
+
+                                                                                                   Capstone · Project Charter Template
+
+
+
+
+      Objective/question                                             Measure of completion
+      Question 1: What IIoT and network
+                                                                     EDA and anomaly-detection results
+      behaviours deviate significantly from
+                                                                     identifying and ranking anomalous events.
+      established normal patterns?
+      Question 2: Can remote-user activity be used                   Behavioural indicators and identified
+      to identify potentially unusual or suspicious                  anomalous user activities supported by
+      access behaviour?                                              evidence.
+                                                                     A documented risk-scoring approach and
+      Question 3: How can detected anomalies be
+                                                                     ranked security events displayed in the
+      prioritized to support security investigation?
+                                                                     prototype.
+
+
+
+5. Learning Sessions 1-10 coverage matrix
+      Session        Course area                              Planned project evidence
+                     Foundations of security                  Definition of the mining security problem,
+      1
+                     analytics                                stakeholders, threats and security decision.
+                     Analytical software and                  Python-based data preparation, analysis and
+      2
+                     tools                                    prototype development environment.
+                     Machine-learning                         Feature preparation, model selection, training and
+      3
+                     fundamentals                             evaluation principles.
+                     Machine learning in                      Application of anomaly detection to IIoT and
+      4
+                     cybersecurity                            network behaviour.
+                     Analytics and incident                   Analysis and prioritisation of suspicious events for
+      5
+                     response                                 investigation.
+                                                              Conversion of analytical findings into risk indicators
+      6              Security intelligence
+                                                              and prioritised security information.
+                                                              Analysis of remote-user access patterns and unusual
+      7              Access analytics
+                                                              behaviour.
+                     Simulations and security                 Small segmented-network simulation comparing
+      8
+                     processes                                different security scenarios.
+                                                              Available maintenance/incident text data only if
+      9              Security and text mining
+                                                              suitable authorised data is available.
+
+
+Namibia University of Science and Technology · Semester 2, 2026
+
+                                                                                                                              Page 3
+                                                                                                    SAS821S · Security Analytics
+
+                                                                                                  Capstone · Project Charter Template
+
+
+
+
+      Session        Course area                              Planned project evidence
+                                                              Integration of anomaly, user-behaviour and risk
+                     Advanced security
+      10                                                      findings into the final prototype and security decision
+                     intelligence
+                                                              support.
+
+
+
+6. Proposed data sources
+                              Format/volum                               Provenance/acces Security/ethics
+      Source                               Key fields
+                              e                                          s                controls
+      IIoT telemetry          CSV/JSON,              Timestamp,       Public, synthetic       No PII, only
+                              volume to be           device ID,       or approved             authorized data and
+                              determined             sensor readings, dataset                 anonymised device
+                              after dataset          operating status                         identifiers where
+                              selection                                                       necessary
+      Network-flow            CSV/JSON/logs          Timestamp,          Public, synthetic    No live network
+      data                    , volume to be         source,             or approved          capture
+                              determined             destination,        dataset
+                              after dataset          protocol, port,
+                              selection              packets, bytes,
+                                                     duration
+      Remote-user             CSV/JSON/logs          User ID,            Public, synthetic    No real credentials
+      activity                , volume to be         timestamp,          or approved
+                              determined             login/logout,       dataset
+                              after dataset          source, device,
+                              selection              access/action
+      Maintenance/i CSV/TXT,                         Timestamp,       Public, synthetic       No personal or
+      ncident text  volume to be                     equipment ID,    or approved data        confidential
+      data          determined                       event/maintena if suitable               information
+                    after dataset                    nce description,
+                    selection                        category
+
+
+
+
+Namibia University of Science and Technology · Semester 2, 2026
+
+                                                                                                                             Page 4
+                                                                                                   SAS821S · Security Analytics
+
+                                                                                                 Capstone · Project Charter Template
+
+
+
+
+7. Proposed analytical methods
+      Component                             Proposed method/tool                 Expected output
+      Baseline / EDA                        Python, Pandas, NumPy,               Data-quality assessment,
+                                            visualization                        behavioural baselines,
+                                                                                 distributions and trends
+      Supervised ML                         TBC                                  TBC
+      Unsupervised or UBA                   Isolation Forest and                 Anomaly scores and
+                                            rule/baseline-based user             identification of unusual
+                                            behaviour analysis                   device/network/user behaviour
+      Incident investigation                Event filtering, correlation and     Evidence-based investigation
+                                            timeline analysis                    view for selected suspicious
+                                                                                 events
+      Security intelligence                 Risk scoring and event               Ranked high, medium and low-
+                                            prioritization                       risk events
+      Simulation                            Simple segmented-network             Comparison of potential event
+                                            scenario simulation                  impact under different
+                                                                                 segmentation scenarios
+      Text mining/NLP                       TBC                                  Supporting themes/indicators
+                                                                                 from maintenance or incident
+                                                                                 records
+      Predictive/adversarial                Limited risk-pattern analysis        Identification of conditions
+      analysis                                                                   associated with increased
+                                                                                 security risk
+      Prototype/dashboard                   Python, Streamlit, Plotly            Interactive dashboard displaying
+                                                                                 anomalies, user behaviour, risk
+                                                                                 and investigation evidence
+
+
+
+8. High-level architecture
+
+                                                                  DATA SOURCES
+
+                                                      ┌────────────┼────────────┐
+
+
+Namibia University of Science and Technology · Semester 2, 2026
+
+                                                                                                                            Page 5
+                                                                                             SAS821S · Security Analytics
+
+                                                                                            Capstone · Project Charter Template
+
+
+
+
+                                                                  │        │      │
+
+                                                              ▼            ▼         ▼
+
+                                                 IIoT Data Network Flow User Activity
+
+                                                                  │        │      │
+
+                                                      └────────────┼────────────┘
+
+                                                                           ▼
+
+                                                                      DATA INGESTION
+
+                                                                           │
+
+                                                                           ▼
+
+                                                       DATA CLEANING & PREPARATION
+
+                                                                            │
+
+                                                                           ▼
+
+                                                                  SECURITY ANALYTICS
+
+                                                              ┌────────┴─────────┐
+
+                                                                       │         │
+
+                                                                      ▼          ▼
+
+                                                    Anomaly Detection User Behaviour
+
+                                                         (IIoT/Network)         Analytics
+
+                                                                       │         │
+
+                                                            └────────┬─────────┘
+
+                                                                           ▼
+
+                                                                       RISK SCORING
+
+                                                                           │
+
+                                                                           ▼
+
+
+
+
+Namibia University of Science and Technology · Semester 2, 2026
+
+                                                                                                                       Page 6
+                                                                                                           SAS821S · Security Analytics
+
+                                                                                                          Capstone · Project Charter Template
+
+
+
+
+                                                             PROTOTYPE/DASHBOARD
+
+                                                                          │
+
+                                                          ┌──────────┴──────────┐
+
+                                                                  ▼                ▼
+
+                                                        Security Events       Investigation
+
+                                                         & Risk Ranking           Evidence
+
+                                                                          │
+
+                                                                          ▼
+
+                                                              SECURITY DECISION
+
+                                                               / PRIORITISATION
+
+                                                                              │
+
+                                                                          ▼
+
+                                                          SEGMENTATION SIMULATION
+
+
+
+
+9. Roles and RACI
+      Workstream                                    Member A              Member B            Review/approval evidence
+      Data acquisition and quality                  R/A                   C                   Dataset inventory,
+                                                                                              preprocessing documentation
+                                                                                              and data-quality results
+      ML and anomaly modelling                      R/A                   C                   Model notebook, anomaly
+                                                                                              results and evaluation
+      Investigation and access                      C                     R/A                 User-behaviour analysis and
+      analytics                                                                               investigation scenarios
+
+
+
+Namibia University of Science and Technology · Semester 2, 2026
+
+                                                                                                                                     Page 7
+                                                                                                   SAS821S · Security Analytics
+
+                                                                                                  Capstone · Project Charter Template
+
+
+
+
+      Workstream                                    Member A           Member B       Review/approval evidence
+      Simulation and intelligence                   C                  R/A            Segmentation simulation and
+                                                                                      risk-prioritization results
+      Prototype and testing                         R                  A              Working dashboard and
+                                                                                      testing evidence
+      Documentation and                             R                  R/A            Final report, presentation and
+      presentation                                                                    contribution records
+
+
+
+10. Work plan
+      Task                         Owner          Start           Finish     Dependency       Output
+      Task 1: Finalize             Both           Week 1          Week 1     None             Approved project
+      charter, research                                                                       charter
+      question and
+      scope
+      Task 2: Identify,            Both           Week 1          Week 2     Task 1           Dataset inventory
+      obtain and assess                                                                       and suitability
+      suitable datasets                                                                       assessment
+      Task 3: Clean,               Member Week 2                  Week 3     Task 2           Prepared datasets
+      integrate and                A                                                          and EDA results
+      explore datasets
+      Task 4: Develop   A/B                       Week 4          Week 6     Task 3           Anomaly model and
+      anomaly and user-                                                                       UBA results
+      behaviour
+      analytics
+      Task 5: Develop              Member Week 6                  Week 7     Task 4           Risk-prioritization
+      risk scoring and             B                                                          method
+      investigation logic
+      Task 6: Develop              Both           Week 7          Week 8     Tasks 4–5        Working prototype
+      prototype                                                                               and simulation
+      dashboard and
+      segmentation
+      simulation
+
+
+
+Namibia University of Science and Technology · Semester 2, 2026
+
+                                                                                                                             Page 8
+                                                                                                       SAS821S · Security Analytics
+
+                                                                                                   Capstone · Project Charter Template
+
+
+
+
+      Task                         Owner          Start           Finish     Dependency       Output
+      Task 7: Test,                Both           Week 8          Week 9     Task 6           Evaluation and
+      evaluate and                                                                            revised prototype
+      refine prototype
+      Task 8: Final                Both           Week 9          Week 10    Task 7           Final report,
+      documentation                                                                           presentation and
+      and presentation                                                                        project evidence
+      preparation
+
+
+
+11. Risk and ethics register
+                                      Likelihoo
+      Risk                                            Impact       Mitigation                                   Owner
+                                      d
+      Data unavailable or             H               H            Assess datasets early, prioritise            Both
+      unsuitable                                                   public/synthetic alternatives and
+                                                                   adjust the analytical scope if
+                                                                   necessary.
+      Privacy or sensitive            L               H            Only authorised, public or synthetic         Both
+      data exposure                                                data will be used anonymize
+                                                                   identifiers and exclude
+                                                                   credentials/PII.
+      Model bias or                   M               H            Establish behavioural baselines,             A/B
+      misleading results                                           validate results, compare outputs
+                                                                   against known/synthetic anomalies
+                                                                   and document limitations.
+      Scope/time overrun              H               H            Keep anomaly detection and user              Both
+                                                                   behaviour analytics as the core and
+                                                                   make advanced methods conditional
+                                                                   and review progress biweekly.
+      Technical integration M                         M            Develop analytical components                A/B
+      failure                                                      independently before integrating
+                                                                   them into the dashboard and
+                                                                   maintain version controlled backups.
+
+
+
+
+Namibia University of Science and Technology · Semester 2, 2026
+
+                                                                                                                              Page 9
+                                                                                                    SAS821S · Security Analytics
+
+                                                                                                   Capstone · Project Charter Template
+
+
+
+
+                                      Likelihoo
+      Risk                                            Impact      Mitigation                                    Owner
+                                      d
+      Unequal                         M               M           Assign clear responsibilities, maintain       Both
+      contribution                                                contribution records and conduct
+                                                                  regular progress reviews.
+
+
+
+12. Responsible AI and academic integrity statement
+AI tools will be used as guidance and to get sources that may be needed for the project and this
+includes diagrams. The group will validate all outputs and disclose permitted assistance.
+
+
+
+
+13. Group agreement and declaration
+•    We confirm that this group consists of exactly two students.
+•    We accept the role allocation and will retain evidence of our contributions.
+•    We understand that both members must explain the complete solution during the presentation and
+     Q&A.
+•    We will use only authorised data and will not test live third-party systems.
+•    We will disclose permitted AI assistance, reused code and external data sources.
+      Member                                      Signature                          Date
+      Sophia Kalume                               S.Kalume                           09/08/2026
+      Lazarus Shithindi                           L.Shithindi                        09/08/2026
+
+
+
+14. Lecturer approval
+      Decision                      Comments/conditions                                         Lecturer/date
+      [Approved / Revise
+                         [Comments]                                                             [Name/date]
+      / Not approved]
+
+
+
+
+Namibia University of Science and Technology · Semester 2, 2026
+
+                                                                                                                             Page 10
+

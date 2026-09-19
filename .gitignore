@@ -1,0 +1,10 @@
+# raw third-party datasets are not redistributed - see README section 2
+data/raw/ton_iot_gh/
+data/raw/netrepo/
+data/raw/attack_bundle/
+# regenerable artefacts
+data/processed/
+outputs/models/*.joblib
+__pycache__/
+*.pyc
+.venv/

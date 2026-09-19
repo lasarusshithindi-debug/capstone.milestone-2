@@ -1,0 +1,127 @@
+{
+  "network": {
+    "roc_auc_unsupervised": 0.2792739669243307,
+    "sample_rows": 80000,
+    "attack_share_in_sample": 0.7772875,
+    "chosen_threshold": {
+      "threshold_quantile": 0.85,
+      "threshold_score": 0.5022757443887185,
+      "flagged": 12000.0,
+      "precision": 0.6090833333333333,
+      "recall": 0.11754016371033883,
+      "f1": 0.19705323322054918
+    },
+    "thresholds": [
+      {
+        "threshold_quantile": 0.8,
+        "threshold_score": 0.4758363432545381,
+        "flagged": 16000,
+        "precision": 0.5645,
+        "recall": 0.14524870141356963,
+        "f1": 0.23104767020963637
+      },
+      {
+        "threshold_quantile": 0.85,
+        "threshold_score": 0.5022757443887185,
+        "flagged": 12000,
+        "precision": 0.6090833333333333,
+        "recall": 0.11754016371033883,
+        "f1": 0.19705323322054918
+      },
+      {
+        "threshold_quantile": 0.9,
+        "threshold_score": 0.5212493214294827,
+        "flagged": 8000,
+        "precision": 0.6945,
+        "recall": 0.08934917903607095,
+        "f1": 0.1583289400567089
+      },
+      {
+        "threshold_quantile": 0.95,
+        "threshold_score": 0.5833382052896381,
+        "flagged": 4000,
+        "precision": 0.72025,
+        "recall": 0.04633099078526285,
+        "f1": 0.08706163214118429
+      },
+      {
+        "threshold_quantile": 0.99,
+        "threshold_score": 0.658028363097833,
+        "flagged": 800,
+        "precision": 0.5925,
+        "recall": 0.007622662142386182,
+        "f1": 0.015051680612228696
+      }
+    ],
+    "roc_auc_clean_baseline": 0.7160119273545291,
+    "baseline_thresholds": [
+      {
+        "threshold_quantile": 0.5,
+        "threshold_score": 0.4314358336921438,
+        "flagged": 34671,
+        "precision": 0.9350177381673445,
+        "recall": 0.5213321969026904,
+        "f1": 0.669419951679848
+      },
+      {
+        "threshold_quantile": 0.7,
+        "threshold_score": 0.5102137752776609,
+        "flagged": 20795,
+        "precision": 0.9738879538350566,
+        "recall": 0.3256838685814451,
+        "f1": 0.48812938369206293
+      },
+      {
+        "threshold_quantile": 0.8,
+        "threshold_score": 0.5681681421107866,
+        "flagged": 13863,
+        "precision": 0.9748250739378201,
+        "recall": 0.2173262788865124,
+        "f1": 0.35541645845935355
+      },
+      {
+        "threshold_quantile": 0.9,
+        "threshold_score": 0.6055261739965826,
+        "flagged": 6936,
+        "precision": 0.9623702422145328,
+        "recall": 0.10734445105575478,
+        "f1": 0.1931451554565315
+      }
+    ],
+    "interpretation": "Fully unsupervised outlier detection performs below chance here (ROC-AUC 0.28) because attack traffic is the majority class in this capture. Learning the profile of known-good traffic and scoring novelty against it raises ROC-AUC to 0.72. The operational lesson for the mine is that anomaly detection needs a trusted baseline window, not simply 'whatever is rare today'."
+  },
+  "access": {
+    "threshold_quantile": 0.98,
+    "threshold_score": 0.6316517261642609,
+    "flagged_user_days": 56,
+    "validation": [
+      {
+        "method": "iso",
+        "flagged": 56,
+        "precision_vs_injected": 0.6428571428571429,
+        "recall_vs_injected": 0.8181818181818182,
+        "f1": 0.72,
+        "roc_auc_vs_injected": 0.9971466851925368
+      },
+      {
+        "method": "lof",
+        "flagged": 56,
+        "precision_vs_injected": 0.10714285714285714,
+        "recall_vs_injected": 0.13636363636363635,
+        "f1": 0.12,
+        "roc_auc_vs_injected": 0.5011992192669049
+      }
+    ],
+    "dbscan_clusters": 3,
+    "dbscan_noise": 116
+  },
+  "env": {
+    "utc_time": "2026-09-19T19:32:55+00:00",
+    "python": "3.11.15",
+    "platform": "Linux-6.18.44-fc-v37-x86_64-with-glibc2.39",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scikit_learn": "1.8.0",
+    "seed": 3815
+  }
+}

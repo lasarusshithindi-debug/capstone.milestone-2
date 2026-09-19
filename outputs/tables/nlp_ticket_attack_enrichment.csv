@@ -1,0 +1,321 @@
+ticket_id,category,ticket_text,nearest_attack_id,nearest_attack_name,nearest_attack_class,similarity
+TKT00310,instrumentation,GPS tracker on the PIT-B light vehicle fleet dropping position fixes; firmware update pending.,AN1934,Analytic 1934,analytic,0.522
+TKT00016,instrumentation,GPS tracker on the PIT-A light vehicle fleet dropping position fixes; firmware update pending.,AN1934,Analytic 1934,analytic,0.522
+TKT00012,instrumentation,GPS tracker on the PIT-A light vehicle fleet dropping position fixes; firmware update pending.,AN1934,Analytic 1934,analytic,0.522
+TKT00002,instrumentation,GPS tracker on the HQ-WHK light vehicle fleet dropping position fixes; firmware update pending.,AN1934,Analytic 1934,analytic,0.522
+TKT00182,instrumentation,GPS tracker on the HQ-WHK light vehicle fleet dropping position fixes; firmware update pending.,AN1934,Analytic 1934,analytic,0.522
+TKT00006,instrumentation,GPS tracker on the HQ-WHK light vehicle fleet dropping position fixes; firmware update pending.,AN1934,Analytic 1934,analytic,0.522
+TKT00192,instrumentation,GPS tracker on the PIT-A light vehicle fleet dropping position fixes; firmware update pending.,AN1934,Analytic 1934,analytic,0.522
+TKT00249,instrumentation,GPS tracker on the HQ-WHK light vehicle fleet dropping position fixes; firmware update pending.,AN1934,Analytic 1934,analytic,0.522
+TKT00216,instrumentation,GPS tracker on the PIT-A light vehicle fleet dropping position fixes; firmware update pending.,AN1934,Analytic 1934,analytic,0.522
+TKT00039,instrumentation,GPS tracker on the WORKSHOP-01 light vehicle fleet dropping position fixes; firmware update pending.,AN1934,Analytic 1934,analytic,0.43
+TKT00094,instrumentation,GPS tracker on the WORKSHOP-01 light vehicle fleet dropping position fixes; firmware update pending.,AN1934,Analytic 1934,analytic,0.43
+TKT00076,instrumentation,GPS tracker on the TAILINGS-01 light vehicle fleet dropping position fixes; firmware update pending.,AN1934,Analytic 1934,analytic,0.43
+TKT00231,instrumentation,GPS tracker on the TAILINGS-01 light vehicle fleet dropping position fixes; firmware update pending.,AN1934,Analytic 1934,analytic,0.43
+TKT00117,instrumentation,GPS tracker on the WORKSHOP-01 light vehicle fleet dropping position fixes; firmware update pending.,AN1934,Analytic 1934,analytic,0.43
+TKT00036,instrumentation,GPS tracker on the WORKSHOP-01 light vehicle fleet dropping position fixes; firmware update pending.,AN1934,Analytic 1934,analytic,0.43
+TKT00041,instrumentation,GPS tracker on the WORKSHOP-01 light vehicle fleet dropping position fixes; firmware update pending.,AN1934,Analytic 1934,analytic,0.43
+TKT00169,instrumentation,GPS tracker on the TAILINGS-01 light vehicle fleet dropping position fixes; firmware update pending.,AN1934,Analytic 1934,analytic,0.43
+TKT00092,instrumentation,GPS tracker on the TAILINGS-01 light vehicle fleet dropping position fixes; firmware update pending.,AN1934,Analytic 1934,analytic,0.43
+TKT00176,instrumentation,GPS tracker on the PLANT-01 light vehicle fleet dropping position fixes; firmware update pending.,AN1934,Analytic 1934,analytic,0.381
+TKT00230,instrumentation,GPS tracker on the PLANT-01 light vehicle fleet dropping position fixes; firmware update pending.,AN1934,Analytic 1934,analytic,0.381
+TKT00221,instrumentation,Thermostat on AST-0069 drifting by several degrees against the reference probe. Scheduled for recalibration.,DC0005,Scheduled Job Metadata,data_component,0.369
+TKT00280,instrumentation,Thermostat on AST-0006 drifting by several degrees against the reference probe. Scheduled for recalibration.,DC0005,Scheduled Job Metadata,data_component,0.369
+TKT00017,instrumentation,Thermostat on AST-0176 drifting by several degrees against the reference probe. Scheduled for recalibration.,DC0005,Scheduled Job Metadata,data_component,0.369
+TKT00215,instrumentation,Thermostat on AST-0150 drifting by several degrees against the reference probe. Scheduled for recalibration.,DC0005,Scheduled Job Metadata,data_component,0.369
+TKT00163,instrumentation,Thermostat on AST-0100 drifting by several degrees against the reference probe. Scheduled for recalibration.,DC0005,Scheduled Job Metadata,data_component,0.369
+TKT00292,instrumentation,Thermostat on AST-0140 drifting by several degrees against the reference probe. Scheduled for recalibration.,DC0005,Scheduled Job Metadata,data_component,0.369
+TKT00139,instrumentation,Thermostat on AST-0161 drifting by several degrees against the reference probe. Scheduled for recalibration.,DC0005,Scheduled Job Metadata,data_component,0.369
+TKT00054,instrumentation,Thermostat on AST-0114 drifting by several degrees against the reference probe. Scheduled for recalibration.,DC0005,Scheduled Job Metadata,data_component,0.369
+TKT00201,instrumentation,Thermostat on AST-0074 drifting by several degrees against the reference probe. Scheduled for recalibration.,DC0005,Scheduled Job Metadata,data_component,0.369
+TKT00040,instrumentation,Thermostat on AST-0043 drifting by several degrees against the reference probe. Scheduled for recalibration.,DC0005,Scheduled Job Metadata,data_component,0.369
+TKT00273,instrumentation,Thermostat on AST-0123 drifting by several degrees against the reference probe. Scheduled for recalibration.,DC0005,Scheduled Job Metadata,data_component,0.369
+TKT00027,instrumentation,Thermostat on AST-0071 drifting by several degrees against the reference probe. Scheduled for recalibration.,DC0005,Scheduled Job Metadata,data_component,0.369
+TKT00239,network_fault,Intermittent link loss between the PORT-WVB radio bridge and the core switch. Modbus/TCP sessions from AST-0090 time out during the fault window.,T0885,Commonly Used Port,technique,0.337
+TKT00052,security_incident,Antivirus on the engineering workstation flagged Conficker after a contractor connected a USB drive at HQ-WHK. Machine isolated from the OT network for imaging.,DC0042,Drive Creation,data_component,0.336
+TKT00126,security_incident,Antivirus on the engineering workstation flagged Conficker after a contractor connected a USB drive at PIT-B. Machine isolated from the OT network for imaging.,DC0042,Drive Creation,data_component,0.336
+TKT00030,security_incident,Antivirus on the engineering workstation flagged Emotet after a contractor connected a USB drive at HQ-WHK. Machine isolated from the OT network for imaging.,DC0042,Drive Creation,data_component,0.336
+TKT00159,access_request,Request to open Modbus/TCP from the vendor network to AST-0165 for diagnostics. Security review required before the rule is added.,T0885,Commonly Used Port,technique,0.326
+TKT00063,security_incident,Antivirus on the engineering workstation flagged Conficker after a contractor connected a USB drive at WORKSHOP-01. Machine isolated from the OT network for imaging.,DC0042,Drive Creation,data_component,0.311
+TKT00035,security_incident,Antivirus on the engineering workstation flagged Industroyer after a contractor connected a USB drive at PIT-A. Machine isolated from the OT network for imaging.,DC0042,Drive Creation,data_component,0.311
+TKT00319,security_incident,Antivirus on the engineering workstation flagged Emotet after a contractor connected a USB drive at TAILINGS-01. Machine isolated from the OT network for imaging.,DC0042,Drive Creation,data_component,0.311
+TKT00043,security_incident,Antivirus on the engineering workstation flagged Industroyer after a contractor connected a USB drive at HQ-WHK. Machine isolated from the OT network for imaging.,DC0042,Drive Creation,data_component,0.311
+TKT00252,security_incident,Antivirus on the engineering workstation flagged TRITON after a contractor connected a USB drive at HQ-WHK. Machine isolated from the OT network for imaging.,DC0042,Drive Creation,data_component,0.311
+TKT00013,security_incident,Antivirus on the engineering workstation flagged BlackEnergy after a contractor connected a USB drive at PIT-B. Machine isolated from the OT network for imaging.,DC0042,Drive Creation,data_component,0.311
+TKT00067,security_incident,Antivirus on the engineering workstation flagged TRITON after a contractor connected a USB drive at PIT-A. Machine isolated from the OT network for imaging.,DC0042,Drive Creation,data_component,0.311
+TKT00145,security_incident,Antivirus on the engineering workstation flagged TRITON after a contractor connected a USB drive at PIT-B. Machine isolated from the OT network for imaging.,DC0042,Drive Creation,data_component,0.311
+TKT00085,security_incident,Antivirus on the engineering workstation flagged Ryuk after a contractor connected a USB drive at CAMP-01. Machine isolated from the OT network for imaging.,DC0042,Drive Creation,data_component,0.311
+TKT00088,security_incident,Antivirus on the engineering workstation flagged Industroyer after a contractor connected a USB drive at PORT-WVB. Machine isolated from the OT network for imaging.,DC0042,Drive Creation,data_component,0.295
+TKT00127,security_incident,Antivirus on the engineering workstation flagged Industroyer after a contractor connected a USB drive at TAILINGS-01. Machine isolated from the OT network for imaging.,DC0042,Drive Creation,data_component,0.29
+TKT00286,security_incident,Antivirus on the engineering workstation flagged TRITON after a contractor connected a USB drive at CAMP-01. Machine isolated from the OT network for imaging.,DC0042,Drive Creation,data_component,0.29
+TKT00153,security_incident,Antivirus on the engineering workstation flagged BlackEnergy after a contractor connected a USB drive at CAMP-01. Machine isolated from the OT network for imaging.,DC0042,Drive Creation,data_component,0.29
+TKT00099,network_fault,Firewall rule change blocked Modbus/TCP polling to AST-0127; control room lost trend data until the rule was reverted.,T0885,Commonly Used Port,technique,0.272
+TKT00049,network_fault,Firewall rule change blocked Modbus/TCP polling to AST-0068; control room lost trend data until the rule was reverted.,T0885,Commonly Used Port,technique,0.272
+TKT00218,network_fault,Intermittent link loss between the HQ-WHK radio bridge and the core switch. Modbus/TCP sessions from AST-0136 time out during the fault window.,T0885,Commonly Used Port,technique,0.267
+TKT00258,network_fault,"High latency on the PIT-A microwave backhaul. Telemetry from AST-0194 arriving late, historian shows gaps of several minutes.",A0006,Data Historian,asset,0.263
+TKT00240,network_fault,"High latency on the PIT-A microwave backhaul. Telemetry from AST-0161 arriving late, historian shows gaps of several minutes.",A0006,Data Historian,asset,0.263
+TKT00205,network_fault,"High latency on the HQ-WHK microwave backhaul. Telemetry from AST-0084 arriving late, historian shows gaps of several minutes.",A0006,Data Historian,asset,0.263
+TKT00287,network_fault,"High latency on the PIT-A microwave backhaul. Telemetry from AST-0138 arriving late, historian shows gaps of several minutes.",A0006,Data Historian,asset,0.263
+TKT00243,network_fault,"High latency on the PIT-B microwave backhaul. Telemetry from AST-0021 arriving late, historian shows gaps of several minutes.",A0006,Data Historian,asset,0.263
+TKT00289,network_fault,"High latency on the PIT-B microwave backhaul. Telemetry from AST-0170 arriving late, historian shows gaps of several minutes.",A0006,Data Historian,asset,0.263
+TKT00096,network_fault,"High latency on the PIT-B microwave backhaul. Telemetry from AST-0010 arriving late, historian shows gaps of several minutes.",A0006,Data Historian,asset,0.263
+TKT00184,network_fault,"High latency on the HQ-WHK microwave backhaul. Telemetry from AST-0138 arriving late, historian shows gaps of several minutes.",A0006,Data Historian,asset,0.263
+TKT00158,security_incident,Unusual Modbus/TCP traffic observed from AST-0076 at PIT-A towards 195.4.170.199. Volume far above the normal baseline for this device. Suspected scanning activity.,T0885,Commonly Used Port,technique,0.253
+TKT00072,network_fault,"High latency on the PLANT-01 microwave backhaul. Telemetry from AST-0021 arriving late, historian shows gaps of several minutes.",A0006,Data Historian,asset,0.25
+TKT00046,network_fault,"High latency on the PLANT-01 microwave backhaul. Telemetry from AST-0005 arriving late, historian shows gaps of several minutes.",A0006,Data Historian,asset,0.25
+TKT00091,security_incident,Repeated failed remote logins for account supe108 from 91.157.36.23 against the CCTV recorder on AST-0131. SOC asked to review; account temporarily disabled pending confirmation.,M0936,Account Use Policies,mitigation,0.233
+TKT00086,network_fault,"High latency on the PORT-WVB microwave backhaul. Telemetry from AST-0162 arriving late, historian shows gaps of several minutes.",A0006,Data Historian,asset,0.228
+TKT00164,security_incident,Repeated failed remote logins for account mine102 from 143.215.38.78 against the fleet management portal on AST-0110. SOC asked to review; account temporarily disabled pending confirmation.,M0936,Account Use Policies,mitigation,0.227
+TKT00011,security_incident,Repeated failed remote logins for account cont015 from 137.196.215.105 against the fleet management portal on AST-0017. SOC asked to review; account temporarily disabled pending confirmation.,M0936,Account Use Policies,mitigation,0.227
+TKT00256,security_incident,Repeated failed remote logins for account mine093 from 145.43.107.60 against the fleet management portal on AST-0144. SOC asked to review; account temporarily disabled pending confirmation.,M0936,Account Use Policies,mitigation,0.227
+TKT00211,security_incident,Repeated failed remote logins for account main046 from 200.245.187.32 against the fleet management portal on AST-0157. SOC asked to review; account temporarily disabled pending confirmation.,M0936,Account Use Policies,mitigation,0.227
+TKT00023,access_request,Contractor mine102 requires temporary remote access to the fleet management portal at PIT-A for a commissioning task. Approval and MFA enrolment required before access is granted.,M0935,Limit Access to Resource Over Network,mitigation,0.224
+TKT00255,network_fault,"High latency on the TAILINGS-01 microwave backhaul. Telemetry from AST-0007 arriving late, historian shows gaps of several minutes.",A0006,Data Historian,asset,0.218
+TKT00191,network_fault,"High latency on the WORKSHOP-01 microwave backhaul. Telemetry from AST-0037 arriving late, historian shows gaps of several minutes.",A0006,Data Historian,asset,0.218
+TKT00048,network_fault,"High latency on the CAMP-01 microwave backhaul. Telemetry from AST-0109 arriving late, historian shows gaps of several minutes.",A0006,Data Historian,asset,0.218
+TKT00254,security_incident,Repeated failed remote logins for account it066 from 156.220.114.190 against the historian on AST-0117. SOC asked to review; account temporarily disabled pending confirmation.,M0936,Account Use Policies,mitigation,0.217
+TKT00303,security_incident,Repeated failed remote logins for account mine099 from 216.116.135.112 against the historian on AST-0193. SOC asked to review; account temporarily disabled pending confirmation.,M0936,Account Use Policies,mitigation,0.217
+TKT00113,security_incident,Repeated failed remote logins for account mine103 from 176.95.169.85 against the maintenance portal on AST-0087. SOC asked to review; account temporarily disabled pending confirmation.,M0936,Account Use Policies,mitigation,0.216
+TKT00069,security_incident,Repeated failed remote logins for account it063 from 124.69.186.228 against the maintenance portal on AST-0089. SOC asked to review; account temporarily disabled pending confirmation.,M0936,Account Use Policies,mitigation,0.216
+TKT00183,security_incident,Vendor account it064 logged into the OT jump host outside the approved maintenance window and opened the CCTV recorder. No change ticket exists for this work.,AN1857,Analytic 1857,analytic,0.214
+TKT00212,access_request,Contractor it062 requires temporary remote access to the historian at PIT-B for a commissioning task. Approval and MFA enrolment required before access is granted.,M0935,Limit Access to Resource Over Network,mitigation,0.212
+TKT00124,access_request,Contractor supe107 requires temporary remote access to the CCTV recorder at TAILINGS-01 for a commissioning task. Approval and MFA enrolment required before access is granted.,M0935,Limit Access to Resource Over Network,mitigation,0.209
+TKT00140,security_incident,Vendor account ot051 logged into the OT jump host outside the approved maintenance window and opened the fleet management portal. No change ticket exists for this work.,AN1857,Analytic 1857,analytic,0.209
+TKT00060,instrumentation,"Sensor AST-0145 at PIT-A reporting values outside the calibrated range. Calibration certificate expired, technician assigned.",T1692.002,Reporting Message,technique,0.207
+TKT00203,instrumentation,"Sensor AST-0003 at PIT-A reporting values outside the calibrated range. Calibration certificate expired, technician assigned.",T1692.002,Reporting Message,technique,0.207
+TKT00266,instrumentation,"Sensor AST-0094 at HQ-WHK reporting values outside the calibrated range. Calibration certificate expired, technician assigned.",T1692.002,Reporting Message,technique,0.207
+TKT00206,instrumentation,"Sensor AST-0029 at HQ-WHK reporting values outside the calibrated range. Calibration certificate expired, technician assigned.",T1692.002,Reporting Message,technique,0.207
+TKT00190,security_incident,Repeated failed remote logins for account cont085 from 16.106.30.229 against the SCADA HMI on AST-0087. SOC asked to review; account temporarily disabled pending confirmation.,M0936,Account Use Policies,mitigation,0.206
+TKT00118,security_incident,Repeated failed remote logins for account main043 from 211.228.88.171 against the SCADA HMI on AST-0135. SOC asked to review; account temporarily disabled pending confirmation.,M0936,Account Use Policies,mitigation,0.206
+TKT00194,security_incident,Repeated failed remote logins for account mine101 from 78.169.242.66 against the SCADA HMI on AST-0102. SOC asked to review; account temporarily disabled pending confirmation.,M0936,Account Use Policies,mitigation,0.206
+TKT00235,mechanical,Crusher liner wear beyond limit at HQ-WHK. Production rate reduced until the liner is replaced.,M0935,Limit Access to Resource Over Network,mitigation,0.205
+TKT00172,mechanical,Crusher liner wear beyond limit at PIT-A. Production rate reduced until the liner is replaced.,M0935,Limit Access to Resource Over Network,mitigation,0.205
+TKT00079,mechanical,Crusher liner wear beyond limit at HQ-WHK. Production rate reduced until the liner is replaced.,M0935,Limit Access to Resource Over Network,mitigation,0.205
+TKT00051,mechanical,Crusher liner wear beyond limit at PIT-A. Production rate reduced until the liner is replaced.,M0935,Limit Access to Resource Over Network,mitigation,0.205
+TKT00260,mechanical,Crusher liner wear beyond limit at PIT-B. Production rate reduced until the liner is replaced.,M0935,Limit Access to Resource Over Network,mitigation,0.205
+TKT00283,mechanical,Crusher liner wear beyond limit at PIT-A. Production rate reduced until the liner is replaced.,M0935,Limit Access to Resource Over Network,mitigation,0.205
+TKT00189,mechanical,Crusher liner wear beyond limit at PIT-A. Production rate reduced until the liner is replaced.,M0935,Limit Access to Resource Over Network,mitigation,0.205
+TKT00034,mechanical,Crusher liner wear beyond limit at PIT-B. Production rate reduced until the liner is replaced.,M0935,Limit Access to Resource Over Network,mitigation,0.205
+TKT00087,mechanical,Crusher liner wear beyond limit at PIT-A. Production rate reduced until the liner is replaced.,M0935,Limit Access to Resource Over Network,mitigation,0.205
+TKT00131,access_request,Contractor main048 requires temporary remote access to the fleet management portal at CAMP-01 for a commissioning task. Approval and MFA enrolment required before access is granted.,M0935,Limit Access to Resource Over Network,mitigation,0.204
+TKT00316,security_incident,Vendor account main046 logged into the OT jump host outside the approved maintenance window and opened the historian. No change ticket exists for this work.,AN1857,Analytic 1857,analytic,0.202
+TKT00055,security_incident,Vendor account cont013 logged into the OT jump host outside the approved maintenance window and opened the historian. No change ticket exists for this work.,AN1857,Analytic 1857,analytic,0.202
+TKT00157,access_request,Contractor supe105 requires temporary remote access to the historian at TAILINGS-01 for a commissioning task. Approval and MFA enrolment required before access is granted.,M0935,Limit Access to Resource Over Network,mitigation,0.195
+TKT00300,access_request,Contractor mine102 requires temporary remote access to the historian at CAMP-01 for a commissioning task. Approval and MFA enrolment required before access is granted.,M0935,Limit Access to Resource Over Network,mitigation,0.195
+TKT00136,security_incident,Vendor account mine094 logged into the OT jump host outside the approved maintenance window and opened the SCADA HMI. No change ticket exists for this work.,AN1857,Analytic 1857,analytic,0.194
+TKT00253,security_incident,Repeated failed remote logins for account cont003 from 182.30.242.22 against the SCADA HMI on AST-0180. SOC asked to review; account temporarily disabled pending confirmation.,M0936,Account Use Policies,mitigation,0.193
+TKT00233,security_incident,Vendor account cont081 logged into the OT jump host outside the approved maintenance window and opened the maintenance portal. No change ticket exists for this work.,AN1857,Analytic 1857,analytic,0.192
+TKT00245,security_incident,Vendor account it067 logged into the OT jump host outside the approved maintenance window and opened the maintenance portal. No change ticket exists for this work.,AN1857,Analytic 1857,analytic,0.192
+TKT00195,access_request,Offboarding: disable account supe108 and revoke remote access tokens issued for PIT-B.,M0935,Limit Access to Resource Over Network,mitigation,0.191
+TKT00174,access_request,Offboarding: disable account main028 and revoke remote access tokens issued for PIT-A.,M0935,Limit Access to Resource Over Network,mitigation,0.191
+TKT00128,access_request,Offboarding: disable account ot052 and revoke remote access tokens issued for HQ-WHK.,M0935,Limit Access to Resource Over Network,mitigation,0.191
+TKT00236,access_request,Offboarding: disable account main027 and revoke remote access tokens issued for HQ-WHK.,M0935,Limit Access to Resource Over Network,mitigation,0.191
+TKT00132,security_incident,Repeated failed remote logins for account it064 from 112.238.161.97 against the PLC engineering workstation on AST-0120. SOC asked to review; account temporarily disabled pending confirmation.,M0936,Account Use Policies,mitigation,0.191
+TKT00250,access_request,Offboarding: disable account cont089 and revoke remote access tokens issued for PIT-B.,M0935,Limit Access to Resource Over Network,mitigation,0.191
+TKT00274,access_request,Offboarding: disable account cont010 and revoke remote access tokens issued for HQ-WHK.,M0935,Limit Access to Resource Over Network,mitigation,0.191
+TKT00312,access_request,Offboarding: disable account cont017 and revoke remote access tokens issued for PIT-B.,M0935,Limit Access to Resource Over Network,mitigation,0.191
+TKT00227,access_request,Contractor cont014 requires temporary remote access to the SCADA HMI at PORT-WVB for a commissioning task. Approval and MFA enrolment required before access is granted.,M0935,Limit Access to Resource Over Network,mitigation,0.188
+TKT00262,network_fault,Firewall rule change blocked HTTPS polling to AST-0099; control room lost trend data until the rule was reverted.,S0607,KillDisk,malware,0.187
+TKT00244,network_fault,Firewall rule change blocked HTTPS polling to AST-0162; control room lost trend data until the rule was reverted.,S0607,KillDisk,malware,0.187
+TKT00005,network_fault,Firewall rule change blocked HTTPS polling to AST-0118; control room lost trend data until the rule was reverted.,S0607,KillDisk,malware,0.187
+TKT00263,network_fault,Firewall rule change blocked HTTPS polling to AST-0070; control room lost trend data until the rule was reverted.,S0607,KillDisk,malware,0.187
+TKT00294,mechanical,Conveyor drive bearing at PIT-B running hot. Vibration readings above the alarm threshold; replacement scheduled for the next shutdown.,DC0005,Scheduled Job Metadata,data_component,0.185
+TKT00320,mechanical,Conveyor drive bearing at PIT-A running hot. Vibration readings above the alarm threshold; replacement scheduled for the next shutdown.,DC0005,Scheduled Job Metadata,data_component,0.185
+TKT00297,mechanical,Conveyor drive bearing at PIT-A running hot. Vibration readings above the alarm threshold; replacement scheduled for the next shutdown.,DC0005,Scheduled Job Metadata,data_component,0.185
+TKT00306,mechanical,Conveyor drive bearing at HQ-WHK running hot. Vibration readings above the alarm threshold; replacement scheduled for the next shutdown.,DC0005,Scheduled Job Metadata,data_component,0.185
+TKT00193,mechanical,Conveyor drive bearing at HQ-WHK running hot. Vibration readings above the alarm threshold; replacement scheduled for the next shutdown.,DC0005,Scheduled Job Metadata,data_component,0.185
+TKT00307,mechanical,Conveyor drive bearing at HQ-WHK running hot. Vibration readings above the alarm threshold; replacement scheduled for the next shutdown.,DC0005,Scheduled Job Metadata,data_component,0.185
+TKT00107,access_request,Contractor mine102 requires temporary remote access to the SCADA HMI at CAMP-01 for a commissioning task. Approval and MFA enrolment required before access is granted.,M0935,Limit Access to Resource Over Network,mitigation,0.185
+TKT00143,network_fault,DHCP exhaustion at PORT-WVB; new devices cannot obtain an address. Affected range includes 148.0.235.72.,M0807,Network Allowlists,mitigation,0.183
+TKT00234,security_incident,Vendor account main040 logged into the OT jump host outside the approved maintenance window and opened the PLC engineering workstation. No change ticket exists for this work.,AN1857,Analytic 1857,analytic,0.182
+TKT00028,security_incident,Vendor account cont026 logged into the OT jump host outside the approved maintenance window and opened the PLC engineering workstation. No change ticket exists for this work.,AN1857,Analytic 1857,analytic,0.182
+TKT00207,security_incident,Vendor account main047 logged into the OT jump host outside the approved maintenance window and opened the PLC engineering workstation. No change ticket exists for this work.,AN1857,Analytic 1857,analytic,0.182
+TKT00186,security_incident,Unusual DNP3 traffic observed from AST-0126 at PORT-WVB towards 51.254.174.183. Volume far above the normal baseline for this device. Suspected scanning activity.,T0885,Commonly Used Port,technique,0.179
+TKT00120,security_incident,Unusual DNP3 traffic observed from AST-0135 at PORT-WVB towards 153.38.101.96. Volume far above the normal baseline for this device. Suspected scanning activity.,T0885,Commonly Used Port,technique,0.179
+TKT00154,access_request,Offboarding: disable account cont017 and revoke remote access tokens issued for PORT-WVB.,M0935,Limit Access to Resource Over Network,mitigation,0.177
+TKT00125,mechanical,Crusher liner wear beyond limit at PORT-WVB. Production rate reduced until the liner is replaced.,M0935,Limit Access to Resource Over Network,mitigation,0.175
+TKT00198,mechanical,Crusher liner wear beyond limit at PORT-WVB. Production rate reduced until the liner is replaced.,M0935,Limit Access to Resource Over Network,mitigation,0.175
+TKT00053,access_request,Contractor main049 requires temporary remote access to the PLC engineering workstation at PORT-WVB for a commissioning task. Approval and MFA enrolment required before access is granted.,M0935,Limit Access to Resource Over Network,mitigation,0.174
+TKT00200,access_request,Offboarding: disable account cont013 and revoke remote access tokens issued for TAILINGS-01.,M0935,Limit Access to Resource Over Network,mitigation,0.172
+TKT00228,access_request,Offboarding: disable account it067 and revoke remote access tokens issued for TAILINGS-01.,M0935,Limit Access to Resource Over Network,mitigation,0.172
+TKT00071,access_request,Offboarding: disable account mine102 and revoke remote access tokens issued for WORKSHOP-01.,M0935,Limit Access to Resource Over Network,mitigation,0.172
+TKT00264,access_request,Offboarding: disable account cont081 and revoke remote access tokens issued for TAILINGS-01.,M0935,Limit Access to Resource Over Network,mitigation,0.172
+TKT00178,access_request,Offboarding: disable account supe114 and revoke remote access tokens issued for CAMP-01.,M0935,Limit Access to Resource Over Network,mitigation,0.172
+TKT00106,access_request,Offboarding: disable account it061 and revoke remote access tokens issued for CAMP-01.,M0935,Limit Access to Resource Over Network,mitigation,0.172
+TKT00009,access_request,Offboarding: disable account main049 and revoke remote access tokens issued for WORKSHOP-01.,M0935,Limit Access to Resource Over Network,mitigation,0.172
+TKT00121,access_request,Offboarding: disable account cont082 and revoke remote access tokens issued for TAILINGS-01.,M0935,Limit Access to Resource Over Network,mitigation,0.172
+TKT00278,instrumentation,"Sensor AST-0114 at PORT-WVB reporting values outside the calibrated range. Calibration certificate expired, technician assigned.",T1692.002,Reporting Message,technique,0.171
+TKT00129,security_incident,Possible credential sharing: the same account it063 authenticated from 188.85.212.235 and a second address within a few minutes. Access review requested for PIT-A.,T0859,Valid Accounts,technique,0.171
+TKT00066,security_incident,Possible credential sharing: the same account supe113 authenticated from 59.49.201.143 and a second address within a few minutes. Access review requested for PIT-B.,T0859,Valid Accounts,technique,0.171
+TKT00152,instrumentation,"Sensor AST-0182 at PORT-WVB reporting values outside the calibrated range. Calibration certificate expired, technician assigned.",T1692.002,Reporting Message,technique,0.171
+TKT00226,security_incident,Possible credential sharing: the same account cont024 authenticated from 156.235.207.197 and a second address within a few minutes. Access review requested for PIT-B.,T0859,Valid Accounts,technique,0.171
+TKT00175,instrumentation,"Sensor AST-0167 at PORT-WVB reporting values outside the calibrated range. Calibration certificate expired, technician assigned.",T1692.002,Reporting Message,technique,0.171
+TKT00015,security_incident,Possible credential sharing: the same account cont081 authenticated from 12.221.179.177 and a second address within a few minutes. Access review requested for PIT-A.,T0859,Valid Accounts,technique,0.171
+TKT00134,mechanical,Conveyor drive bearing at PORT-WVB running hot. Vibration readings above the alarm threshold; replacement scheduled for the next shutdown.,DC0005,Scheduled Job Metadata,data_component,0.168
+TKT00115,access_request,Account main049 requests privilege elevation on AST-0166 to complete firmware maintenance.,M0936,Account Use Policies,mitigation,0.168
+TKT00162,access_request,Account it060 requests privilege elevation on AST-0054 to complete firmware maintenance.,M0936,Account Use Policies,mitigation,0.168
+TKT00246,access_request,Account main038 requests privilege elevation on AST-0108 to complete firmware maintenance.,M0936,Account Use Policies,mitigation,0.168
+TKT00102,access_request,Account cont086 requests privilege elevation on AST-0161 to complete firmware maintenance.,M0936,Account Use Policies,mitigation,0.168
+TKT00050,access_request,Account mine095 requests privilege elevation on AST-0019 to complete firmware maintenance.,M0936,Account Use Policies,mitigation,0.168
+TKT00003,access_request,Account vend077 requests privilege elevation on AST-0083 to complete firmware maintenance.,M0936,Account Use Policies,mitigation,0.168
+TKT00084,access_request,Account main046 requests privilege elevation on AST-0147 to complete firmware maintenance.,M0936,Account Use Policies,mitigation,0.168
+TKT00217,access_request,Account mine091 requests privilege elevation on AST-0145 to complete firmware maintenance.,M0936,Account Use Policies,mitigation,0.168
+TKT00199,access_request,Account main032 requests privilege elevation on AST-0182 to complete firmware maintenance.,M0936,Account Use Policies,mitigation,0.168
+TKT00222,access_request,Account mine095 requests privilege elevation on AST-0112 to complete firmware maintenance.,M0936,Account Use Policies,mitigation,0.168
+TKT00275,mechanical,Conveyor drive bearing at PORT-WVB running hot. Vibration readings above the alarm threshold; replacement scheduled for the next shutdown.,DC0005,Scheduled Job Metadata,data_component,0.168
+TKT00020,access_request,Account cont017 requests privilege elevation on AST-0172 to complete firmware maintenance.,M0936,Account Use Policies,mitigation,0.168
+TKT00018,access_request,Account vend071 requests privilege elevation on AST-0191 to complete firmware maintenance.,M0936,Account Use Policies,mitigation,0.168
+TKT00311,access_request,Account cont006 requests privilege elevation on AST-0141 to complete firmware maintenance.,M0936,Account Use Policies,mitigation,0.168
+TKT00214,access_request,Account mine099 requests privilege elevation on AST-0015 to complete firmware maintenance.,M0936,Account Use Policies,mitigation,0.168
+TKT00188,access_request,Account mine093 requests privilege elevation on AST-0022 to complete firmware maintenance.,M0936,Account Use Policies,mitigation,0.168
+TKT00295,access_request,Account it068 requests privilege elevation on AST-0151 to complete firmware maintenance.,M0936,Account Use Policies,mitigation,0.168
+TKT00019,access_request,Account cont021 requests privilege elevation on AST-0125 to complete firmware maintenance.,M0936,Account Use Policies,mitigation,0.168
+TKT00146,mechanical,Crusher liner wear beyond limit at TAILINGS-01. Production rate reduced until the liner is replaced.,M0935,Limit Access to Resource Over Network,mitigation,0.166
+TKT00064,mechanical,Crusher liner wear beyond limit at WORKSHOP-01. Production rate reduced until the liner is replaced.,M0935,Limit Access to Resource Over Network,mitigation,0.166
+TKT00302,mechanical,Crusher liner wear beyond limit at CAMP-01. Production rate reduced until the liner is replaced.,M0935,Limit Access to Resource Over Network,mitigation,0.166
+TKT00261,mechanical,Crusher liner wear beyond limit at TAILINGS-01. Production rate reduced until the liner is replaced.,M0935,Limit Access to Resource Over Network,mitigation,0.166
+TKT00293,mechanical,Crusher liner wear beyond limit at TAILINGS-01. Production rate reduced until the liner is replaced.,M0935,Limit Access to Resource Over Network,mitigation,0.166
+TKT00083,mechanical,Crusher liner wear beyond limit at WORKSHOP-01. Production rate reduced until the liner is replaced.,M0935,Limit Access to Resource Over Network,mitigation,0.166
+TKT00282,mechanical,Conveyor drive bearing at TAILINGS-01 running hot. Vibration readings above the alarm threshold; replacement scheduled for the next shutdown.,DC0005,Scheduled Job Metadata,data_component,0.162
+TKT00265,instrumentation,"Sensor AST-0048 at WORKSHOP-01 reporting values outside the calibrated range. Calibration certificate expired, technician assigned.",T1692.002,Reporting Message,technique,0.162
+TKT00116,mechanical,Conveyor drive bearing at CAMP-01 running hot. Vibration readings above the alarm threshold; replacement scheduled for the next shutdown.,DC0005,Scheduled Job Metadata,data_component,0.162
+TKT00288,mechanical,Conveyor drive bearing at TAILINGS-01 running hot. Vibration readings above the alarm threshold; replacement scheduled for the next shutdown.,DC0005,Scheduled Job Metadata,data_component,0.162
+TKT00296,mechanical,Conveyor drive bearing at CAMP-01 running hot. Vibration readings above the alarm threshold; replacement scheduled for the next shutdown.,DC0005,Scheduled Job Metadata,data_component,0.162
+TKT00171,mechanical,Conveyor drive bearing at WORKSHOP-01 running hot. Vibration readings above the alarm threshold; replacement scheduled for the next shutdown.,DC0005,Scheduled Job Metadata,data_component,0.162
+TKT00059,instrumentation,"Sensor AST-0110 at CAMP-01 reporting values outside the calibrated range. Calibration certificate expired, technician assigned.",T1692.002,Reporting Message,technique,0.162
+TKT00123,mechanical,Conveyor drive bearing at WORKSHOP-01 running hot. Vibration readings above the alarm threshold; replacement scheduled for the next shutdown.,DC0005,Scheduled Job Metadata,data_component,0.162
+TKT00317,instrumentation,"Sensor AST-0081 at TAILINGS-01 reporting values outside the calibrated range. Calibration certificate expired, technician assigned.",T1692.002,Reporting Message,technique,0.162
+TKT00196,instrumentation,"Sensor AST-0111 at CAMP-01 reporting values outside the calibrated range. Calibration certificate expired, technician assigned.",T1692.002,Reporting Message,technique,0.162
+TKT00213,mechanical,Conveyor drive bearing at WORKSHOP-01 running hot. Vibration readings above the alarm threshold; replacement scheduled for the next shutdown.,DC0005,Scheduled Job Metadata,data_component,0.162
+TKT00318,instrumentation,"Sensor AST-0035 at TAILINGS-01 reporting values outside the calibrated range. Calibration certificate expired, technician assigned.",T1692.002,Reporting Message,technique,0.162
+TKT00075,mechanical,Conveyor drive bearing at WORKSHOP-01 running hot. Vibration readings above the alarm threshold; replacement scheduled for the next shutdown.,DC0005,Scheduled Job Metadata,data_component,0.162
+TKT00281,instrumentation,"Sensor AST-0188 at CAMP-01 reporting values outside the calibrated range. Calibration certificate expired, technician assigned.",T1692.002,Reporting Message,technique,0.162
+TKT00161,instrumentation,"Sensor AST-0135 at CAMP-01 reporting values outside the calibrated range. Calibration certificate expired, technician assigned.",T1692.002,Reporting Message,technique,0.162
+TKT00144,instrumentation,"Sensor AST-0095 at TAILINGS-01 reporting values outside the calibrated range. Calibration certificate expired, technician assigned.",T1692.002,Reporting Message,technique,0.162
+TKT00038,network_fault,Intermittent link loss between the PIT-B radio bridge and the core switch. RDP sessions from AST-0051 time out during the fault window.,A0012,Jump Host,asset,0.161
+TKT00089,instrumentation,"Sensor AST-0108 at PLANT-01 reporting values outside the calibrated range. Calibration certificate expired, technician assigned.",S0608,Conficker,malware,0.161
+TKT00304,access_request,Offboarding: disable account cont086 and revoke remote access tokens issued for PLANT-01.,M0935,Limit Access to Resource Over Network,mitigation,0.16
+TKT00081,access_request,Offboarding: disable account main044 and revoke remote access tokens issued for PLANT-01.,M0935,Limit Access to Resource Over Network,mitigation,0.16
+TKT00279,network_fault,Firewall rule change blocked SNMP polling to AST-0032; control room lost trend data until the rule was reverted.,S0607,KillDisk,malware,0.157
+TKT00074,network_fault,Firewall rule change blocked SNMP polling to AST-0023; control room lost trend data until the rule was reverted.,S0607,KillDisk,malware,0.157
+TKT00276,network_fault,Firewall rule change blocked MQTT polling to AST-0065; control room lost trend data until the rule was reverted.,S0607,KillDisk,malware,0.157
+TKT00148,network_fault,DHCP exhaustion at PIT-B; new devices cannot obtain an address. Affected range includes 137.163.5.41.,DC0107,Process History/Live Data,data_component,0.155
+TKT00062,network_fault,DHCP exhaustion at HQ-WHK; new devices cannot obtain an address. Affected range includes 105.162.156.156.,DC0107,Process History/Live Data,data_component,0.155
+TKT00259,mechanical,Pump seal failure at the PLANT-01 dewatering station. Standby pump started automatically.,S0608,Conficker,malware,0.155
+TKT00061,network_fault,DHCP exhaustion at PIT-B; new devices cannot obtain an address. Affected range includes 69.197.221.12.,DC0107,Process History/Live Data,data_component,0.155
+TKT00082,network_fault,DHCP exhaustion at HQ-WHK; new devices cannot obtain an address. Affected range includes 210.92.96.235.,DC0107,Process History/Live Data,data_component,0.155
+TKT00177,network_fault,DHCP exhaustion at PIT-A; new devices cannot obtain an address. Affected range includes 12.223.75.118.,DC0107,Process History/Live Data,data_component,0.155
+TKT00241,network_fault,DHCP exhaustion at PIT-A; new devices cannot obtain an address. Affected range includes 134.181.211.169.,DC0107,Process History/Live Data,data_component,0.155
+TKT00314,mechanical,Pump seal failure at the PLANT-01 dewatering station. Standby pump started automatically.,S0608,Conficker,malware,0.155
+TKT00090,mechanical,Pump seal failure at the PLANT-01 dewatering station. Standby pump started automatically.,S0608,Conficker,malware,0.155
+TKT00197,mechanical,Crusher liner wear beyond limit at PLANT-01. Production rate reduced until the liner is replaced.,S0608,Conficker,malware,0.154
+TKT00097,network_fault,Intermittent link loss between the PORT-WVB radio bridge and the core switch. HTTPS sessions from AST-0050 time out during the fault window.,T0846.001,Port Scan,technique,0.153
+TKT00103,network_fault,Intermittent link loss between the PIT-A radio bridge and the core switch. MQTT sessions from AST-0006 time out during the fault window.,DC0001,Scheduled Job Creation,data_component,0.153
+TKT00024,security_incident,Possible credential sharing: the same account it059 authenticated from 58.213.148.79 and a second address within a few minutes. Access review requested for CAMP-01.,T0859,Valid Accounts,technique,0.152
+TKT00147,security_incident,Possible credential sharing: the same account supe109 authenticated from 210.130.243.104 and a second address within a few minutes. Access review requested for CAMP-01.,T0859,Valid Accounts,technique,0.152
+TKT00160,security_incident,Possible credential sharing: the same account ot053 authenticated from 71.240.139.15 and a second address within a few minutes. Access review requested for CAMP-01.,T0859,Valid Accounts,technique,0.152
+TKT00270,security_incident,Possible credential sharing: the same account mine090 authenticated from 73.77.109.193 and a second address within a few minutes. Access review requested for TAILINGS-01.,T0859,Valid Accounts,technique,0.152
+TKT00098,mechanical,Pump seal failure at the PIT-B dewatering station. Standby pump started automatically.,M0812,Safety Instrumented Systems,mitigation,0.151
+TKT00242,mechanical,Pump seal failure at the PIT-A dewatering station. Standby pump started automatically.,M0812,Safety Instrumented Systems,mitigation,0.151
+TKT00026,mechanical,Pump seal failure at the HQ-WHK dewatering station. Standby pump started automatically.,M0812,Safety Instrumented Systems,mitigation,0.151
+TKT00044,mechanical,Pump seal failure at the PIT-A dewatering station. Standby pump started automatically.,M0812,Safety Instrumented Systems,mitigation,0.151
+TKT00299,mechanical,Pump seal failure at the PIT-B dewatering station. Standby pump started automatically.,M0812,Safety Instrumented Systems,mitigation,0.151
+TKT00112,mechanical,Pump seal failure at the PIT-B dewatering station. Standby pump started automatically.,M0812,Safety Instrumented Systems,mitigation,0.151
+TKT00056,security_incident,Unusual SNMP traffic observed from AST-0157 at PIT-A towards 159.119.162.245. Volume far above the normal baseline for this device. Suspected scanning activity.,M0916,Vulnerability Scanning,mitigation,0.15
+TKT00070,security_incident,Unusual MQTT traffic observed from AST-0179 at HQ-WHK towards 183.118.231.202. Volume far above the normal baseline for this device. Suspected scanning activity.,M0916,Vulnerability Scanning,mitigation,0.15
+TKT00010,security_incident,Unusual SNMP traffic observed from AST-0011 at HQ-WHK towards 196.6.242.219. Volume far above the normal baseline for this device. Suspected scanning activity.,M0916,Vulnerability Scanning,mitigation,0.15
+TKT00232,mechanical,Conveyor drive bearing at PLANT-01 running hot. Vibration readings above the alarm threshold; replacement scheduled for the next shutdown.,DC0005,Scheduled Job Metadata,data_component,0.149
+TKT00305,mechanical,Conveyor drive bearing at PLANT-01 running hot. Vibration readings above the alarm threshold; replacement scheduled for the next shutdown.,DC0005,Scheduled Job Metadata,data_component,0.149
+TKT00138,access_request,Request to open DNP3 from the vendor network to AST-0145 for diagnostics. Security review required before the rule is added.,T0885,Commonly Used Port,technique,0.148
+TKT00014,mechanical,Pump seal failure at the PORT-WVB dewatering station. Standby pump started automatically.,T0846.001,Port Scan,technique,0.144
+TKT00181,mechanical,Pump seal failure at the PORT-WVB dewatering station. Standby pump started automatically.,T0846.001,Port Scan,technique,0.144
+TKT00095,security_incident,Unusual RDP traffic observed from AST-0087 at PIT-A towards 167.43.9.72. Volume far above the normal baseline for this device. Suspected scanning activity.,M0916,Vulnerability Scanning,mitigation,0.143
+TKT00135,security_incident,Possible credential sharing: the same account cont018 authenticated from 74.120.21.109 and a second address within a few minutes. Access review requested for PLANT-01.,T0859,Valid Accounts,technique,0.141
+TKT00204,network_fault,Intermittent link loss between the CAMP-01 radio bridge and the core switch. RDP sessions from AST-0115 time out during the fault window.,A0012,Jump Host,asset,0.141
+TKT00093,security_incident,Possible credential sharing: the same account mine090 authenticated from 192.91.173.195 and a second address within a few minutes. Access review requested for PLANT-01.,T0859,Valid Accounts,technique,0.141
+TKT00109,security_incident,Possible credential sharing: the same account vend073 authenticated from 66.229.6.42 and a second address within a few minutes. Access review requested for PLANT-01.,T0859,Valid Accounts,technique,0.141
+TKT00042,network_fault,DHCP exhaustion at TAILINGS-01; new devices cannot obtain an address. Affected range includes 14.155.135.171.,DC0107,Process History/Live Data,data_component,0.14
+TKT00111,security_incident,Unusual SNMP traffic observed from AST-0192 at PIT-A towards 159.25.80.120. Volume far above the normal baseline for this device. Suspected scanning activity.,M0916,Vulnerability Scanning,mitigation,0.14
+TKT00114,network_fault,DHCP exhaustion at CAMP-01; new devices cannot obtain an address. Affected range includes 192.95.17.145.,DC0107,Process History/Live Data,data_component,0.14
+TKT00167,network_fault,DHCP exhaustion at WORKSHOP-01; new devices cannot obtain an address. Affected range includes 201.222.248.218.,DC0107,Process History/Live Data,data_component,0.14
+TKT00269,network_fault,DHCP exhaustion at CAMP-01; new devices cannot obtain an address. Affected range includes 28.84.225.118.,DC0107,Process History/Live Data,data_component,0.14
+TKT00008,network_fault,DHCP exhaustion at CAMP-01; new devices cannot obtain an address. Affected range includes 57.31.202.46.,DC0107,Process History/Live Data,data_component,0.14
+TKT00210,network_fault,Firewall rule change blocked RDP polling to AST-0076; control room lost trend data until the rule was reverted.,S0607,KillDisk,malware,0.139
+TKT00029,network_fault,Firewall rule change blocked RDP polling to AST-0131; control room lost trend data until the rule was reverted.,S0607,KillDisk,malware,0.139
+TKT00237,network_fault,Firewall rule change blocked RDP polling to AST-0154; control room lost trend data until the rule was reverted.,S0607,KillDisk,malware,0.139
+TKT00137,network_fault,Firewall rule change blocked RDP polling to AST-0094; control room lost trend data until the rule was reverted.,S0607,KillDisk,malware,0.139
+TKT00223,network_fault,Intermittent link loss between the PORT-WVB radio bridge and the core switch. SNMP sessions from AST-0182 time out during the fault window.,DC0001,Scheduled Job Creation,data_component,0.136
+TKT00185,network_fault,Intermittent link loss between the PORT-WVB radio bridge and the core switch. SNMP sessions from AST-0017 time out during the fault window.,DC0001,Scheduled Job Creation,data_component,0.136
+TKT00007,network_fault,Firewall rule change blocked DNP3 polling to AST-0123; control room lost trend data until the rule was reverted.,S0607,KillDisk,malware,0.135
+TKT00057,network_fault,Firewall rule change blocked DNP3 polling to AST-0130; control room lost trend data until the rule was reverted.,S0607,KillDisk,malware,0.135
+TKT00173,network_fault,Firewall rule change blocked DNP3 polling to AST-0107; control room lost trend data until the rule was reverted.,S0607,KillDisk,malware,0.135
+TKT00141,network_fault,Firewall rule change blocked DNP3 polling to AST-0155; control room lost trend data until the rule was reverted.,S0607,KillDisk,malware,0.135
+TKT00187,security_incident,Unusual RDP traffic observed from AST-0183 at CAMP-01 towards 89.174.155.128. Volume far above the normal baseline for this device. Suspected scanning activity.,M0916,Vulnerability Scanning,mitigation,0.134
+TKT00248,security_incident,Unusual RDP traffic observed from AST-0088 at CAMP-01 towards 19.223.134.21. Volume far above the normal baseline for this device. Suspected scanning activity.,M0916,Vulnerability Scanning,mitigation,0.134
+TKT00110,security_incident,Unusual RDP traffic observed from AST-0176 at TAILINGS-01 towards 53.109.123.168. Volume far above the normal baseline for this device. Suspected scanning activity.,M0916,Vulnerability Scanning,mitigation,0.134
+TKT00180,network_fault,Intermittent link loss between the PIT-B radio bridge and the core switch. DNP3 sessions from AST-0124 time out during the fault window.,DC0001,Scheduled Job Creation,data_component,0.133
+TKT00166,network_fault,Intermittent link loss between the PIT-B radio bridge and the core switch. DNP3 sessions from AST-0193 time out during the fault window.,DC0001,Scheduled Job Creation,data_component,0.133
+TKT00021,security_incident,Unusual SSH traffic observed from AST-0130 at CAMP-01 towards 30.166.48.145. Volume far above the normal baseline for this device. Suspected scanning activity.,M0916,Vulnerability Scanning,mitigation,0.132
+TKT00004,security_incident,Unusual MQTT traffic observed from AST-0138 at PLANT-01 towards 106.185.37.199. Volume far above the normal baseline for this device. Suspected scanning activity.,M0916,Vulnerability Scanning,mitigation,0.132
+TKT00257,access_request,Request to open RDP from the vendor network to AST-0099 for diagnostics. Security review required before the rule is added.,M0935,Limit Access to Resource Over Network,mitigation,0.132
+TKT00037,access_request,Request to open RDP from the vendor network to AST-0089 for diagnostics. Security review required before the rule is added.,M0935,Limit Access to Resource Over Network,mitigation,0.132
+TKT00220,access_request,Request to open RDP from the vendor network to AST-0123 for diagnostics. Security review required before the rule is added.,M0935,Limit Access to Resource Over Network,mitigation,0.132
+TKT00251,network_fault,Intermittent link loss between the PLANT-01 radio bridge and the core switch. RDP sessions from AST-0062 time out during the fault window.,S0608,Conficker,malware,0.131
+TKT00100,network_fault,Intermittent link loss between the TAILINGS-01 radio bridge and the core switch. SNMP sessions from AST-0148 time out during the fault window.,DC0001,Scheduled Job Creation,data_component,0.131
+TKT00208,network_fault,Intermittent link loss between the TAILINGS-01 radio bridge and the core switch. MQTT sessions from AST-0077 time out during the fault window.,DC0001,Scheduled Job Creation,data_component,0.131
+TKT00309,network_fault,DHCP exhaustion at PLANT-01; new devices cannot obtain an address. Affected range includes 101.116.197.93.,DC0107,Process History/Live Data,data_component,0.131
+TKT00104,security_incident,Unusual HTTPS traffic observed from AST-0146 at PLANT-01 towards 189.215.16.230. Volume far above the normal baseline for this device. Suspected scanning activity.,M0916,Vulnerability Scanning,mitigation,0.131
+TKT00271,network_fault,DHCP exhaustion at PLANT-01; new devices cannot obtain an address. Affected range includes 98.149.191.217.,DC0107,Process History/Live Data,data_component,0.131
+TKT00165,network_fault,Intermittent link loss between the PLANT-01 radio bridge and the core switch. DNP3 sessions from AST-0158 time out during the fault window.,S0608,Conficker,malware,0.129
+TKT00285,network_fault,Intermittent link loss between the PLANT-01 radio bridge and the core switch. DNP3 sessions from AST-0022 time out during the fault window.,S0608,Conficker,malware,0.129
+TKT00058,network_fault,Intermittent link loss between the TAILINGS-01 radio bridge and the core switch. HTTPS sessions from AST-0115 time out during the fault window.,DC0001,Scheduled Job Creation,data_component,0.128
+TKT00032,mechanical,"Haul truck hydraulic leak reported by operator at PLANT-01. Unit removed from service, no network impact to AST-0091.",S0608,Conficker,malware,0.125
+TKT00284,access_request,Request to open SSH from the vendor network to AST-0079 for diagnostics. Security review required before the rule is added.,AN1936,Analytic 1936,analytic,0.125
+TKT00077,access_request,Request to open SSH from the vendor network to AST-0007 for diagnostics. Security review required before the rule is added.,AN1936,Analytic 1936,analytic,0.125
+TKT00151,mechanical,"Haul truck hydraulic leak reported by operator at PLANT-01. Unit removed from service, no network impact to AST-0131.",S0608,Conficker,malware,0.125
+TKT00308,mechanical,"Haul truck hydraulic leak reported by operator at PLANT-01. Unit removed from service, no network impact to AST-0180.",S0608,Conficker,malware,0.125
+TKT00150,mechanical,"Haul truck hydraulic leak reported by operator at HQ-WHK. Unit removed from service, no network impact to AST-0105.",DC0041,Service Metadata,data_component,0.122
+TKT00047,mechanical,"Haul truck hydraulic leak reported by operator at PIT-B. Unit removed from service, no network impact to AST-0105.",DC0041,Service Metadata,data_component,0.122
+TKT00022,mechanical,"Haul truck hydraulic leak reported by operator at PIT-B. Unit removed from service, no network impact to AST-0012.",DC0041,Service Metadata,data_component,0.122
+TKT00122,mechanical,"Haul truck hydraulic leak reported by operator at PIT-B. Unit removed from service, no network impact to AST-0019.",DC0041,Service Metadata,data_component,0.122
+TKT00133,mechanical,Pump seal failure at the TAILINGS-01 dewatering station. Standby pump started automatically.,M0812,Safety Instrumented Systems,mitigation,0.122
+TKT00078,mechanical,Pump seal failure at the WORKSHOP-01 dewatering station. Standby pump started automatically.,M0812,Safety Instrumented Systems,mitigation,0.122
+TKT00105,mechanical,"Haul truck hydraulic leak reported by operator at HQ-WHK. Unit removed from service, no network impact to AST-0031.",DC0041,Service Metadata,data_component,0.122
+TKT00247,mechanical,Pump seal failure at the WORKSHOP-01 dewatering station. Standby pump started automatically.,M0812,Safety Instrumented Systems,mitigation,0.122
+TKT00045,mechanical,"Haul truck hydraulic leak reported by operator at HQ-WHK. Unit removed from service, no network impact to AST-0170.",DC0041,Service Metadata,data_component,0.122
+TKT00290,mechanical,Pump seal failure at the CAMP-01 dewatering station. Standby pump started automatically.,M0812,Safety Instrumented Systems,mitigation,0.122
+TKT00031,mechanical,Pump seal failure at the CAMP-01 dewatering station. Standby pump started automatically.,M0812,Safety Instrumented Systems,mitigation,0.122
+TKT00219,mechanical,Pump seal failure at the WORKSHOP-01 dewatering station. Standby pump started automatically.,M0812,Safety Instrumented Systems,mitigation,0.122
+TKT00033,mechanical,"Haul truck hydraulic leak reported by operator at PIT-B. Unit removed from service, no network impact to AST-0025.",DC0041,Service Metadata,data_component,0.122
+TKT00170,mechanical,Pump seal failure at the WORKSHOP-01 dewatering station. Standby pump started automatically.,M0812,Safety Instrumented Systems,mitigation,0.122
+TKT00313,mechanical,Pump seal failure at the CAMP-01 dewatering station. Standby pump started automatically.,M0812,Safety Instrumented Systems,mitigation,0.122
+TKT00179,network_fault,Intermittent link loss between the PORT-WVB radio bridge and the core switch. SSH sessions from AST-0141 time out during the fault window.,DC0001,Scheduled Job Creation,data_component,0.121
+TKT00291,access_request,Request to open HTTPS from the vendor network to AST-0022 for diagnostics. Security review required before the rule is added.,AN1858,Analytic 1858,analytic,0.112
+TKT00025,access_request,Request to open HTTPS from the vendor network to AST-0176 for diagnostics. Security review required before the rule is added.,AN1858,Analytic 1858,analytic,0.112
+TKT00268,mechanical,"Haul truck hydraulic leak reported by operator at TAILINGS-01. Unit removed from service, no network impact to AST-0105.",DC0041,Service Metadata,data_component,0.108
+TKT00142,mechanical,"Haul truck hydraulic leak reported by operator at TAILINGS-01. Unit removed from service, no network impact to AST-0061.",DC0041,Service Metadata,data_component,0.108
+TKT00149,mechanical,"Haul truck hydraulic leak reported by operator at WORKSHOP-01. Unit removed from service, no network impact to AST-0037.",DC0041,Service Metadata,data_component,0.108
+TKT00119,mechanical,"Haul truck hydraulic leak reported by operator at CAMP-01. Unit removed from service, no network impact to AST-0168.",DC0041,Service Metadata,data_component,0.108
+TKT00065,mechanical,"Haul truck hydraulic leak reported by operator at TAILINGS-01. Unit removed from service, no network impact to AST-0028.",DC0041,Service Metadata,data_component,0.108
+TKT00267,mechanical,"Haul truck hydraulic leak reported by operator at CAMP-01. Unit removed from service, no network impact to AST-0014.",DC0041,Service Metadata,data_component,0.108
+TKT00080,access_request,Request to open SNMP from the vendor network to AST-0149 for diagnostics. Security review required before the rule is added.,AN1858,Analytic 1858,analytic,0.101
+TKT00277,access_request,Request to open SNMP from the vendor network to AST-0100 for diagnostics. Security review required before the rule is added.,AN1858,Analytic 1858,analytic,0.101
+TKT00101,access_request,Request to open SNMP from the vendor network to AST-0042 for diagnostics. Security review required before the rule is added.,AN1858,Analytic 1858,analytic,0.101
+TKT00225,access_request,Request to open MQTT from the vendor network to AST-0045 for diagnostics. Security review required before the rule is added.,AN1858,Analytic 1858,analytic,0.101
+TKT00108,instrumentation,Modbus register map on AST-0035 does not match the documented configuration after a vendor visit.,T0849,Masquerading,technique,0.098
+TKT00130,instrumentation,Modbus register map on AST-0058 does not match the documented configuration after a vendor visit.,T0849,Masquerading,technique,0.098
+TKT00073,instrumentation,Modbus register map on AST-0092 does not match the documented configuration after a vendor visit.,T0849,Masquerading,technique,0.098
+TKT00168,instrumentation,Modbus register map on AST-0111 does not match the documented configuration after a vendor visit.,T0849,Masquerading,technique,0.098
+TKT00238,instrumentation,Modbus register map on AST-0182 does not match the documented configuration after a vendor visit.,T0849,Masquerading,technique,0.098
+TKT00155,instrumentation,Modbus register map on AST-0103 does not match the documented configuration after a vendor visit.,T0849,Masquerading,technique,0.098
+TKT00156,instrumentation,Modbus register map on AST-0132 does not match the documented configuration after a vendor visit.,T0849,Masquerading,technique,0.098
+TKT00272,instrumentation,Modbus register map on AST-0175 does not match the documented configuration after a vendor visit.,T0849,Masquerading,technique,0.098
+TKT00298,instrumentation,Modbus register map on AST-0090 does not match the documented configuration after a vendor visit.,T0849,Masquerading,technique,0.098
+TKT00068,instrumentation,Modbus register map on AST-0112 does not match the documented configuration after a vendor visit.,T0849,Masquerading,technique,0.098
+TKT00209,instrumentation,Modbus register map on AST-0184 does not match the documented configuration after a vendor visit.,T0849,Masquerading,technique,0.098
+TKT00202,instrumentation,Modbus register map on AST-0176 does not match the documented configuration after a vendor visit.,T0849,Masquerading,technique,0.098
+TKT00315,instrumentation,Modbus register map on AST-0089 does not match the documented configuration after a vendor visit.,T0849,Masquerading,technique,0.098
+TKT00224,instrumentation,Modbus register map on AST-0121 does not match the documented configuration after a vendor visit.,T0849,Masquerading,technique,0.098
+TKT00001,instrumentation,Modbus register map on AST-0184 does not match the documented configuration after a vendor visit.,T0849,Masquerading,technique,0.098
+TKT00229,instrumentation,Modbus register map on AST-0014 does not match the documented configuration after a vendor visit.,T0849,Masquerading,technique,0.098
+TKT00301,instrumentation,Modbus register map on AST-0115 does not match the documented configuration after a vendor visit.,T0849,Masquerading,technique,0.098

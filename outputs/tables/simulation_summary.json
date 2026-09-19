@@ -1,0 +1,151 @@
+{
+  "runs_per_scenario": 5000,
+  "max_steps": 12,
+  "measured_p_foothold": 0.9473684210526315,
+  "measured_from_events": 19,
+  "graph": {
+    "nodes": 195,
+    "edges": 1963
+  },
+  "assumptions": {
+    "base_probabilities": {
+      "IT-OT->IT": 0.1,
+      "IT->IT": 0.08,
+      "IT->IT-OT": 0.09,
+      "IT-OT->OT": 0.14,
+      "OT->OT": 0.12,
+      "IT-OT->IT-OT": 0.11
+    },
+    "criticality_multiplier": {
+      "critical": 0.8,
+      "high": 0.9,
+      "medium": 1.0,
+      "low": 1.1
+    },
+    "scenario_factors": {
+      "S0_baseline": {
+        "seg": 1.0,
+        "mfa": 1.0,
+        "edr": 1.0
+      },
+      "S1_segmentation": {
+        "seg": 0.25,
+        "mfa": 1.0,
+        "edr": 1.0
+      },
+      "S2_strong_auth": {
+        "seg": 1.0,
+        "mfa": 0.35,
+        "edr": 1.0
+      },
+      "S3_monitoring": {
+        "seg": 1.0,
+        "mfa": 1.0,
+        "edr": 0.45
+      },
+      "S4_combined": {
+        "seg": 0.25,
+        "mfa": 0.35,
+        "edr": 0.45
+      }
+    }
+  },
+  "results": [
+    {
+      "scenario": "S0_baseline",
+      "description": "current controls as described in the asset inventory",
+      "runs": 5000,
+      "p_reach_ot": 0.5406,
+      "ci_ot_low": 0.5267605713847682,
+      "ci_ot_high": 0.5543770889280603,
+      "p_reach_critical": 0.539,
+      "ci_crit_low": 0.5251582623580289,
+      "ci_crit_high": 0.55278185469124,
+      "mean_assets_compromised": 29.5984,
+      "p95_assets_compromised": 84.0,
+      "median_steps_to_ot": 1.0,
+      "abs_reduction_ot": 0.0,
+      "rel_reduction_ot": 0.0
+    },
+    {
+      "scenario": "S1_segmentation",
+      "description": "IT-OT to OT traffic restricted to approved flows",
+      "runs": 5000,
+      "p_reach_ot": 0.3438,
+      "ci_ot_low": 0.33075878357815475,
+      "ci_ot_high": 0.3570810553168255,
+      "p_reach_critical": 0.3158,
+      "ci_crit_low": 0.3030610538753029,
+      "ci_crit_high": 0.328821777907382,
+      "mean_assets_compromised": 18.4774,
+      "p95_assets_compromised": 60.0,
+      "median_steps_to_ot": 2.0,
+      "abs_reduction_ot": 0.19679999999999997,
+      "rel_reduction_ot": 0.36403995560488345
+    },
+    {
+      "scenario": "S2_strong_auth",
+      "description": "MFA enforced for every remote and privileged session",
+      "runs": 5000,
+      "p_reach_ot": 0.1904,
+      "ci_ot_low": 0.17975649268997654,
+      "ci_ot_high": 0.2015188858112135,
+      "p_reach_critical": 0.1892,
+      "ci_crit_low": 0.17858368916999193,
+      "ci_crit_high": 0.20029353188352825,
+      "mean_assets_compromised": 10.1176,
+      "p95_assets_compromised": 61.0,
+      "median_steps_to_ot": 1.0,
+      "abs_reduction_ot": 0.35019999999999996,
+      "rel_reduction_ot": 0.6477987421383647
+    },
+    {
+      "scenario": "S3_monitoring",
+      "description": "detection and isolation of a compromised host after 2 steps",
+      "runs": 5000,
+      "p_reach_ot": 0.5096,
+      "ci_ot_low": 0.4957412098379929,
+      "ci_ot_high": 0.5234440497433658,
+      "p_reach_critical": 0.4976,
+      "ci_crit_low": 0.48374803023713775,
+      "ci_crit_high": 0.5114556548675228,
+      "mean_assets_compromised": 18.0454,
+      "p95_assets_compromised": 54.0,
+      "median_steps_to_ot": 1.0,
+      "abs_reduction_ot": 0.030999999999999917,
+      "rel_reduction_ot": 0.05734369219385852
+    },
+    {
+      "scenario": "S4_combined",
+      "description": "all three control packages together",
+      "runs": 5000,
+      "p_reach_ot": 0.1004,
+      "ci_ot_low": 0.09237399550187989,
+      "ci_ot_high": 0.10903957442407461,
+      "p_reach_critical": 0.0818,
+      "ci_crit_low": 0.0745206475696005,
+      "ci_crit_high": 0.08972148191747198,
+      "mean_assets_compromised": 3.0042,
+      "p95_assets_compromised": 21.0,
+      "median_steps_to_ot": 2.0,
+      "abs_reduction_ot": 0.4402,
+      "rel_reduction_ot": 0.8142804291527932
+    }
+  ],
+  "ranking_stable_under_sensitivity": true,
+  "limitations": [
+    "probabilities are assumed, not measured from mining incidents",
+    "no human defender acts during a run except the S3 isolation effect",
+    "the graph is generated from a synthetic asset inventory",
+    "results compare scenarios; they are not incident-frequency forecasts"
+  ],
+  "env": {
+    "utc_time": "2026-09-19T19:33:16+00:00",
+    "python": "3.11.15",
+    "platform": "Linux-6.18.44-fc-v37-x86_64-with-glibc2.39",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scikit_learn": "1.8.0",
+    "seed": 3815
+  }
+}

@@ -1,0 +1,116 @@
+username,alerts,rules,highest_sev,last_seen,evidence,max_risk,worst_day,band,top_driver,user_role,employment_type,home_site,privileged_account,mfa_enrolled,priority,attack_context
+vend069,22,"R3,R4,R5,R7",high,2019-04-28 02:56:00+00:00,ACC018376|ACC018376|ACC018378|ACC018379|ACC018379|ACC018390|ACC018390|ACC018394|ACC018394|ACC018396|ACC018396|ACC019317|ACC019318|ACC019320|ACC019339|ACC020141|ACC020144|ACC020148|,98.1,2593.0,critical,external_foreign,vendor_technician,vendor,WORKSHOP-01,False,True,299.1,R3->M0936 Account Use Policies; R4->AN1935 Analytic 1935; R5->M0936 Account Use Policies; R7->DC0002 User Account Authentication
+cont081,8,"R1,R4,R5,R6,R7",high,2019-04-29 04:02:00+00:00,ACC017623|ACC017625|ACC017626|ACC017623|ACC020951|ACC020951|ACC020952|ACC020952|ACC020959|ACC020959,90.9,757.0,critical,external_foreign,contractor_surveyor,contractor,PORT-WVB,False,True,179.9,R1->DC0002 User Account Authentication; R4->AN1935 Analytic 1935; R5->M0936 Account Use Policies; R6->M0935 Limit Access to Resource Over Network; R7->DC0002 User Account Authentication
+main029,9,"R4,R5",medium,2019-04-24 02:37:28+00:00,ACC003546|ACC013192|ACC013198|ACC013205|ACC013251|ACC014073|ACC014074|ACC014078|ACC017621,75.6,1248.0,moderate,anomaly,maintenance_engineer,employee,TAILINGS-01,True,True,157.6,R4->AN1935 Analytic 1935; R5->M0936 Account Use Policies
+supe112,6,"R1,R4,R5",medium,2019-04-24 02:32:38+00:00,ACC014123|ACC015691|ACC015692|ACC015694|ACC017609|ACC017610|ACC017611|ACC017609,96.0,2519.0,critical,priv_no_mfa,supervisor,employee,PIT-B,True,False,154.0,R1->DC0002 User Account Authentication; R4->AN1935 Analytic 1935; R5->M0936 Account Use Policies
+ot054,8,"R4,R5",medium,2019-04-24 02:17:45+00:00,ACC000805|ACC003444|ACC003445|ACC003449|ACC006124|ACC006131|ACC008769|ACC017569,74.5,2196.0,moderate,anomaly,ot_network_admin,employee,PLANT-01,True,True,148.5,R4->AN1935 Analytic 1935; R5->M0936 Account Use Policies
+ot051,5,"R3,R4,R5",high,2019-04-28 00:53:25+00:00,ACC006065|ACC011269|ACC020255|ACC020264|ACC020264|ACC020545,76.0,2098.0,high,anomaly,ot_network_admin,employee,PIT-B,True,True,141.0,R3->M0936 Account Use Policies; R4->AN1935 Analytic 1935; R5->M0936 Account Use Policies
+cont001,7,R4,medium,2019-04-29 22:06:53+00:00,ACC002586|ACC007937|ACC008806|ACC017470|ACC017474|ACC020122|ACC021686,73.6,1.0,moderate,anomaly,control_room_operator,employee,PLANT-01,True,True,139.6,R4->AN1935 Analytic 1935
+ot052,6,R4,medium,2019-04-16 21:03:26+00:00,ACC000841|ACC001738|ACC001739|ACC006980|ACC006985|ACC012138,76.9,2123.0,high,anomaly,ot_network_admin,employee,PORT-WVB,True,True,134.9,R4->AN1935 Analytic 1935
+it059,5,R4,medium,2019-04-30 00:52:35+00:00,ACC000833|ACC004343|ACC018356|ACC020956|ACC021742,84.4,961.0,high,priv_no_mfa,it_service_desk,employee,CAMP-01,True,False,134.4,R4->AN1935 Analytic 1935
+it061,5,"R4,R5",medium,2019-04-24 02:41:07+00:00,ACC005144|ACC008760|ACC014214|ACC017499|ACC017634,80.1,1006.0,high,anomaly,it_service_desk,employee,CAMP-01,True,True,130.1,R4->AN1935 Analytic 1935; R5->M0936 Account Use Policies
+main042,2,"R3,R5",high,2019-04-24 03:09:10+00:00,ACC017556|ACC017635|ACC017645,88.9,1557.0,critical,external_foreign,maintenance_engineer,employee,TAILINGS-01,False,True,129.9,R3->M0936 Account Use Policies; R5->M0936 Account Use Policies
+it066,6,R4,medium,2019-04-21 18:18:13+00:00,ACC013300|ACC013301|ACC013302|ACC013303|ACC013957|ACC015660,68.9,1126.0,moderate,anomaly,it_service_desk,employee,PORT-WVB,True,True,126.9,R4->AN1935 Analytic 1935
+cont015,3,"R1,R4,R5",medium,2019-04-24 02:18:13+00:00,ACC002600|ACC017571|ACC017572|ACC017573|ACC017571,90.2,388.0,critical,priv_no_mfa,control_room_operator,employee,PIT-B,True,False,124.2,R1->DC0002 User Account Authentication; R4->AN1935 Analytic 1935; R5->M0936 Account Use Policies
+supe106,4,"R4,R5",medium,2019-04-24 02:19:55+00:00,ACC004357|ACC008786|ACC017457|ACC017575,81.5,2373.0,high,anomaly,supervisor,employee,PLANT-01,True,True,123.5,R4->AN1935 Analytic 1935; R5->M0936 Account Use Policies
+vend072,5,"R1,R4,R5",medium,2019-04-30 03:03:18+00:00,ACC007929|ACC015370|ACC017629|ACC017631|ACC017632|ACC017629|ACC021797,71.8,2666.0,moderate,anomaly,vendor_technician,vendor,TAILINGS-01,True,True,121.8,R1->DC0002 User Account Authentication; R4->AN1935 Analytic 1935; R5->M0936 Account Use Policies
+main047,3,"R4,R5",medium,2019-04-26 22:41:07+00:00,ACC017591|ACC020079|ACC020081,85.8,1674.0,critical,anomaly,maintenance_engineer,employee,TAILINGS-01,True,True,119.8,R4->AN1935 Analytic 1935; R5->M0936 Account Use Policies
+vend075,4,R4,medium,2019-04-25 23:12:28+00:00,ACC004388|ACC004396|ACC019230|ACC019242,77.0,2744.0,high,anomaly,vendor_technician,vendor,PIT-A,True,True,119.0,R4->AN1935 Analytic 1935
+ot053,5,R4,medium,2019-04-18 22:59:41+00:00,ACC000796|ACC010446|ACC010451|ACC014058|ACC014062,67.8,2159.0,moderate,anomaly,ot_network_admin,employee,TAILINGS-01,True,True,117.8,R4->AN1935 Analytic 1935
+cont021,2,"R1,R5",medium,2019-04-24 02:35:27+00:00,ACC017616|ACC017617|ACC017618|ACC017616,87.9,548.0,critical,external_foreign,control_room_operator,employee,PIT-B,False,True,113.9,R1->DC0002 User Account Authentication; R5->M0936 Account Use Policies
+it068,3,R4,medium,2019-04-11 18:16:09+00:00,ACC008715|ACC008726|ACC008729,79.4,1165.0,high,priv_no_mfa,it_service_desk,employee,HQ-WHK,True,False,113.4,R4->AN1935 Analytic 1935
+ot055,3,R4,medium,2019-04-29 20:04:20+00:00,ACC007989|ACC018318|ACC021648,78.3,2206.0,high,anomaly,ot_network_admin,employee,TAILINGS-01,True,True,112.3,R4->AN1935 Analytic 1935
+main049,3,"R1,R4,R5",medium,2019-04-28 00:46:43+00:00,ACC017600|ACC017602|ACC017603|ACC017600|ACC020541,77.8,1723.0,high,anomaly,maintenance_engineer,employee,PIT-B,True,True,111.8,R1->DC0002 User Account Authentication; R4->AN1935 Analytic 1935; R5->M0936 Account Use Policies
+vend076,3,"R1,R4,R5",medium,2019-04-24 02:15:36+00:00,ACC016618|ACC017560|ACC017561|ACC017562|ACC017560,77.5,2754.0,high,priv_no_mfa,vendor_technician,vendor,PLANT-01,True,False,111.5,R1->DC0002 User Account Authentication; R4->AN1935 Analytic 1935; R5->M0936 Account Use Policies
+vend070,3,"R4,R5",medium,2019-04-24 02:19:34+00:00,ACC012177|ACC015749|ACC017574,77.3,2611.0,high,priv_no_mfa,vendor_technician,vendor,PIT-B,True,False,111.3,R4->AN1935 Analytic 1935; R5->M0936 Account Use Policies
+cont080,2,"R1,R5",medium,2019-04-24 02:28:22+00:00,ACC017597|ACC017598|ACC017599|ACC017597,83.6,745.0,high,anomaly,contractor_surveyor,contractor,TAILINGS-01,False,False,109.6,R1->DC0002 User Account Authentication; R5->M0936 Account Use Policies
+vend073,3,R4,medium,2019-04-06 03:29:09+00:00,ACC004391|ACC004393|ACC004394,73.5,2690.0,moderate,anomaly,vendor_technician,vendor,PIT-B,True,True,107.5,R4->AN1935 Analytic 1935
+vend071,2,"R1,R5",medium,2019-04-24 02:17:04+00:00,ACC017565|ACC017566|ACC017568|ACC017565,78.8,2644.0,high,external_foreign,vendor_technician,vendor,TAILINGS-01,False,True,104.8,R1->DC0002 User Account Authentication; R5->M0936 Account Use Policies
+main030,2,R4,medium,2019-04-19 20:12:50+00:00,ACC014912|ACC014915,78.6,1273.0,high,priv_no_mfa,maintenance_engineer,employee,WORKSHOP-01,True,False,104.6,R4->AN1935 Analytic 1935
+main037,2,"R4,R5",medium,2019-04-24 02:26:59+00:00,ACC015690|ACC017593,78.0,1439.0,high,anomaly,maintenance_engineer,employee,TAILINGS-01,True,True,104.0,R4->AN1935 Analytic 1935; R5->M0936 Account Use Policies
+ot056,3,R4,medium,2019-04-26 01:35:48+00:00,ACC002647|ACC012208|ACC019289,69.9,2238.0,moderate,anomaly,ot_network_admin,employee,WORKSHOP-01,True,True,103.9,R4->AN1935 Analytic 1935
+cont026,2,"R1,R5",medium,2019-04-24 02:21:57+00:00,ACC017580|ACC017581|ACC017582|ACC017580,76.6,678.0,high,external_foreign,control_room_operator,employee,PIT-A,False,True,102.6,R1->DC0002 User Account Authentication; R5->M0936 Account Use Policies
+cont006,1,R5,low,2019-04-24 02:15:03+00:00,ACC017558,89.2,148.0,critical,anomaly,control_room_operator,employee,PIT-A,False,True,100.2,R5->M0936 Account Use Policies
+supe114,2,"R1,R5",medium,2019-04-24 02:27:06+00:00,ACC017594|ACC017595|ACC017596|ACC017594,71.8,2570.0,moderate,external_foreign,supervisor,employee,PIT-B,False,True,97.8,R1->DC0002 User Account Authentication; R5->M0936 Account Use Policies
+it060,2,R4,medium,2019-04-23 23:16:46+00:00,ACC004250|ACC017494,71.6,982.0,moderate,anomaly,it_service_desk,employee,HQ-WHK,True,True,97.6,R4->AN1935 Analytic 1935
+cont023,2,R4,medium,2019-04-19 03:23:17+00:00,ACC000825|ACC014174,70.6,593.0,moderate,anomaly,control_room_operator,employee,PIT-A,True,True,96.6,R4->AN1935 Analytic 1935
+cont008,1,R5,low,2019-04-24 02:16:43+00:00,ACC017563,85.4,205.0,critical,anomaly,control_room_operator,employee,TAILINGS-01,False,True,96.4,R5->M0936 Account Use Policies
+main038,1,R5,low,2019-04-24 02:39:23+00:00,ACC017627,84.3,1459.0,high,anomaly,maintenance_engineer,employee,WORKSHOP-01,False,False,95.3,R5->M0936 Account Use Policies
+cont014,1,R5,low,2019-04-24 02:34:53+00:00,ACC017615,84.1,361.0,high,anomaly,control_room_operator,employee,TAILINGS-01,False,True,95.1,R5->M0936 Account Use Policies
+main028,1,R5,low,2019-04-24 02:31:00+00:00,ACC017605,83.0,1225.0,high,external_foreign,maintenance_engineer,employee,TAILINGS-01,False,True,94.0,R5->M0936 Account Use Policies
+ot057,2,R4,medium,2019-04-30 21:47:32+00:00,ACC016646|ACC022613,67.9,2266.0,moderate,anomaly,ot_network_admin,employee,PIT-A,True,True,93.9,R4->AN1935 Analytic 1935
+cont083,1,R5,low,2019-04-24 02:24:39+00:00,ACC017586,81.5,800.0,high,external_foreign,contractor_surveyor,contractor,PORT-WVB,False,True,92.5,R5->M0936 Account Use Policies
+it063,1,R5,low,2019-04-24 02:40:40+00:00,ACC017633,79.4,1054.0,high,external_foreign,it_service_desk,employee,CAMP-01,False,True,90.4,R5->M0936 Account Use Policies
+main032,1,R5,low,2019-04-24 02:21:25+00:00,ACC017578,79.4,1321.0,high,external_foreign,maintenance_engineer,employee,PIT-B,False,True,90.4,R5->M0936 Account Use Policies
+ot058,1,R5,low,2019-04-24 02:33:47+00:00,ACC017612,78.7,2299.0,high,anomaly,ot_network_admin,employee,PLANT-01,True,True,89.7,R5->M0936 Account Use Policies
+main033,2,R4,medium,2019-04-26 02:35:46+00:00,ACC006028|ACC019305,63.1,1346.0,low,anomaly,maintenance_engineer,employee,TAILINGS-01,True,True,89.1,R4->AN1935 Analytic 1935
+cont017,1,R5,low,2019-04-24 02:34:08+00:00,ACC017613,77.5,442.0,high,anomaly,control_room_operator,employee,TAILINGS-01,False,False,88.5,R5->M0936 Account Use Policies
+cont078,1,R5,low,2019-04-24 02:20:18+00:00,ACC017576,76.8,701.0,high,external_foreign,contractor_surveyor,contractor,TAILINGS-01,False,True,87.8,R5->M0936 Account Use Policies
+mine099,1,R5,low,2019-04-24 02:31:33+00:00,ACC017606,76.3,1987.0,high,external_foreign,mine_planner,employee,CAMP-01,False,True,87.3,R5->M0936 Account Use Policies
+cont022,1,R5,low,2019-04-24 02:36:55+00:00,ACC017619,75.6,579.0,moderate,anomaly,control_room_operator,employee,PLANT-01,False,True,86.6,R5->M0936 Account Use Policies
+main048,1,R5,low,2019-04-24 02:30:31+00:00,ACC017604,75.3,1689.0,moderate,external_foreign,maintenance_engineer,employee,PLANT-01,False,True,86.3,R5->M0936 Account Use Policies
+vend077,1,R5,low,2019-04-24 02:32:05+00:00,ACC017608,75.1,2786.0,moderate,external_foreign,vendor_technician,vendor,PIT-A,False,True,86.1,R5->M0936 Account Use Policies
+main039,1,R5,low,2019-04-24 02:24:48+00:00,ACC017587,74.2,1472.0,moderate,external_foreign,maintenance_engineer,employee,TAILINGS-01,False,True,85.2,R5->M0936 Account Use Policies
+cont018,1,R5,low,2019-04-24 02:25:25+00:00,ACC017589,73.8,470.0,moderate,external_foreign,control_room_operator,employee,PIT-A,False,True,84.8,R5->M0936 Account Use Policies
+cont086,1,R5,low,2019-04-24 02:24:17+00:00,ACC017585,73.0,865.0,moderate,external_foreign,contractor_surveyor,contractor,PORT-WVB,False,True,84.0,R5->M0936 Account Use Policies
+cont087,1,R5,low,2019-04-24 02:23:05+00:00,ACC017583,72.6,889.0,moderate,external_foreign,contractor_surveyor,contractor,PIT-B,False,True,83.6,R5->M0936 Account Use Policies
+mine096,0,,,,,76.8,1905.0,high,external_foreign,mine_planner,employee,CAMP-01,False,True,76.8,
+cont003,0,,,,,76.6,65.0,high,external_foreign,control_room_operator,employee,TAILINGS-01,False,True,76.6,
+cont084,0,,,,,76.5,814.0,high,external_foreign,contractor_surveyor,contractor,PIT-B,False,True,76.5,
+main036,0,,,,,76.1,1398.0,high,external_foreign,maintenance_engineer,employee,PIT-B,False,True,76.1,
+main043,0,,,,,75.8,1586.0,moderate,anomaly,maintenance_engineer,employee,PLANT-01,False,False,75.8,
+mine092,0,,,,,75.3,1808.0,moderate,external_foreign,mine_planner,employee,PORT-WVB,False,True,75.3,
+cont016,0,,,,,74.9,404.0,moderate,external_foreign,control_room_operator,employee,PLANT-01,False,True,74.9,
+supe109,0,,,,,74.9,2447.0,moderate,external_foreign,supervisor,employee,TAILINGS-01,False,True,74.9,
+cont005,0,,,,,74.7,106.0,moderate,anomaly,control_room_operator,employee,TAILINGS-01,False,True,74.7,
+cont007,0,,,,,74.3,163.0,moderate,anomaly,control_room_operator,employee,PIT-B,True,True,74.3,
+cont019,0,,,,,74.3,481.0,moderate,anomaly,control_room_operator,employee,PIT-A,False,False,74.3,
+cont020,0,,,,,74.1,511.0,moderate,external_foreign,control_room_operator,employee,PLANT-01,False,True,74.1,
+supe104,0,,,,,74.0,2311.0,moderate,external_foreign,supervisor,employee,PIT-A,False,True,74.0,
+cont011,0,,,,,73.9,281.0,moderate,anomaly,control_room_operator,employee,PLANT-01,False,True,73.9,
+main050,0,,,,,73.2,1730.0,moderate,external_foreign,maintenance_engineer,employee,PLANT-01,False,True,73.2,
+cont002,0,,,,,71.8,45.0,moderate,anomaly,control_room_operator,employee,PIT-A,False,False,71.8,
+mine094,0,,,,,71.3,1869.0,moderate,egress,mine_planner,employee,HQ-WHK,False,True,71.3,
+cont025,0,,,,,70.6,645.0,moderate,anomaly,control_room_operator,employee,PLANT-01,False,True,70.6,
+supe105,0,,,,,70.4,2340.0,moderate,anomaly,supervisor,employee,PLANT-01,False,False,70.4,
+cont024,0,,,,,70.3,619.0,moderate,external_foreign,control_room_operator,employee,PLANT-01,False,True,70.3,
+main041,0,,,,,70.3,1531.0,moderate,external_foreign,maintenance_engineer,employee,PLANT-01,False,True,70.3,
+vend074,0,,,,,70.1,2699.0,moderate,anomaly,vendor_technician,vendor,PLANT-01,True,True,70.1,
+mine093,0,,,,,69.9,1851.0,moderate,anomaly,mine_planner,employee,HQ-WHK,False,True,69.9,
+cont010,0,,,,,69.9,237.0,moderate,anomaly,control_room_operator,employee,TAILINGS-01,False,True,69.9,
+cont012,0,,,,,69.8,310.0,moderate,anomaly,control_room_operator,employee,TAILINGS-01,False,False,69.8,
+supe107,0,,,,,69.7,2384.0,moderate,anomaly,supervisor,employee,HQ-WHK,False,False,69.7,
+main035,0,,,,,69.6,1391.0,moderate,external_foreign,maintenance_engineer,employee,WORKSHOP-01,False,True,69.6,
+supe113,0,,,,,69.5,2533.0,moderate,external_foreign,supervisor,employee,TAILINGS-01,False,True,69.5,
+it067,0,,,,,69.0,1153.0,moderate,external_foreign,it_service_desk,employee,HQ-WHK,False,True,69.0,
+cont009,0,,,,,68.8,224.0,moderate,external_foreign,control_room_operator,employee,PIT-A,False,True,68.8,
+cont013,0,,,,,68.8,318.0,moderate,anomaly,control_room_operator,employee,PIT-B,False,True,68.8,
+cont004,0,,,,,68.8,98.0,moderate,external_foreign,control_room_operator,employee,TAILINGS-01,False,True,68.8,
+supe111,0,,,,,68.8,2497.0,moderate,anomaly,supervisor,employee,PIT-B,False,False,68.8,
+main044,0,,,,,67.9,1589.0,moderate,external_foreign,maintenance_engineer,employee,PIT-A,False,True,67.9,
+main027,0,,,,,67.3,1189.0,moderate,external_foreign,maintenance_engineer,employee,WORKSHOP-01,False,True,67.3,
+mine095,0,,,,,67.2,1881.0,moderate,anomaly,mine_planner,employee,HQ-WHK,False,False,67.2,
+mine098,0,,,,,67.2,1950.0,moderate,anomaly,mine_planner,employee,PORT-WVB,False,False,67.2,
+mine090,0,,,,,67.1,1752.0,moderate,external_foreign,mine_planner,employee,CAMP-01,False,True,67.1,
+main045,0,,,,,67.1,1626.0,moderate,external_foreign,maintenance_engineer,employee,WORKSHOP-01,False,True,67.1,
+supe110,0,,,,,66.9,2478.0,moderate,external_foreign,supervisor,employee,PIT-A,False,True,66.9,
+cont089,0,,,,,66.8,928.0,moderate,anomaly,contractor_surveyor,contractor,PIT-B,False,False,66.8,
+main034,0,,,,,66.7,1365.0,moderate,external_foreign,maintenance_engineer,employee,TAILINGS-01,False,True,66.7,
+it062,0,,,,,66.5,1025.0,moderate,anomaly,it_service_desk,employee,PORT-WVB,False,False,66.5,
+cont088,0,,,,,65.7,914.0,low,external_foreign,contractor_surveyor,contractor,CAMP-01,False,True,65.7,
+cont085,0,,,,,65.2,837.0,low,external_foreign,contractor_surveyor,contractor,PIT-B,False,False,65.2,
+cont082,0,,,,,65.0,775.0,low,external_foreign,contractor_surveyor,contractor,PIT-A,False,True,65.0,
+mine102,0,,,,,64.8,2052.0,low,external_foreign,mine_planner,employee,CAMP-01,False,True,64.8,
+mine097,0,,,,,63.7,1924.0,low,external_foreign,mine_planner,employee,HQ-WHK,False,True,63.7,
+mine091,0,,,,,63.0,1777.0,low,anomaly,mine_planner,employee,PORT-WVB,False,False,63.0,
+supe108,0,,,,,62.9,2406.0,low,anomaly,supervisor,employee,PIT-A,False,False,62.9,
+main040,0,,,,,62.9,1504.0,low,external_foreign,maintenance_engineer,employee,PIT-A,False,True,62.9,
+mine103,0,,,,,62.8,2082.0,low,external_foreign,mine_planner,employee,PORT-WVB,False,True,62.8,
+mine100,0,,,,,62.4,1994.0,low,external_foreign,mine_planner,employee,CAMP-01,False,True,62.4,
+main031,0,,,,,62.3,1281.0,low,external_foreign,maintenance_engineer,employee,PIT-B,False,True,62.3,
+mine101,0,,,,,62.0,2032.0,low,anomaly,mine_planner,employee,HQ-WHK,False,True,62.0,
+cont079,0,,,,,61.4,727.0,low,external_foreign,contractor_surveyor,contractor,CAMP-01,False,True,61.4,
+main046,0,,,,,60.9,1647.0,low,external_foreign,maintenance_engineer,employee,PLANT-01,False,True,60.9,
+it064,0,,,,,59.9,1064.0,low,external_foreign,it_service_desk,employee,PORT-WVB,False,True,59.9,
+it065,0,,,,,59.4,1084.0,low,external_foreign,it_service_desk,employee,PORT-WVB,False,True,59.4,
+38 accounts,1,R2,high,2019-04-24 02:00:00+00:00,ACC017556|ACC017557|ACC017558|ACC017559|ACC017560|ACC017561|ACC017562|ACC017563|ACC017564|ACC017565|ACC017566|ACC017568|ACC017569|ACC017570|ACC017571,,,,,,,,,,33.0,R2->M0927 Password Policies

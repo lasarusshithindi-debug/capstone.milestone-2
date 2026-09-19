@@ -1,0 +1,17 @@
+{
+  "telemetry_measurement_rows": 784691,
+  "network_flow_rows": 211043,
+  "access_events": 22686,
+  "user_days": 2792,
+  "ip_profiles": 776,
+  "cleaning_actions": 37,
+  "env": {
+    "utc_time": "2026-09-19T19:31:55+00:00",
+    "python": "3.11.15",
+    "platform": "Linux-6.18.44-fc-v37-x86_64-with-glibc2.39",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scikit_learn": "1.8.0",
+    "seed": 3815
+  }
+}

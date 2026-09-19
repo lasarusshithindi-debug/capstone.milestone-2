@@ -1,0 +1,113 @@
+{
+  "corpus_sizes": {
+    "tickets": 320,
+    "attack_ics": 357,
+    "total": 677
+  },
+  "classification": {
+    "macro_f1": 1.0,
+    "accuracy": 1.0,
+    "test_rows": 96,
+    "top_security_terms": [
+      "ot",
+      "account",
+      "review",
+      "engineering",
+      "engineering workstation",
+      "workstation",
+      "observed ast",
+      "suspected scanning",
+      "far",
+      "scanning"
+    ],
+    "caveat": "The tickets are generated from a template bank, so the vocabulary of each category is highly consistent and the task is far easier than real ticket text. Treat this score as evidence that the pipeline works end to end, not as an estimate of accuracy on real tickets."
+  },
+  "indicator_extraction": {
+    "precision": 0.972176759410802,
+    "recall": 0.9966442953020134,
+    "f1": 0.984258492129246,
+    "tp": 594,
+    "fp": 17,
+    "fn": 2,
+    "tickets_with_any_indicator": 320,
+    "by_type": {
+      "ip": 53,
+      "asset": 167,
+      "user": 79,
+      "site": 220,
+      "proto": 78,
+      "malware": 14
+    }
+  },
+  "topics_and_enrichment": {
+    "topics": [
+      {
+        "topic": "T1",
+        "top_terms": "attack, org, mitre org, attack mitre, https attack, https, mitre, org software, citation, software, org groups, groups"
+      },
+      {
+        "topic": "T2",
+        "top_terms": "standard detection, exists technique, method currently, currently exists, detection method, currently, exists, method, standard, detection, technique, easily"
+      },
+      {
+        "topic": "T3",
+        "top_terms": "adversaries, control, devices, adversary, systems, access, environment, citation, device, techniques, process, network"
+      },
+      {
+        "topic": "T4",
+        "top_terms": "communications, help, blocked, technique used, loss, technique, alarms, identify loss, help identify, loss communications, monitor, indicate"
+      },
+      {
+        "topic": "T5",
+        "top_terms": "program, management, alarms, monitor, monitor device, devices produce, produce, program download, download, logs, devices, device"
+      },
+      {
+        "topic": "T6",
+        "top_terms": "monitor, network, files, file, traffic, executed, windows, changes, data, user, arguments, suspicious"
+      }
+    ],
+    "matched_tickets": 225,
+    "median_similarity": 0.168,
+    "top_matches": [
+      {
+        "ticket_id": "TKT00310",
+        "nearest_attack_id": "AN1934",
+        "nearest_attack_name": "Analytic 1934",
+        "similarity": 0.522
+      },
+      {
+        "ticket_id": "TKT00016",
+        "nearest_attack_id": "AN1934",
+        "nearest_attack_name": "Analytic 1934",
+        "similarity": 0.522
+      },
+      {
+        "ticket_id": "TKT00012",
+        "nearest_attack_id": "AN1934",
+        "nearest_attack_name": "Analytic 1934",
+        "similarity": 0.522
+      },
+      {
+        "ticket_id": "TKT00002",
+        "nearest_attack_id": "AN1934",
+        "nearest_attack_name": "Analytic 1934",
+        "similarity": 0.522
+      },
+      {
+        "ticket_id": "TKT00182",
+        "nearest_attack_id": "AN1934",
+        "nearest_attack_name": "Analytic 1934",
+        "similarity": 0.522
+      }
+    ]
+  },
+  "env": {
+    "utc_time": "2026-09-19T19:33:17+00:00",
+    "python": "3.11.15",
+    "platform": "Linux-6.18.44-fc-v37-x86_64-with-glibc2.39",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scikit_learn": "1.8.0",
+    "seed": 3815
+  }
+}
