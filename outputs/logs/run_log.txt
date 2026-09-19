@@ -149,3 +149,181 @@
 2026-09-19 19:33:49,022 | INFO    | s20_compliance |   C10  Decision-support prototype                    COMPLETE
 2026-09-19 19:33:49,022 | INFO    | run_all | --- s20 finished in 0.0s
 2026-09-19 19:33:49,022 | INFO    | run_all | pipeline complete in 15.2s
+2026-09-19 21:00:36,937 | INFO    | run_all | === s01  extract ATT&CK ICS text corpus
+2026-09-19 21:00:38,729 | INFO    | s01_attack_text | wrote 357 rows to /home/claude/capstone/data/raw/attack_ics_text.csv
+2026-09-19 21:00:38,729 | INFO    | s01_attack_text | class counts: {'technique': 97, 'analytic': 97, 'mitigation': 52, 'data_component': 36, 'malware': 23, 'asset': 18, 'threat_group': 14, 'tactic': 12, 'campaign': 8}
+2026-09-19 21:00:38,731 | INFO    | run_all | --- s01 finished in 1.8s
+2026-09-19 21:00:38,731 | INFO    | run_all | === s02  generate asset/user context + access log
+2026-09-19 21:00:39,998 | INFO    | s02_synth_access | assets=194 users=114 access_events=22686
+2026-09-19 21:00:39,999 | INFO    | s02_synth_access | ground truth rows: {'GT1_password_spray': 78, 'GT2_vendor_out_of_hours': 20, 'GT3_dormant_account': 7, 'GT4_impossible_travel': 3}
+2026-09-19 21:00:39,999 | INFO    | run_all | --- s02 finished in 1.3s
+2026-09-19 21:00:39,999 | INFO    | run_all | === s03  generate maintenance/incident tickets
+2026-09-19 21:00:40,432 | INFO    | s03_tickets | tickets=320 categories={'mechanical': 71, 'security_incident': 65, 'instrumentation': 65, 'network_fault': 62, 'access_request': 57}
+2026-09-19 21:00:40,433 | INFO    | run_all | --- s03 finished in 0.4s
+2026-09-19 21:00:40,433 | INFO    | run_all | === s04  data inventory, dictionary, quality profile
+2026-09-19 21:00:40,722 | INFO    | s04_inventory | iot_fridge       rows=59944    cols=7   dup=8901   labelled=True
+2026-09-19 21:00:41,072 | INFO    | s04_inventory | iot_garage_door  rows=59587    cols=7   dup=38836  labelled=True
+2026-09-19 21:00:41,327 | INFO    | s04_inventory | iot_gps_tracker  rows=58960    cols=7   dup=0      labelled=True
+2026-09-19 21:00:41,516 | INFO    | s04_inventory | iot_modbus       rows=51106    cols=9   dup=19744  labelled=True
+2026-09-19 21:00:41,690 | INFO    | s04_inventory | iot_motion_light rows=59488    cols=7   dup=28629  labelled=True
+2026-09-19 21:00:41,904 | INFO    | s04_inventory | iot_thermostat   rows=52774    cols=7   dup=1154   labelled=True
+2026-09-19 21:00:42,653 | INFO    | s04_inventory | iot_weather      rows=59260    cols=8   dup=0      labelled=True
+2026-09-19 21:00:46,015 | INFO    | s04_inventory | network_flow     rows=211043   cols=44  dup=20569  labelled=True
+2026-09-19 21:00:46,153 | INFO    | s04_inventory | access_log       rows=22686    cols=18  dup=0      labelled=False
+2026-09-19 21:00:46,169 | INFO    | s04_inventory | asset_inventory  rows=194      cols=11  dup=0      labelled=False
+2026-09-19 21:00:46,179 | INFO    | s04_inventory | user_directory   rows=114      cols=7   dup=0      labelled=False
+2026-09-19 21:00:46,197 | INFO    | s04_inventory | tickets          rows=320      cols=10  dup=0      labelled=True
+2026-09-19 21:00:46,217 | INFO    | s04_inventory | attack_ics_text  rows=357      cols=11  dup=0      labelled=False
+2026-09-19 21:00:46,225 | INFO    | s04_inventory | TOTAL records across all sources: 635,833
+2026-09-19 21:00:46,225 | INFO    | s04_inventory | unstructured text records: 677
+2026-09-19 21:00:46,225 | INFO    | run_all | --- s04 finished in 5.8s
+2026-09-19 21:00:46,225 | INFO    | run_all | === s05  requirements matrix and minimum-data check
+2026-09-19 21:00:46,233 | INFO    | s05_requirements | MET    At least three distinct security data sources
+2026-09-19 21:00:46,233 | INFO    | s05_requirements | MET    At least 5,000 combined event/transaction records
+2026-09-19 21:00:46,233 | INFO    | s05_requirements | MET    At least one labelled dataset (recommended >= 1,000 records)
+2026-09-19 21:00:46,233 | INFO    | s05_requirements | MET    At least one unlabelled/semi-labelled dataset for anomaly or behavioural work
+2026-09-19 21:00:46,233 | INFO    | s05_requirements | MET    At least 200 unstructured text records
+2026-09-19 21:00:46,234 | INFO    | s05_requirements | MET    Documented asset/user/device/account/service context
+2026-09-19 21:00:46,234 | INFO    | run_all | --- s05 finished in 0.0s
+2026-09-19 21:00:46,234 | INFO    | run_all | === s06  cleaning, features, joins, crosswalk
+2026-09-19 21:00:46,493 | INFO    | s06_clean | telemetry fridge        rows=59944   dup_flagged=8901   -> telemetry_fridge.parquet
+2026-09-19 21:00:46,621 | INFO    | s06_clean | telemetry garage_door   rows=59587   dup_flagged=38836  -> telemetry_garage_door.parquet
+2026-09-19 21:00:46,727 | INFO    | s06_clean | telemetry gps_tracker   rows=58960   dup_flagged=0      -> telemetry_gps_tracker.parquet
+2026-09-19 21:00:46,828 | INFO    | s06_clean | telemetry modbus        rows=51106   dup_flagged=19744  -> telemetry_modbus.parquet
+2026-09-19 21:00:46,931 | INFO    | s06_clean | telemetry motion_light  rows=59488   dup_flagged=28629  -> telemetry_motion_light.parquet
+2026-09-19 21:00:47,015 | INFO    | s06_clean | telemetry thermostat    rows=52774   dup_flagged=1154   -> telemetry_thermostat.parquet
+2026-09-19 21:00:47,171 | INFO    | s06_clean | telemetry weather       rows=59260   dup_flagged=0      -> telemetry_weather.parquet
+2026-09-19 21:00:50,962 | INFO    | s06_clean | network flows rows=211043 dup_flagged=20569 sparse_cols=16
+2026-09-19 21:00:52,378 | INFO    | s06_clean | access events=22686 user-days=2792
+2026-09-19 21:00:52,474 | INFO    | s06_clean | cleaning log entries: 37 -> outputs/tables/cleaning_log.csv
+2026-09-19 21:00:52,489 | INFO    | run_all | --- s06 finished in 6.3s
+2026-09-19 21:00:52,489 | INFO    | run_all | === s07  descriptive/diagnostic analytics and baselines
+2026-09-19 21:00:54,724 | INFO    | s07_eda | telemetry EDA done
+2026-09-19 21:00:55,127 | INFO    | s07_eda | network EDA done
+2026-09-19 21:00:55,421 | INFO    | s07_eda | access EDA done
+2026-09-19 21:00:55,422 | INFO    | s07_eda | [IIoT telemetry] Attack-labelled readings are not uniformly extreme | highest separation: weather/pressure with 26.4% of attack rows beyond 3 SD of the normal baseline; median across sensor-measures is 0.0%
+2026-09-19 21:00:55,422 | INFO    | s07_eda | [Network flows] Connection state separates attack-labelled traffic strongly | state 'rej' carries 44,852 flows of which 100.0% are attack-labelled
+2026-09-19 21:00:55,422 | INFO    | s07_eda | [Remote access] A small number of user-days break the behavioural baseline | 45 of 2792 user-days (1.6%) show either >= 3 failed logins, more than one source country, or any non-domestic source address; the 99th percentile of daily failures is 2.0
+2026-09-19 21:00:55,423 | INFO    | s07_eda | [Remote access] Baseline authentication failure rate | 2.01% of all access events are failures (455 of 22,686)
+2026-09-19 21:00:55,425 | INFO    | run_all | --- s07 finished in 2.9s
+2026-09-19 21:00:55,426 | INFO    | run_all | === s08  supervised intrusion classification
+2026-09-19 21:00:55,744 | INFO    | s08_supervised | network flows 211043 -> 190474 after removing exact duplicates
+2026-09-19 21:00:55,772 | INFO    | s08_supervised | class balance: {'attack': 148434, 'normal': 42040, 'attack_share': 0.7792874618058108}
+2026-09-19 21:00:58,611 | INFO    | s08_supervised | CV  logistic_regression  f1=0.9690 (+/- 0.0015)
+2026-09-19 21:00:59,636 | INFO    | s08_supervised | CV  decision_tree        f1=0.9924 (+/- 0.0006)
+2026-09-19 21:01:12,548 | INFO    | s08_supervised | CV  random_forest        f1=0.9983 (+/- 0.0001)
+2026-09-19 21:01:14,716 | INFO    | s08_supervised | TEST logistic_regression  acc=0.9556 prec=0.9934 rec=0.9493 f1=0.9708
+2026-09-19 21:01:16,202 | INFO    | s08_supervised | TEST decision_tree        acc=0.9923 prec=0.9959 rec=0.9942 f1=0.9951
+2026-09-19 21:01:32,664 | INFO    | s08_supervised | TEST random_forest        acc=0.9980 prec=0.9987 rec=0.9987 f1=0.9987
+2026-09-19 21:01:58,511 | INFO    | s08_supervised | MODBUS logistic_regression  acc=0.6244 prec=0.5735 rec=0.5917 f1=0.5825
+2026-09-19 21:02:00,903 | INFO    | s08_supervised | MODBUS random_forest        acc=0.9901 prec=0.9998 rec=0.9779 f1=0.9887
+2026-09-19 21:02:01,101 | INFO    | s08_supervised | supervised stage complete; best network model = random_forest
+2026-09-19 21:02:01,101 | INFO    | run_all | --- s08 finished in 65.7s
+2026-09-19 21:02:01,101 | INFO    | run_all | === s09  unsupervised anomaly detection
+2026-09-19 21:02:05,857 | INFO    | s09_anomaly | network IF (fully unsupervised): ROC-AUC=0.2793  at 15% budget precision=0.609 recall=0.118
+2026-09-19 21:02:05,857 | INFO    | s09_anomaly | network IF (clean-baseline novelty): ROC-AUC=0.7160 on 69310 held-out flows
+2026-09-19 21:02:07,149 | INFO    | s09_anomaly | access IF: flagged=56 of 2792  recall vs injected=0.82  ROC-AUC=0.997
+2026-09-19 21:02:07,150 | INFO    | s09_anomaly | DBSCAN: 3 clusters + 116 noise points
+2026-09-19 21:02:07,153 | INFO    | run_all | --- s09 finished in 6.1s
+2026-09-19 21:02:07,153 | INFO    | run_all | === s10  access and user-behaviour analytics
+2026-09-19 21:02:07,985 | INFO    | s10_access | alerts=176 over 56 accounts
+2026-09-19 21:02:07,986 | INFO    | s10_access |   R1  medium alerts=11   matched_injected=11 
+2026-09-19 21:02:07,986 | INFO    | s10_access |   R2  high   alerts=1    matched_injected=1  
+2026-09-19 21:02:07,986 | INFO    | s10_access |   R3  high   alerts=3    matched_injected=3  
+2026-09-19 21:02:07,986 | INFO    | s10_access |   R4  medium alerts=101  matched_injected=6  
+2026-09-19 21:02:07,986 | INFO    | s10_access |   R5  low    alerts=41   matched_injected=41 
+2026-09-19 21:02:07,986 | INFO    | s10_access |   R6  high   alerts=1    matched_injected=1  
+2026-09-19 21:02:07,986 | INFO    | s10_access |   R7  high   alerts=18   matched_injected=18 
+2026-09-19 21:02:07,986 | INFO    | run_all | --- s10 finished in 0.8s
+2026-09-19 21:02:07,986 | INFO    | run_all | === s11  investigation timeline and response plan
+2026-09-19 21:02:08,588 | INFO    | s11_investigation | case selected: vend069 (top case score 302.6)
+2026-09-19 21:02:09,085 | INFO    | s11_investigation | timeline rows=202 (direct=169, context=11), affected assets=8
+2026-09-19 21:02:09,089 | INFO    | run_all | --- s11 finished in 1.1s
+2026-09-19 21:02:09,089 | INFO    | run_all | === s13  Monte Carlo control-scenario simulation
+2026-09-19 21:02:09,636 | INFO    | s13_simulation | measured p_foothold (external privileged events without MFA) = 0.947 on 19 events
+2026-09-19 21:02:09,739 | INFO    | s13_simulation | graph: 195 nodes, 1963 edges
+2026-09-19 21:02:14,012 | INFO    | s13_simulation | S0_baseline      P(OT)=0.541  P(critical)=0.539  mean assets=29.6
+2026-09-19 21:02:17,007 | INFO    | s13_simulation | S1_segmentation  P(OT)=0.344  P(critical)=0.316  mean assets=18.5
+2026-09-19 21:02:18,466 | INFO    | s13_simulation | S2_strong_auth   P(OT)=0.190  P(critical)=0.189  mean assets=10.1
+2026-09-19 21:02:21,941 | INFO    | s13_simulation | S3_monitoring    P(OT)=0.510  P(critical)=0.498  mean assets=18.0
+2026-09-19 21:02:22,678 | INFO    | s13_simulation | S4_combined      P(OT)=0.100  P(critical)=0.082  mean assets=3.0
+2026-09-19 21:02:33,977 | INFO    | s13_simulation | scenario ranking stable across all probability scales: True
+2026-09-19 21:02:34,206 | INFO    | run_all | --- s13 finished in 25.1s
+2026-09-19 21:02:34,206 | INFO    | run_all | === s14  text mining and NLP
+2026-09-19 21:02:34,224 | INFO    | s14_nlp | corpora: 320 tickets, 357 ATT&CK ICS descriptions (total 677 text records)
+2026-09-19 21:02:34,344 | INFO    | s14_nlp | ticket classifier macro-F1=1.000 accuracy=1.000
+2026-09-19 21:02:34,365 | INFO    | s14_nlp | indicator extraction: precision=0.972 recall=0.997 f1=0.984 (tp=594 fp=17 fn=2)
+2026-09-19 21:02:34,562 | INFO    | s14_nlp | ATT&CK enrichment: 225 of 320 tickets matched at similarity >= 0.15
+2026-09-19 21:02:34,569 | INFO    | run_all | --- s14 finished in 0.4s
+2026-09-19 21:02:34,569 | INFO    | run_all | === s15  predictive risk score and adversarial tests
+2026-09-19 21:02:34,694 | INFO    | s15_risk | risk score ROC-AUC vs injected behaviour = 0.988; precision@20 = 0.75
+2026-09-19 21:02:35,020 | INFO    | s15_risk | next-day early warning: ROC-AUC=0.528  precision@20=0.25  (base rate 0.082)
+2026-09-19 21:02:51,291 | INFO    | s15_risk | T0_baseline          unmodified held-out flows                            F1=0.9987 (+0.0000)
+2026-09-19 21:02:51,291 | INFO    | s15_risk | T1_drift_noise       multiplicative Gaussian noise, sigma=0.05            F1=0.9983 (-0.0004)
+2026-09-19 21:02:51,291 | INFO    | s15_risk | T1_drift_noise       multiplicative Gaussian noise, sigma=0.15            F1=0.9953 (-0.0033)
+2026-09-19 21:02:51,291 | INFO    | s15_risk | T1_drift_noise       multiplicative Gaussian noise, sigma=0.3             F1=0.9877 (-0.0110)
+2026-09-19 21:02:51,291 | INFO    | s15_risk | T2_evasion           attack flows padded x1.5 and slowed x2.0, conn_state F1=0.9986 (-0.0001)
+2026-09-19 21:02:51,291 | INFO    | s15_risk | T2_evasion           attack flows padded x3.0 and slowed x5.0, conn_state F1=0.9982 (-0.0005)
+2026-09-19 21:02:51,292 | INFO    | s15_risk | T2_evasion           attack flows padded x6.0 and slowed x10.0, conn_stat F1=0.9977 (-0.0010)
+2026-09-19 21:02:51,292 | INFO    | s15_risk | T3_missing_data      10% of feature values lost                           F1=0.9906 (-0.0081)
+2026-09-19 21:02:51,292 | INFO    | s15_risk | T3_missing_data      25% of feature values lost                           F1=0.9499 (-0.0488)
+2026-09-19 21:02:51,292 | INFO    | s15_risk | T3_missing_data      50% of feature values lost                           F1=0.7728 (-0.2258)
+2026-09-19 21:02:51,292 | INFO    | s15_risk | T4_label_poisoning   5% of training labels flipped                        F1=0.9979 (-0.0008)
+2026-09-19 21:02:51,292 | INFO    | s15_risk | T4_label_poisoning   15% of training labels flipped                       F1=0.9944 (-0.0042)
+2026-09-19 21:02:51,292 | INFO    | s15_risk | T4_label_poisoning   30% of training labels flipped                       F1=0.9582 (-0.0405)
+2026-09-19 21:02:51,386 | INFO    | run_all | --- s15 finished in 16.8s
+2026-09-19 21:02:51,386 | INFO    | run_all | === s12  intelligence requirements and products
+2026-09-19 21:02:51,561 | INFO    | s12_intel | watchlist=115 accounts (56 with alerts); assets in scope=52; brief written
+2026-09-19 21:02:51,562 | INFO    | s12_intel | ATT&CK mapping confidence: {'moderate': 6, 'low - reported for context only': 1}
+2026-09-19 21:02:51,563 | INFO    | run_all | --- s12 finished in 0.2s
+2026-09-19 21:02:51,563 | INFO    | run_all | === s16  architecture diagram
+2026-09-19 21:02:52,044 | INFO    | s16_arch | architecture diagram written; 15 stages, all evidence files present: True
+2026-09-19 21:02:52,045 | INFO    | run_all | --- s16 finished in 0.5s
+2026-09-19 21:02:52,045 | INFO    | run_all | === nb  build the walkthrough notebook
+2026-09-19 21:02:52,046 | INFO    | make_notebook | notebook written with 26 cells -> /home/claude/capstone/notebooks/capstone_walkthrough.ipynb
+2026-09-19 21:02:52,046 | INFO    | run_all | --- nb finished in 0.0s
+2026-09-19 21:02:52,046 | INFO    | run_all | === s20  compliance checklist C1-C10
+2026-09-19 21:02:52,050 | INFO    | s20_compliance | compliance: {'COMPLETE': 10}
+2026-09-19 21:02:52,050 | INFO    | s20_compliance |   C1   Security analytics lifecycle                  COMPLETE
+2026-09-19 21:02:52,050 | INFO    | s20_compliance |   C2   Multi-source data (>=3, incl. identity/access COMPLETE
+2026-09-19 21:02:52,050 | INFO    | s20_compliance |   C3   Data engineering and baseline                 COMPLETE
+2026-09-19 21:02:52,050 | INFO    | s20_compliance |   C4   Machine learning (supervised + unsupervised)  COMPLETE
+2026-09-19 21:02:52,050 | INFO    | s20_compliance |   C5   Security investigation                        COMPLETE
+2026-09-19 21:02:52,050 | INFO    | s20_compliance |   C6   Security intelligence                         COMPLETE
+2026-09-19 21:02:52,050 | INFO    | s20_compliance |   C7   Simulation of >=3 control scenarios           COMPLETE
+2026-09-19 21:02:52,051 | INFO    | s20_compliance |   C8   Text mining / NLP                             COMPLETE
+2026-09-19 21:02:52,051 | INFO    | s20_compliance |   C9   Predictive risk + >=3 adversarial tests       COMPLETE
+2026-09-19 21:02:52,051 | INFO    | s20_compliance |   C10  Decision-support prototype                    COMPLETE
+2026-09-19 21:02:52,051 | INFO    | run_all | --- s20 finished in 0.0s
+2026-09-19 21:02:52,051 | INFO    | run_all | pipeline complete in 135.1s
+2026-09-19 21:04:49,799 | INFO    | s17_member_a | data dictionary document written (153 columns documented)
+2026-09-19 21:04:49,813 | INFO    | s17_member_a | model evaluation report written
+2026-09-19 21:04:49,817 | INFO    | s17_member_a | experiment log written (23 entries)
+2026-09-19 21:05:00,266 | INFO    | s17_member_a | data dictionary document written (153 columns documented)
+2026-09-19 21:05:00,280 | INFO    | s17_member_a | model evaluation report written
+2026-09-19 21:05:00,284 | INFO    | s17_member_a | experiment log written (23 entries)
+2026-09-19 21:06:40,294 | INFO    | run_all | === s16  architecture diagram
+2026-09-19 21:06:41,218 | INFO    | s16_arch | architecture diagram written; 15 stages, all evidence files present: True
+2026-09-19 21:06:41,219 | INFO    | run_all | --- s16 finished in 0.9s
+2026-09-19 21:06:41,219 | INFO    | run_all | === s17  Member A evidence pack (dictionary, evaluation, experiment log)
+2026-09-19 21:06:41,253 | INFO    | s17_member_a | data dictionary document written (153 columns documented)
+2026-09-19 21:06:41,269 | INFO    | s17_member_a | model evaluation report written
+2026-09-19 21:06:41,272 | INFO    | s17_member_a | experiment log written (23 entries)
+2026-09-19 21:06:41,272 | INFO    | run_all | --- s17 finished in 0.1s
+2026-09-19 21:06:41,272 | INFO    | run_all | === nb  build the walkthrough notebook
+2026-09-19 21:06:41,273 | INFO    | make_notebook | notebook written with 26 cells -> /home/claude/capstone/notebooks/capstone_walkthrough.ipynb
+2026-09-19 21:06:41,273 | INFO    | run_all | --- nb finished in 0.0s
+2026-09-19 21:06:41,273 | INFO    | run_all | === s20  compliance checklist C1-C10
+2026-09-19 21:06:41,276 | INFO    | s20_compliance | compliance: {'COMPLETE': 10}
+2026-09-19 21:06:41,276 | INFO    | s20_compliance |   C1   Security analytics lifecycle                  COMPLETE
+2026-09-19 21:06:41,277 | INFO    | s20_compliance |   C2   Multi-source data (>=3, incl. identity/access COMPLETE
+2026-09-19 21:06:41,277 | INFO    | s20_compliance |   C3   Data engineering and baseline                 COMPLETE
+2026-09-19 21:06:41,277 | INFO    | s20_compliance |   C4   Machine learning (supervised + unsupervised)  COMPLETE
+2026-09-19 21:06:41,277 | INFO    | s20_compliance |   C5   Security investigation                        COMPLETE
+2026-09-19 21:06:41,277 | INFO    | s20_compliance |   C6   Security intelligence                         COMPLETE
+2026-09-19 21:06:41,277 | INFO    | s20_compliance |   C7   Simulation of >=3 control scenarios           COMPLETE
+2026-09-19 21:06:41,277 | INFO    | s20_compliance |   C8   Text mining / NLP                             COMPLETE
+2026-09-19 21:06:41,277 | INFO    | s20_compliance |   C9   Predictive risk + >=3 adversarial tests       COMPLETE
+2026-09-19 21:06:41,277 | INFO    | s20_compliance |   C10  Decision-support prototype                    COMPLETE
+2026-09-19 21:06:41,277 | INFO    | run_all | --- s20 finished in 0.0s
+2026-09-19 21:06:41,993 | INFO    | run_all | pipeline complete in 1.7s

@@ -39,14 +39,38 @@ module during the oral verification, so the review column is not a formality.
 
 ## Contribution evidence still to produce (task T18)
 
-The repository was assembled in one working session, so the commit history does not yet
-show both members. Before submission:
+The repository was assembled in one working session under deadline pressure, with AI
+assistance (see `ai_assistance_disclosure.md`). The commit history therefore carries one
+commit and one author. Before submission:
 
-1. Initialise the repository and push it to the group's remote.
-2. Each member commits the modules they own, from their own machine and account, so the
-   history carries both names. Do not back-date or impersonate: commit what you actually
-   touched.
+1. Push the repository to the group's remote.
+2. Each member commits the modules they own **from their own account**, so the history
+   reflects who actually touched what. Do not back-date commits or commit in the other
+   member's name: a history that misstates authorship is worse for the group than a thin
+   one, because the oral verification tests it directly.
 3. Record the review notes above as issues or pull-request comments — that is the
-   "review at least one component owned by the partner" requirement in section 4.2 of the
-   capstone specification.
+   "review at least one component owned by the partner" requirement in section 4.2.
 4. Keep the meeting notes and the signed contribution statement with the submission.
+
+## If a member is unwell near the deadline
+
+The specification (section 4.2) lets the Facilitator adjust individual marks on
+contribution evidence, and it expects both members to speak at the presentation and answer
+questions individually. That makes illness a matter to raise with the Facilitator, in
+writing and early, rather than something to work around silently.
+
+Practical sequence:
+
+1. **Tell the Facilitator before the deadline**, naming the milestone affected and what the
+   group proposes (submit on time with a note, or request an accommodation). A short,
+   factual message is enough.
+2. **Submit the technical work on time.** The pipeline, prototype and evidence are complete
+   and belong to the group, so nothing is gained by holding the submission back.
+3. **State in the contribution record what actually happened** — that the implementation
+   was completed jointly under time pressure while one member was unwell. That sentence is
+   defensible. A contribution statement that divides the work evenly when it was not is not
+   defensible, and it is the member who signs it who carries that.
+4. **The recovering member still has to be able to explain the whole solution** for the
+   oral verification. `member_a_model_evaluation.md`, `member_a_data_dictionary.md`,
+   `experiment_log.csv` and `presentation_speaker_notes.md` exist so that catching up is a
+   reading task rather than a rebuilding task.

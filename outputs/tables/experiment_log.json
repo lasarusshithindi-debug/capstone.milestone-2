@@ -1,22 +1,16 @@
 {
   "stages": [
     {
-      "stage": "s15",
-      "module": "s15_risk_adversarial",
-      "description": "predictive risk score and adversarial tests",
-      "seconds": 14.7
-    },
-    {
-      "stage": "s12",
-      "module": "s12_intelligence",
-      "description": "intelligence requirements and products",
-      "seconds": 0.2
-    },
-    {
       "stage": "s16",
       "module": "s16_architecture",
       "description": "architecture diagram",
-      "seconds": 0.3
+      "seconds": 0.9
+    },
+    {
+      "stage": "s17",
+      "module": "s17_member_a_pack",
+      "description": "Member A evidence pack (dictionary, evaluation, experiment log)",
+      "seconds": 0.1
     },
     {
       "stage": "nb",
@@ -31,9 +25,9 @@
       "seconds": 0.0
     }
   ],
-  "total_seconds": 15.2,
+  "total_seconds": 1.0,
   "env": {
-    "utc_time": "2026-09-19T19:33:49+00:00",
+    "utc_time": "2026-09-19T21:06:41+00:00",
     "python": "3.11.15",
     "platform": "Linux-6.18.44-fc-v37-x86_64-with-glibc2.39",
     "numpy": "2.4.4",

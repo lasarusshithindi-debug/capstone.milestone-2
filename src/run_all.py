@@ -37,6 +37,7 @@ STAGES = [
     ("s15", "s15_risk_adversarial", "predictive risk score and adversarial tests"),
     ("s12", "s12_intelligence", "intelligence requirements and products"),
     ("s16", "s16_architecture", "architecture diagram"),
+    ("s17", "s17_member_a_pack", "Member A evidence pack (dictionary, evaluation, experiment log)"),
     ("nb", "make_notebook", "build the walkthrough notebook"),
     ("s20", "s20_compliance", "compliance checklist C1-C10"),
 ]
