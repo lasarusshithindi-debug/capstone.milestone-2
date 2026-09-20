@@ -152,8 +152,14 @@ def build() -> str:
       .kv { font-family: "DejaVu Sans", Arial, sans-serif; font-size: 8.6pt; }
       code { font-family: "DejaVu Sans Mono", monospace; font-size: 8.6pt; }
       .pagebreak { page-break-before: always; }
-      .toc td { border: none; padding: 2.2pt 0; font-size: 9.6pt; }
       .small { font-size: 9pt; color: #4a5462; }
+      .toc { margin-top: 4pt; }
+      .tocrow { display: flex; align-items: baseline; font-size: 9.8pt; margin: 2.4pt 0; }
+      .tocrow.l2 { font-size: 9.1pt; color: #333b45; padding-left: 14pt; margin: 1.6pt 0; }
+      .tocrow .t { white-space: nowrap; }
+      .tocrow .dots { flex: 1; border-bottom: 0.6pt dotted #9aa3ae; margin: 0 5pt 0 5pt;
+                      transform: translateY(-2.5pt); }
+      .tocrow .pg { font-variant-numeric: tabular-nums; color: #333b45; }
     </style>"""
 
     # ------------------------------------------------------------------ cover + TOC
@@ -174,29 +180,9 @@ def build() -> str:
       </table>
     </div>"""]
 
-    html.append("""
-    <h2>Contents</h2>
-    <table class="toc">
-      <tr><td>1. Executive summary</td></tr>
-      <tr><td>2. Alignment with the approved Project Charter</td></tr>
-      <tr><td>3. Architecture and data flow</td></tr>
-      <tr><td>4. Data inventory, dictionary, cleaning log and quality checks</td></tr>
-      <tr><td>5. Exploratory analysis, baselines and security hypotheses</td></tr>
-      <tr><td>6. Supervised model and anomaly/behavioural model</td></tr>
-      <tr><td>7. Incident timeline, access findings and response logic</td></tr>
-      <tr><td>8. Security intelligence requirements, enrichment and first products</td></tr>
-      <tr><td>9. Simulation design and preliminary comparative results</td></tr>
-      <tr><td>10. Text-mining and NLP workflow and preliminary outputs</td></tr>
-      <tr><td>11. Predictive risk method and adversarial test cases</td></tr>
-      <tr><td>12. Working prototype, test cases, known defects and backlog</td></tr>
-      <tr><td>13. Repository, environment and contribution evidence</td></tr>
-      <tr><td>14. Updated risk register and deviations from the charter</td></tr>
-      <tr><td>15. Implementation plan to Milestones 3 and 4</td></tr>
-      <tr><td>16. Limitations, ethics and AI assistance</td></tr>
-      <tr><td>Appendix A. Requirement coverage C1&ndash;C10</td></tr>
-      <tr><td>Appendix B. Experiment log</td></tr>
-      <tr><td>Appendix C. Figure and file index</td></tr>
-    </table>""")
+    # The contents list is generated from the headings after the document is laid out, so
+    # that the page numbers are the real ones. See build_document() below.
+    html.append('<h2>Contents</h2>\n<!--TOC-->\n<div class="pagebreak"></div>')
 
     # ------------------------------------------------------------------ 1. summary
     html.append(f"""
@@ -930,6 +916,74 @@ def build() -> str:
     return "\n".join(html)
 
 
+def headings(html: str) -> list[tuple[int, str]]:
+    """Every h2/h3 in document order, except the Contents heading itself."""
+    import re
+    out = []
+    for m in re.finditer(r"<h([23])>(.*?)</h\1>", html, re.S):
+        title = re.sub(r"<[^>]+>", "", m.group(2))
+        title = (title.replace("&ndash;", "–").replace("&amp;", "&")
+                      .replace("&middot;", "·").strip())
+        if title.lower() == "contents":
+            continue
+        out.append((int(m.group(1)), title))
+    return out
+
+
+def toc_html(items: list[tuple[int, str]], pages: dict[str, int] | None) -> str:
+    """Contents list with dotted leaders. Page numbers are '--' on the measuring pass."""
+    rows = []
+    for level, title in items:
+        pg = "&ndash;&ndash;" if pages is None else str(pages.get(title, ""))
+        cls = "tocrow" if level == 2 else "tocrow l2"
+        rows.append(f'<div class="{cls}"><span class="t">{title}</span>'
+                    f'<span class="dots"></span><span class="pg">{pg}</span></div>')
+    return '<div class="toc">' + "".join(rows) + "</div>"
+
+
+def measure_pages(pdf_path: Path, items: list[tuple[int, str]]) -> dict[str, int]:
+    """Find the printed page each heading starts on by reading the rendered PDF."""
+    from pypdf import PdfReader
+
+    # the PDF text layer uses typographic ligatures (fi, fl, ff), so both sides of the
+    # comparison are folded back to plain letters before matching
+    LIGATURES = {"ﬀ": "ff", "ﬁ": "fi", "ﬂ": "fl", "ﬃ": "ffi",
+                 "ﬄ": "ffl", "–": "-", "—": "-", " ": " "}
+
+    def norm(s: str) -> str:
+        for k, v in LIGATURES.items():
+            s = s.replace(k, v)
+        return " ".join(s.split()).lower()
+
+    reader = PdfReader(str(pdf_path))
+    page_text = [norm(p.extract_text() or "") for p in reader.pages]
+
+    # The contents page lists every heading, so it would match all of them. Any page
+    # holding six or more heading titles is treated as front matter and skipped.
+    targets = [norm(t) for _l, t in items]
+    first_body = 1
+    for i, txt in enumerate(page_text):
+        if sum(1 for t in targets if t in txt) >= 6:
+            first_body = i + 1
+    pages, cursor = {}, first_body
+    for _level, title in items:
+        target = norm(title)
+        found = None
+        for i in range(cursor, len(page_text)):
+            if target in page_text[i]:
+                found = i + 1                  # 1-based, matches the printed footer
+                break
+        if found is None:                      # fall back to a search after the contents
+            for i in range(first_body, len(page_text)):
+                if target in page_text[i]:
+                    found = i + 1
+                    break
+        if found:
+            pages[title] = found
+            cursor = found - 1                 # headings are in order; allow same page
+    return pages
+
+
 def render_pdf(html_path: Path, pdf_path: Path) -> None:
     script = f"""
 from playwright.sync_api import sync_playwright
@@ -952,10 +1006,34 @@ with sync_playwright() as pw:
 
 
 def main() -> None:
-    html = build()
-    HTML.write_text(html, encoding="utf-8")
-    render_pdf(HTML, PDF)
-    LOG.info("Milestone 2 document written: %s (%.1f MB)", PDF, PDF.stat().st_size / 1e6)
+    """
+    The contents page needs real page numbers, and inserting it changes the pagination,
+    so the document is laid out more than once: first with placeholder numbers, then with
+    the measured ones, repeating until the numbers stop moving (at most three passes).
+    """
+    base = build()
+    items = headings(base)
+
+    pages = None
+    previous: dict[str, int] = {}
+    for attempt in range(1, 4):
+        html = base.replace("<!--TOC-->", toc_html(items, pages))
+        HTML.write_text(html, encoding="utf-8")
+        render_pdf(HTML, PDF)
+        measured = measure_pages(PDF, items)
+        if pages is not None and measured == previous:
+            LOG.info("contents page numbers stable after %d passes", attempt)
+            break
+        previous, pages = measured, measured
+    else:
+        LOG.warning("contents page numbers still moving after 3 passes; "
+                    "check the rendered document")
+
+    missing = [t for _l, t in items if t not in (pages or {})]
+    if missing:
+        LOG.warning("headings not located in the PDF: %s", missing)
+    LOG.info("Milestone 2 document written: %s (%.1f MB), %d contents entries",
+             PDF, PDF.stat().st_size / 1e6, len(items))
 
 
 if __name__ == "__main__":

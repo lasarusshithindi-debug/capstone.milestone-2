@@ -38,8 +38,14 @@
       .kv { font-family: "DejaVu Sans", Arial, sans-serif; font-size: 8.6pt; }
       code { font-family: "DejaVu Sans Mono", monospace; font-size: 8.6pt; }
       .pagebreak { page-break-before: always; }
-      .toc td { border: none; padding: 2.2pt 0; font-size: 9.6pt; }
       .small { font-size: 9pt; color: #4a5462; }
+      .toc { margin-top: 4pt; }
+      .tocrow { display: flex; align-items: baseline; font-size: 9.8pt; margin: 2.4pt 0; }
+      .tocrow.l2 { font-size: 9.1pt; color: #333b45; padding-left: 14pt; margin: 1.6pt 0; }
+      .tocrow .t { white-space: nowrap; }
+      .tocrow .dots { flex: 1; border-bottom: 0.6pt dotted #9aa3ae; margin: 0 5pt 0 5pt;
+                      transform: translateY(-2.5pt); }
+      .tocrow .pg { font-variant-numeric: tabular-nums; color: #333b45; }
     </style></head><body>
     <div class="cover">
       <div class="topic">SAS821S Security Analytics &middot; Capstone Project &middot; Milestone 2</div>
@@ -52,33 +58,13 @@
         <tr><td><b>Member B</b></td><td>215103815 &middot; Lasarus Shithindi &middot; Security Engineering and Intelligence Lead</td></tr>
         <tr><td><b>Milestone</b></td><td>2 of 4 &middot; weight 40% of the capstone mark</td></tr>
         <tr><td><b>Due</b></td><td>20 September 2026</td></tr>
-        <tr><td><b>Submitted</b></td><td>19 September 2026</td></tr>
+        <tr><td><b>Submitted</b></td><td>20 September 2026</td></tr>
         <tr><td><b>Institution</b></td><td>Namibia University of Science and Technology</td></tr>
       </table>
     </div>
-
-    <h2>Contents</h2>
-    <table class="toc">
-      <tr><td>1. Executive summary</td></tr>
-      <tr><td>2. Alignment with the approved Project Charter</td></tr>
-      <tr><td>3. Architecture and data flow</td></tr>
-      <tr><td>4. Data inventory, dictionary, cleaning log and quality checks</td></tr>
-      <tr><td>5. Exploratory analysis, baselines and security hypotheses</td></tr>
-      <tr><td>6. Supervised model and anomaly/behavioural model</td></tr>
-      <tr><td>7. Incident timeline, access findings and response logic</td></tr>
-      <tr><td>8. Security intelligence requirements, enrichment and first products</td></tr>
-      <tr><td>9. Simulation design and preliminary comparative results</td></tr>
-      <tr><td>10. Text-mining and NLP workflow and preliminary outputs</td></tr>
-      <tr><td>11. Predictive risk method and adversarial test cases</td></tr>
-      <tr><td>12. Working prototype, test cases, known defects and backlog</td></tr>
-      <tr><td>13. Repository, environment and contribution evidence</td></tr>
-      <tr><td>14. Updated risk register and deviations from the charter</td></tr>
-      <tr><td>15. Implementation plan to Milestones 3 and 4</td></tr>
-      <tr><td>16. Limitations, ethics and AI assistance</td></tr>
-      <tr><td>Appendix A. Requirement coverage C1&ndash;C10</td></tr>
-      <tr><td>Appendix B. Experiment log</td></tr>
-      <tr><td>Appendix C. Figure and file index</td></tr>
-    </table>
+<h2>Contents</h2>
+<div class="toc"><div class="tocrow"><span class="t">1. Executive summary</span><span class="dots"></span><span class="pg">3</span></div><div class="tocrow"><span class="t">2. Alignment with the approved Project Charter</span><span class="dots"></span><span class="pg">4</span></div><div class="tocrow l2"><span class="t">2.1 Objectives and analytics questions</span><span class="dots"></span><span class="pg">4</span></div><div class="tocrow l2"><span class="t">2.2 Data sources</span><span class="dots"></span><span class="pg">4</span></div><div class="tocrow l2"><span class="t">2.3 Analytical methods</span><span class="dots"></span><span class="pg">5</span></div><div class="tocrow l2"><span class="t">2.4 Scope</span><span class="dots"></span><span class="pg">5</span></div><div class="tocrow"><span class="t">3. Architecture and data flow</span><span class="dots"></span><span class="pg">6</span></div><div class="tocrow"><span class="t">4. Data inventory, dictionary, cleaning log and quality checks</span><span class="dots"></span><span class="pg">8</span></div><div class="tocrow l2"><span class="t">4.1 Inventory and minimum-data compliance</span><span class="dots"></span><span class="pg">8</span></div><div class="tocrow l2"><span class="t">4.2 Data dictionary</span><span class="dots"></span><span class="pg">8</span></div><div class="tocrow l2"><span class="t">4.3 Cleaning and transformation log</span><span class="dots"></span><span class="pg">9</span></div><div class="tocrow l2"><span class="t">4.4 Quality checks</span><span class="dots"></span><span class="pg">10</span></div><div class="tocrow"><span class="t">5. Exploratory analysis, baselines and security hypotheses</span><span class="dots"></span><span class="pg">11</span></div><div class="tocrow l2"><span class="t">5.1 Initial security hypotheses</span><span class="dots"></span><span class="pg">12</span></div><div class="tocrow"><span class="t">6. Supervised model and anomaly/behavioural model</span><span class="dots"></span><span class="pg">13</span></div><div class="tocrow l2"><span class="t">6.1 Supervised intrusion detection</span><span class="dots"></span><span class="pg">13</span></div><div class="tocrow l2"><span class="t">6.2 Anomaly and behavioural methods</span><span class="dots"></span><span class="pg">14</span></div><div class="tocrow"><span class="t">7. Incident timeline, access findings and response logic</span><span class="dots"></span><span class="pg">17</span></div><div class="tocrow l2"><span class="t">7.1 Access and identity analytics</span><span class="dots"></span><span class="pg">17</span></div><div class="tocrow l2"><span class="t">7.2 Selected case</span><span class="dots"></span><span class="pg">17</span></div><div class="tocrow l2"><span class="t">7.3 Response logic</span><span class="dots"></span><span class="pg">18</span></div><div class="tocrow"><span class="t">8. Security intelligence requirements, enrichment and first products</span><span class="dots"></span><span class="pg">19</span></div><div class="tocrow"><span class="t">9. Simulation design and preliminary comparative results</span><span class="dots"></span><span class="pg">21</span></div><div class="tocrow"><span class="t">10. Text-mining and NLP workflow and preliminary outputs</span><span class="dots"></span><span class="pg">23</span></div><div class="tocrow"><span class="t">11. Predictive risk method and adversarial test cases</span><span class="dots"></span><span class="pg">25</span></div><div class="tocrow l2"><span class="t">11.1 Daily risk score</span><span class="dots"></span><span class="pg">25</span></div><div class="tocrow l2"><span class="t">11.2 Early warning</span><span class="dots"></span><span class="pg">25</span></div><div class="tocrow l2"><span class="t">11.3 Adversarial and robustness tests</span><span class="dots"></span><span class="pg">25</span></div><div class="tocrow"><span class="t">12. Working prototype, test cases, known defects and backlog</span><span class="dots"></span><span class="pg">27</span></div><div class="tocrow l2"><span class="t">12.1 Prototype</span><span class="dots"></span><span class="pg">27</span></div><div class="tocrow l2"><span class="t">12.2 Test cases</span><span class="dots"></span><span class="pg">27</span></div><div class="tocrow l2"><span class="t">12.3 Known defects and limitations</span><span class="dots"></span><span class="pg">27</span></div><div class="tocrow l2"><span class="t">12.4 Implementation backlog</span><span class="dots"></span><span class="pg">28</span></div><div class="tocrow"><span class="t">13. Repository, environment and contribution evidence</span><span class="dots"></span><span class="pg">29</span></div><div class="tocrow"><span class="t">14. Updated risk register and deviations from the charter</span><span class="dots"></span><span class="pg">30</span></div><div class="tocrow l2"><span class="t">14.1 Declared deviations</span><span class="dots"></span><span class="pg">30</span></div><div class="tocrow"><span class="t">15. Implementation plan to Milestones 3 and 4</span><span class="dots"></span><span class="pg">31</span></div><div class="tocrow l2"><span class="t">15.1 Priorities for Milestone 3</span><span class="dots"></span><span class="pg">32</span></div><div class="tocrow"><span class="t">16. Limitations, ethics and AI assistance</span><span class="dots"></span><span class="pg">32</span></div><div class="tocrow"><span class="t">Appendix A. Requirement coverage C1–C10</span><span class="dots"></span><span class="pg">33</span></div><div class="tocrow"><span class="t">Appendix B. Experiment log</span><span class="dots"></span><span class="pg">33</span></div><div class="tocrow"><span class="t">Appendix C. Figure and file index</span><span class="dots"></span><span class="pg">35</span></div></div>
+<div class="pagebreak"></div>
 
     <h2>1. Executive summary</h2>
     <p>This milestone reports an implemented security analytics solution for the T08 mining

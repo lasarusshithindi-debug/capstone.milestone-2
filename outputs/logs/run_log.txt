@@ -330,3 +330,10 @@
 2026-09-19 21:22:07,768 | INFO    | s18_doc | Milestone 2 document written: /home/claude/capstone/docs/T08_Milestone2_Implementation_Plan.pdf (0.9 MB)
 2026-09-19 21:22:40,269 | INFO    | s18_doc | Milestone 2 document written: /home/claude/capstone/docs/T08_Milestone2_Implementation_Plan.pdf (0.9 MB)
 2026-09-19 21:23:01,994 | INFO    | s18_doc | Milestone 2 document written: /home/claude/capstone/docs/T08_Milestone2_Implementation_Plan.pdf (0.9 MB)
+2026-09-20 09:31:51,617 | INFO    | s18_doc | contents page numbers stable after 2 passes
+2026-09-20 09:31:51,618 | WARNING | s18_doc | headings not located in the PDF: ['3. Architecture and data flow', '7. Incident timeline, access findings and response logic', '8. Security intelligence requirements, enrichment and first products', '10. Text-mining and NLP workflow and preliminary outputs', 'Appendix C. Figure and file index']
+2026-09-20 09:31:51,618 | INFO    | s18_doc | Milestone 2 document written: /home/claude/capstone/docs/T08_Milestone2_Implementation_Plan.pdf (1.1 MB), 42 contents entries
+2026-09-20 09:32:19,460 | INFO    | s18_doc | contents page numbers stable after 2 passes
+2026-09-20 09:32:19,460 | INFO    | s18_doc | Milestone 2 document written: /home/claude/capstone/docs/T08_Milestone2_Implementation_Plan.pdf (1.1 MB), 42 contents entries
+2026-09-20 09:32:55,114 | INFO    | s18_doc | contents page numbers stable after 2 passes
+2026-09-20 09:32:55,114 | INFO    | s18_doc | Milestone 2 document written: /home/claude/capstone/docs/T08_Milestone2_Implementation_Plan.pdf (1.1 MB), 42 contents entries
