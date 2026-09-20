@@ -51,8 +51,11 @@ jupyter lab notebooks/capstone_walkthrough.ipynb
 `python src/run_all.py --from s08` resumes at a stage. Every stage also runs on its own
 (`python src/s09_anomaly.py`). All runs append to `outputs/logs/run_log.txt`.
 
-**Data acquisition.** The two ToN_IoT files are not redistributed in this repository. Fetch
-them once into `data/raw/`:
+**Data acquisition.** The submission archive is self-contained: the ToN_IoT subsets and the
+ATT&CK for ICS bundle are already in `data/raw/`, with sources, licences and the citations
+the dataset authors ask for in `data/raw/DATA_SOURCES.md`. Nothing needs to be downloaded
+to reproduce the results. If you are starting from a clean checkout without the data, fetch
+it once into `data/raw/`:
 
 ```bash
 git clone --depth 1 https://github.com/PengaloGit/ToN_IoT-datasets.git data/raw/ton_iot_gh
