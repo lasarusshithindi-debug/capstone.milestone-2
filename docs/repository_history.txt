@@ -1,0 +1,261 @@
+Repository history export - T08 capstone
+Generated 2026-09-20 16:34 UTC
+
+NOTE: see docs/contribution_and_review.md - the history currently carries one author;
+both members are to commit their own modules before Milestone 3.
+
+commit f8c98d8bcc53a16379cb077e96657831669a0dfd
+author Lasarus Shithindi <215103815@students.nust.na>
+date   2026-09-20 16:21:31 +0000
+
+Capture console screenshots and include the prototype in the Milestone 2 document
+
+src/s19_app_screenshots.py starts the Streamlit console and drives it headlessly to
+capture four views; section 12.1 of the document now shows the running prototype rather
+than only describing it.
+
+Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01CCrg9YaK42umZ4gDEWmi2b
+
+ docs/T08_Milestone2_Implementation_Plan.html    |  11 +++-
+ docs/T08_Milestone2_Implementation_Plan.pdf     | Bin 1119638 -> 1950059 bytes
+ outputs/figures/fig27_console_overview.png      | Bin 0 -> 124210 bytes
+ outputs/figures/fig28_console_accounts.png      | Bin 0 -> 229769 bytes
+ outputs/figures/fig29_console_investigation.png | Bin 0 -> 330002 bytes
+ outputs/figures/fig30_console_simulation.png    | Bin 0 -> 168597 bytes
+ outputs/logs/run_log.txt                        |  21 +++++++
+ src/run_all.py                                  |   1 +
+ src/s18_milestone2_doc.py                       |   7 +++
+ src/s19_app_screenshots.py                      |  74 ++++++++++++++++++++++++
+ 10 files changed, 112 insertions(+), 2 deletions(-)
+
+commit 20866a709a5aa01a359b30e24de4ebe1d824388a
+author Lasarus Shithindi <215103815@students.nust.na>
+date   2026-09-20 09:33:18 +0000
+
+Add a generated table of contents with real page numbers to the Milestone 2 document
+
+The contents list is built from the h2/h3 headings and the page numbers are measured from
+the rendered PDF, re-laying out the document until the numbers stop moving. Ligature and
+front-matter handling included so headings are located reliably.
+
+Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01CCrg9YaK42umZ4gDEWmi2b
+
+ docs/T08_Milestone2_Implementation_Plan.html |  36 +++----
+ docs/T08_Milestone2_Implementation_Plan.pdf  | Bin 892494 -> 1119638 bytes
+ outputs/logs/run_log.txt                     |   7 ++
+ src/s18_milestone2_doc.py                    | 134 +++++++++++++++++++++------
+ 4 files changed, 124 insertions(+), 53 deletions(-)
+
+commit 1a518b90ebc9158e6d0de2086fd00eab4c2f437f
+author Lasarus Shithindi <215103815@students.nust.na>
+date   2026-09-19 21:23:14 +0000
+
+Add Milestone 2 implementation-plan document generator and PDF
+
+src/s18_milestone2_doc.py builds a 35-page A4 document from the pipeline outputs:
+charter alignment, architecture, data engineering, baselines, models, investigation,
+intelligence, simulation, NLP, risk and adversarial testing, prototype, repository
+evidence, updated risk register, declared deviations, forward plan and C1-C10 appendix.
+
+Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01CCrg9YaK42umZ4gDEWmi2b
+
+ docs/T08_Milestone2_Implementation_Plan.html | 594 +++++++++++++++++
+ docs/T08_Milestone2_Implementation_Plan.pdf  | Bin 0 -> 892494 bytes
+ outputs/logs/run_log.txt                     |   3 +
+ src/run_all.py                               |   1 +
+ src/s18_milestone2_doc.py                    | 962 +++++++++++++++++++++++++++
+ 5 files changed, 1560 insertions(+)
+
+commit 336a81427971aa463cddf851fd9e5e4a16b7a184
+author Lasarus Shithindi <215103815@students.nust.na>
+date   2026-09-19 21:06:55 +0000
+
+Add Member A evidence pack, speaker notes, AI disclosure and contingency guidance
+
+- src/s17_member_a_pack.py generates the data dictionary, model evaluation report and
+  experiment log from pipeline outputs (Member A deliverables per spec 4.1)
+- docs/presentation_speaker_notes.md covers all sections with Q&A preparation
+- docs/ai_assistance_disclosure.md satisfies charter section 12
+- contribution record updated with the honest position on authorship and illness
+
+Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01CCrg9YaK42umZ4gDEWmi2b
+
+ docs/ai_assistance_disclosure.md                 |  44 ++
+ docs/contribution_and_review.md                  |  40 +-
+ docs/experiment_log.csv                          |  24 ++
+ docs/member_a_data_dictionary.md                 | 318 ++++++++++++++
+ docs/member_a_model_evaluation.md                | 160 +++++++
+ docs/presentation_speaker_notes.md               | 205 +++++++++
+ outputs/logs/run_log.txt                         | 178 ++++++++
+ outputs/tables/anomaly_summary.json              |   2 +-
+ outputs/tables/cleaning_summary.json             |   2 +-
+ outputs/tables/experiment_log.json               |  24 +-
+ outputs/tables/incident_summary.json             |   2 +-
+ outputs/tables/intel_summary.json                |   2 +-
+ outputs/tables/inventory_summary.json            |   2 +-
+ outputs/tables/nlp_summary.json                  |   2 +-
+ outputs/tables/provenance_attack_ics_text.json   |   2 +-
+ outputs/tables/provenance_synthetic_access.json  |   2 +-
+ outputs/tables/provenance_synthetic_tickets.json |   2 +-
+ outputs/tables/risk_adversarial_summary.json     |   2 +-
+ outputs/tables/simulation_summary.json           |   2 +-
+ outputs/tables/supervised_summary.json           |   2 +-
+ outputs/tables/ueba_summary.json                 |   2 +-
+ src/run_all.py                                   |   1 +
+ src/s17_member_a_pack.py                         | 528 +++++++++++++++++++++++
+ 23 files changed, 1512 insertions(+), 36 deletions(-)
+
+commit 45b146e032debea5b4d40506aed028a712658ef8
+author Lasarus Shithindi <215103815@students.nust.na>
+date   2026-09-19 19:34:11 +0000
+
+T08 capstone: end-to-end mining IIoT security analytics pipeline, prototype and evidence
+
+Implements C1-C10: ingestion and provenance, cleaning pipeline with log, baselines,
+supervised detection (LR/DT/RF), anomaly detection (IF/LOF/DBSCAN), UEBA rules,
+investigation timeline, intelligence products, Monte Carlo control simulation,
+text mining, predictive risk score, adversarial tests, Streamlit console, tests.
+
+Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01CCrg9YaK42umZ4gDEWmi2b
+
+ .gitignore                                         |    10 +
+ README.md                                          |   137 +
+ app/app.py                                         |   244 +
+ data/raw/attack_ics_text.csv                       |  1133 +
+ data/raw/mining_asset_inventory.csv                |   195 +
+ data/raw/mining_user_directory.csv                 |   115 +
+ data/raw/synthetic_maintenance_tickets.csv         |   321 +
+ data/raw/synthetic_remote_access_log.csv           | 22687 +++++++++++++++++++
+ docs/charter.pdf                                   |   Bin 0 -> 368411 bytes
+ docs/charter.txt                                   |   514 +
+ docs/contribution_and_review.md                    |    52 +
+ docs/impl.docx                                     |   Bin 0 -> 60521 bytes
+ docs/implementation_plan.csv                       |    24 +
+ docs/known_defects_and_backlog.csv                 |    18 +
+ notebooks/capstone_walkthrough.ipynb               |   288 +
+ outputs/compliance_checklist.md                    |    63 +
+ .../figures/fig01_telemetry_volume_over_time.png   |   Bin 0 -> 51424 bytes
+ outputs/figures/fig02_attack_mix_by_sensor.png     |   Bin 0 -> 55713 bytes
+ outputs/figures/fig03_modbus_registers.png         |   Bin 0 -> 33646 bytes
+ outputs/figures/fig04_network_type_counts.png      |   Bin 0 -> 42107 bytes
+ outputs/figures/fig05_network_service.png          |   Bin 0 -> 27253 bytes
+ outputs/figures/fig06_top_talkers.png              |   Bin 0 -> 76590 bytes
+ outputs/figures/fig07_access_events_over_time.png  |   Bin 0 -> 83512 bytes
+ outputs/figures/fig08_login_hour_by_role.png       |   Bin 0 -> 44192 bytes
+ outputs/figures/fig09_confusion_network.png        |   Bin 0 -> 22634 bytes
+ .../figures/fig10_feature_importance_network.png   |   Bin 0 -> 41485 bytes
+ .../figures/fig11_confusion_network_multiclass.png |   Bin 0 -> 47128 bytes
+ outputs/figures/fig12_confusion_modbus.png         |   Bin 0 -> 22946 bytes
+ outputs/figures/fig13_network_anomaly_scores.png   |   Bin 0 -> 40282 bytes
+ outputs/figures/fig14_anomaly_share_by_type.png    |   Bin 0 -> 35368 bytes
+ outputs/figures/fig15_access_anomaly_scatter.png   |   Bin 0 -> 46318 bytes
+ outputs/figures/fig16_top_anomalous_user_days.png  |   Bin 0 -> 54523 bytes
+ outputs/figures/fig17_ueba_rule_alerts.png         |   Bin 0 -> 45471 bytes
+ outputs/figures/fig18_alerts_per_day.png           |   Bin 0 -> 23913 bytes
+ outputs/figures/fig19_incident_timeline.png        |   Bin 0 -> 45133 bytes
+ outputs/figures/fig20_simulation_scenarios.png     |   Bin 0 -> 46553 bytes
+ outputs/figures/fig21_simulation_sensitivity.png   |   Bin 0 -> 56926 bytes
+ outputs/figures/fig22_ticket_classification_cm.png |   Bin 0 -> 47822 bytes
+ outputs/figures/fig23_indicator_counts.png         |   Bin 0 -> 23361 bytes
+ outputs/figures/fig24_risk_score_distribution.png  |   Bin 0 -> 34853 bytes
+ outputs/figures/fig25_adversarial_tests.png        |   Bin 0 -> 54788 bytes
+ outputs/figures/fig26_architecture.png             |   Bin 0 -> 223471 bytes
+ outputs/intelligence_executive_brief.md            |    60 +
+ outputs/logs/run_log.txt                           |   151 +
+ outputs/tables/adversarial_results.csv             |    14 +
+ outputs/tables/anomaly_access_dbscan_clusters.csv  |     5 +
+ .../tables/anomaly_access_flagged_user_days.csv    |    57 +
+ outputs/tables/anomaly_access_validation.csv       |     3 +
+ .../tables/anomaly_network_baseline_thresholds.csv |     5 +
+ outputs/tables/anomaly_network_by_type.csv         |    11 +
+ outputs/tables/anomaly_network_thresholds.csv      |     6 +
+ outputs/tables/anomaly_summary.json                |   127 +
+ outputs/tables/architecture_stages.csv             |    16 +
+ outputs/tables/baseline_access_role.csv            |     9 +
+ outputs/tables/baseline_access_user.csv            |   115 +
+ outputs/tables/baseline_network.csv                |     5 +
+ outputs/tables/baseline_telemetry.csv              |    14 +
+ outputs/tables/cleaning_log.csv                    |    38 +
+ outputs/tables/cleaning_summary.json               |    17 +
+ outputs/tables/compliance_checklist.csv            |    11 +
+ outputs/tables/data_dictionary.csv                 |   154 +
+ outputs/tables/data_inventory.csv                  |    14 +
+ outputs/tables/data_quality.csv                    |    11 +
+ outputs/tables/diagnostic_attack_vs_baseline.csv   |    15 +
+ outputs/tables/diagnostic_conn_state.csv           |    14 +
+ outputs/tables/eda_findings.csv                    |     5 +
+ outputs/tables/eda_summary.json                    |    31 +
+ outputs/tables/eda_unusual_user_days.csv           |    46 +
+ outputs/tables/experiment_log.json                 |    44 +
+ outputs/tables/incident_affected_entities.csv      |     9 +
+ outputs/tables/incident_case_ranking.csv           |    56 +
+ outputs/tables/incident_response_plan.csv          |    10 +
+ outputs/tables/incident_summary.json               |    30 +
+ outputs/tables/incident_timeline.csv               |   203 +
+ outputs/tables/intel_assets_in_scope.csv           |    53 +
+ outputs/tables/intel_attack_mapping.csv            |    15 +
+ outputs/tables/intel_operational_watchlist.csv     |   116 +
+ outputs/tables/intel_requirements.csv              |     6 +
+ outputs/tables/intel_summary.json                  |   159 +
+ outputs/tables/inventory_summary.json              |    32 +
+ outputs/tables/minimum_data_check.csv              |     7 +
+ outputs/tables/nlp_attack_topics.csv               |     7 +
+ outputs/tables/nlp_extracted_indicators.csv        |   321 +
+ outputs/tables/nlp_summary.json                    |   113 +
+ outputs/tables/nlp_ticket_attack_enrichment.csv    |   321 +
+ outputs/tables/nlp_ticket_classification.csv       |     9 +
+ outputs/tables/nlp_top_terms_security.csv          |    16 +
+ outputs/tables/provenance_attack_ics_text.json     |    30 +
+ outputs/tables/provenance_synthetic_access.json    |    48 +
+ outputs/tables/provenance_synthetic_tickets.json   |    23 +
+ outputs/tables/requirements_matrix.csv             |    11 +
+ outputs/tables/risk_adversarial_summary.json       |   192 +
+ outputs/tables/risk_band_summary.csv               |     5 +
+ outputs/tables/risk_forecast_coefficients.csv      |    11 +
+ outputs/tables/risk_forecast_metrics.csv           |     2 +
+ outputs/tables/risk_user_day_scores.csv            |  2793 +++
+ outputs/tables/simulation_sensitivity.csv          |    16 +
+ outputs/tables/simulation_summary.csv              |     6 +
+ outputs/tables/simulation_summary.json             |   151 +
+ outputs/tables/supervised_modbus_test.csv          |     3 +
+ outputs/tables/supervised_network_cv.csv           |     4 +
+ outputs/tables/supervised_network_importance.csv   |    22 +
+ outputs/tables/supervised_network_multiclass.csv   |    14 +
+ outputs/tables/supervised_network_report.json      |    27 +
+ outputs/tables/supervised_network_test.csv         |     4 +
+ outputs/tables/supervised_summary.json             |    94 +
+ outputs/tables/ueba_alerts.csv                     |   177 +
+ outputs/tables/ueba_rule_summary.csv               |     8 +
+ outputs/tables/ueba_summary.json                   |    71 +
+ outputs/tables/ueba_user_baseline.csv              |   115 +
+ requirements.txt                                   |    10 +
+ src/common.py                                      |   110 +
+ src/make_notebook.py                               |   142 +
+ src/run_all.py                                     |    74 +
+ src/s01_extract_attack_text.py                     |   112 +
+ src/s02_generate_context_and_access.py             |   346 +
+ src/s03_generate_tickets.py                        |   146 +
+ src/s04_inventory.py                               |   187 +
+ src/s05_requirements_matrix.py                     |   129 +
+ src/s06_clean.py                                   |   376 +
+ src/s07_eda.py                                     |   266 +
+ src/s08_supervised.py                              |   252 +
+ src/s09_anomaly.py                                 |   260 +
+ src/s10_access_analytics.py                        |   194 +
+ src/s11_investigation.py                           |   235 +
+ src/s12_intelligence.py                            |   224 +
+ src/s13_simulation.py                              |   296 +
+ src/s14_textmining.py                              |   236 +
+ src/s15_risk_adversarial.py                        |   316 +
+ src/s16_architecture.py                            |   101 +
+ src/s20_compliance.py                              |   129 +
+ src/viz.py                                         |    46 +
+ tests/test_pipeline.py                             |   146 +
+ 133 files changed, 36442 insertions(+)
+
+=== file count under version control: 147
