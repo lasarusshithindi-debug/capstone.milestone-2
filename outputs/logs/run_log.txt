@@ -337,3 +337,24 @@
 2026-09-20 09:32:19,460 | INFO    | s18_doc | Milestone 2 document written: /home/claude/capstone/docs/T08_Milestone2_Implementation_Plan.pdf (1.1 MB), 42 contents entries
 2026-09-20 09:32:55,114 | INFO    | s18_doc | contents page numbers stable after 2 passes
 2026-09-20 09:32:55,114 | INFO    | s18_doc | Milestone 2 document written: /home/claude/capstone/docs/T08_Milestone2_Implementation_Plan.pdf (1.1 MB), 42 contents entries
+2026-09-20 16:18:55,521 | INFO    | s19_shots | all(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/playwright/_impl/_connection.py", line 559, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Page.wait_for_selector: Timeout 90000ms exceeded.
+Call log:
+  - waiting for locator("button[role=\"tab\"]") to be visible
+2026-09-20 16:18:55,522 | INFO    | s19_shots | fig27_console_overview.png         MISSING
+2026-09-20 16:18:55,522 | INFO    | s19_shots | fig28_console_accounts.png         MISSING
+2026-09-20 16:18:55,522 | INFO    | s19_shots | fig29_console_investigation.png    MISSING
+2026-09-20 16:18:55,522 | INFO    | s19_shots | fig30_console_simulation.png       MISSING
+2026-09-20 16:20:36,669 | INFO    | s19_shots | captured fig27_console_overview.png
+captured fig28_console_accounts.png
+captured fig29_console_investigation.png
+captured fig30_console_simulation.png
+2026-09-20 16:20:36,670 | INFO    | s19_shots | fig27_console_overview.png         124 kB
+2026-09-20 16:20:36,670 | INFO    | s19_shots | fig28_console_accounts.png         230 kB
+2026-09-20 16:20:36,670 | INFO    | s19_shots | fig29_console_investigation.png    330 kB
+2026-09-20 16:20:36,670 | INFO    | s19_shots | fig30_console_simulation.png       169 kB
+2026-09-20 16:21:11,850 | INFO    | s18_doc | contents page numbers stable after 2 passes
+2026-09-20 16:21:11,850 | INFO    | s18_doc | Milestone 2 document written: /home/claude/capstone/docs/T08_Milestone2_Implementation_Plan.pdf (2.0 MB), 42 contents entries

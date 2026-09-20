@@ -713,6 +713,13 @@ def build() -> str:
     evidence, and what to do about it. Every view ends in something actionable rather than in a
     chart. A reproducible notebook, <code>notebooks/capstone_walkthrough.ipynb</code>, accompanies
     it and reproduces every number quoted in this document.</p>
+    <p>The screenshots below were captured from the running application, not mocked up. They are
+    reproduced by <code>python src/s19_app_screenshots.py</code>, which starts the console and
+    drives it in a headless browser.</p>
+    {fig("fig27_console_overview.png", "Console, Overview: volume of records analysed, accounts monitored, alerts raised, critical-risk user-days and the detector's F1, with alerts per day by severity.", "86%")}
+    {fig("fig28_console_accounts.png", "Console, Accounts and risk: the priority watchlist filtered to the critical and high bands, showing which rules fired, the peak risk score, the dominant risk driver, MFA enrolment and the ATT&CK context for each account.", "86%")}
+    {fig("fig29_console_investigation.png", "Console, Investigation: the selected case with its privileged-action counts, the correlated timeline including the linkage-basis column, the affected entities and the response plan.", "86%")}
+    {fig("fig30_console_simulation.png", "Console, Simulation: the control-scenario comparison and the sensitivity view, with the assumptions and limitations shown alongside the numbers.", "86%")}
 
     <h3>12.2 Test cases</h3>
     <p>Sixteen test cases run with <code>python -m pytest tests -q</code> and all pass. They were

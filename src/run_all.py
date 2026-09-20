@@ -39,6 +39,7 @@ STAGES = [
     ("s16", "s16_architecture", "architecture diagram"),
     ("s17", "s17_member_a_pack", "Member A evidence pack (dictionary, evaluation, experiment log)"),
     ("nb", "make_notebook", "build the walkthrough notebook"),
+    ("s19", "s19_app_screenshots", "capture screenshots of the running console"),
     ("s18", "s18_milestone2_doc", "build the Milestone 2 implementation-plan PDF"),
     ("s20", "s20_compliance", "compliance checklist C1-C10"),
 ]
