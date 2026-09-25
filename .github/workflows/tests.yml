@@ -10,5 +10,12 @@ jobs:
           python-version: '3.11'
       - run: pip install -r requirements.txt
       - run: pip install pytest
+      - name: Fetch external datasets
+        run: |
+          git clone --depth 1 https://github.com/PengaloGit/ToN_IoT-datasets.git data/raw/ton_iot_gh
+          git clone --depth 1 --filter=blob:none --sparse https://github.com/thawatchai2799/SecurityArchitectureSmartCityIoT.git data/raw/netrepo
+          cd data/raw/netrepo && git sparse-checkout set data && cd -
+          git clone --depth 1 https://github.com/mitre-attack/attack-stix-data.git /tmp/attack
+          mkdir -p data/raw/attack_bundle && cp /tmp/attack/ics-attack/ics-attack.json data/raw/attack_bundle/
       - run: python src/run_all.py
       - run: python -m pytest tests -q
